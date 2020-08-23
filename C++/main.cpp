@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 	
-	printf("Hello Hieu!") // Gia su quen dau cham phay
+	printf("Hello Hieu!");
 
 	return 0;
 }
