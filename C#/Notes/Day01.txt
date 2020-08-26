@@ -1,0 +1,2 @@
++ Database ADO.NET (thành phần để kết nối cơ sở dữ liệu)
++ .NET FrameWork
