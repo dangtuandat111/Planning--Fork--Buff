@@ -31,5 +31,14 @@ namespace firstProgram
         {
             text.Text = null;
         }
+
+        private void text_TextChanged(object sender, EventArgs e)
+        {
+            if (text.TextLength > 10)
+            {
+                MessageBox.Show("<10 characters");
+                return;
+            }
+        }
     }
 }

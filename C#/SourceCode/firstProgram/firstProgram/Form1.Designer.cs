@@ -40,6 +40,7 @@
             this.text.Name = "text";
             this.text.Size = new System.Drawing.Size(292, 20);
             this.text.TabIndex = 0;
+            this.text.TextChanged += new System.EventHandler(this.text_TextChanged);
             // 
             // button1
             // 
