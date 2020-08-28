@@ -1,0 +1,388 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../chapter2b.htm">
+<link rel=Preview href=preview.wmf>
+<link rel=OLE-Object-Data href=oledata.mso>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Part 2: Apprlications </title>
+<meta name=Description content="11/23/2006: Lập trình Socket TCP">
+<link rel=Stylesheet href="master03_stylesheet.css">
+<![if !ppt]>
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:107% !important;}
+-->
+</style>
+<script src=script.js></script><script><!--
+gUseSldTimings=0;
+str=document.location.hash,idx=str.indexOf('#');if(idx>=0) str=str.substr(1);if (str == "0") g_showAnimation=0;else g_showAnimation=1;
+
+
+//if( !IsNts() ) Redirect( "PPTSld" );
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]><o:shapelayout v:ext="edit">
+ <o:idmap v:ext="edit" data="166"/>
+</o:shapelayout>
+
+<!--[if gte IE 5]>
+<object style="visibility:hidden" id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"
+	codebase="http://download.microsoft.com/download/vizact2000/Install/10/WIN98Me/EN-US/msorun.cab#version=10,0,0,1"></object>
+<![endif]-->
+</head>
+
+<body bgcolor="transparent" style='overflow:hidden' onkeypress="DocumentOnClick()" lang=EN-US style='margin:0px' onclick="DocumentOnClick()"
+onresize="_RSW()" onload="LoadSld()" onkeypresstemp="_KPH()">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:534px;height:400px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"
+ masterhref="master03.xml">
+ <p:shaperangetemp href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#_x0000_s1029"/>
+ <div v:shape="_x0000_s1029" class=O style='text-align:right;position:absolute;
+ top:94.25%;left:60.11%;width:29.77%;height:3.0%'><span style='font-size:58%'>2:
+ Tầng Ứng dụng</span></div>
+ <p:shaperange href="master03.xml#_x0000_s1030"/>
+ <div v:shape="_x0000_s1030" class=O>
+ <div style='text-align:right;position:absolute;top:94.25%;left:91.76%;
+ width:3.18%;height:3.0%'><span style='font-size:58%;mso-field-code:meta16'>19</span><span
+ style='font-size:58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![endif]><p:shaperange href="master03.xml#_x0000_m1026"/><v:shape id="_x0000_s169986"
+  type="#_x0000_m1026" style='position:absolute;left:42pt;top:18pt;width:612pt;
+  height:90pt' o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <o:lock v:ext="edit" text="f"/>
+  <p:placeholder type="title"/></v:shape><p:shaperange
+  href="master03.xml#_x0000_m1027"/><v:shape id="_x0000_s169987" type="#_x0000_m1027"
+  style='position:absolute;left:47.25pt;top:111.75pt;width:612pt;height:120.75pt'
+  o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <o:lock v:ext="edit" text="f"/>
+  <p:placeholder type="body" position="1"/></v:shape>
+ <div v:shape="_x0000_s169986" class=T style='text-align:center;position:absolute;
+ top:8.25%;left:6.92%;width:83.14%;height:7.5%'><span style='font-size:90%;
+ text-decoration:none'>Lập trình Socket TCP</span></div>
+ <div v:shape="_x0000_s169987" class=B><span style='position:absolute;
+ top:21.75%;left:7.49%;width:96.44%;height:5.25%'><span style='mso-special-format:
+ nobullet;display:none;color:#3333CC;mso-color-index:5;font-family:Wingdings;
+ font-size:70%'>q</span><span style='font-size:86%;color:red'><b><u>Socket</u></b></span><span
+ style='font-size:86%;color:red'><u>:</u></span><span style='font-size:86%'> Là
+ “cửa” giữa tiến trình ứng dụng và giao thức giao </span></span><span
+ style='position:absolute;top:27.0%;left:11.23%;width:79.4%;height:5.25%'><span
+ style='font-size:86%'>vận đầu cuối (UCP/TCP)&#13;</span></span><span
+ style='position:absolute;top:33.5%;left:7.49%;width:95.69%;height:5.25%'><span
+ style='mso-special-format:nobullet;display:none;color:#3333CC;mso-color-index:
+ 5;font-family:Wingdings;font-size:70%'>q</span><span style='font-size:86%;
+ color:red'><b><u>TCP</u></b></span><span style='font-size:86%;color:red'><u>:</u></span><span
+ style='font-size:86%'> Dịch vụ truyền byte tin cậy từ tiến trình này sang tiến
+ </span></span><span style='position:absolute;top:38.75%;left:11.23%;
+ width:79.4%;height:5.25%'><span style='font-size:86%'>trình khác.</span></span></div>
+ <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+  o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn="sum @0 1 0"/>
+   <v:f eqn="sum 0 0 @1"/>
+   <v:f eqn="prod @2 1 2"/>
+   <v:f eqn="prod @3 21600 pixelWidth"/>
+   <v:f eqn="prod @3 21600 pixelHeight"/>
+   <v:f eqn="sum @0 0 1"/>
+   <v:f eqn="prod @6 1 2"/>
+   <v:f eqn="prod @7 21600 pixelWidth"/>
+   <v:f eqn="sum @8 21600 0"/>
+   <v:f eqn="prod @7 21600 pixelHeight"/>
+   <v:f eqn="sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+  <o:lock v:ext="edit" aspectratio="t"/>
+ </v:shapetype><v:shape id="_x0000_s169988" type="#_x0000_t75" style='position:absolute;
+  left:163.25pt;top:276.625pt;width:88.5pt;height:70.25pt'>
+  <v:imagedata src="slide0077_image025.wmz" o:title=""/>
+ </v:shape><o:OLEObject Type="Embed" ProgID="MS_ClipArt_Gallery.2"
+  ShapeID="_x0000_s169988" DrawAspect="Content" ObjectID="3480">
+  <p:oleclientdata subtype="clipart" menuname="ClipArt"
+   clipboardname="Microsoft ClipArt Gallery"/></o:OLEObject>
+ <![if !vml]><img border=0 v:shapes="_x0000_s169988"
+ src="slide0089_image048.gif" style='position:absolute;top:51.25%;left:22.65%;
+ width:12.35%;height:13.0%'><![endif]><v:group id="_x0000_s169989" style='position:absolute;
+  left:166.625pt;top:303.5pt;width:89.5pt;height:124.75pt' coordorigin="649,2260"
+  coordsize="716,998">
+  <v:rect id="_x0000_s169990" style='position:absolute;left:678;top:2280;
+   width:642;height:288;mso-wrap-style:none;v-text-anchor:middle' fillcolor="white [0]"
+   strokecolor="black [1]" strokeweight="2.25pt">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"
+   path="m,l,21600r21600,l21600,xe">
+   <v:stroke joinstyle="miter"/>
+   <v:path gradientshapeok="t" o:connecttype="rect"/>
+  </v:shapetype><v:shape id="_x0000_s169991" type="#_x0000_t202" style='position:absolute;
+   left:694;top:2260;width:631;height:231;mso-wrap-style:none;v-text-anchor:middle'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:group id="_x0000_s169992" style='position:absolute;left:649;
+   top:2628;width:716;height:630' coordorigin="637,2610" coordsize="716,630">
+   <v:shape id="_x0000_s169993" type="#_x0000_t202" style='position:absolute;
+    left:637;top:2658;width:716;height:577;mso-wrap-style:none;v-text-anchor:middle'
+    filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape><v:rect id="_x0000_s169994" style='position:absolute;left:672;
+    top:2610;width:642;height:630;mso-wrap-style:none;v-text-anchor:middle'
+    filled="f" strokecolor="black [1]" strokeweight="2.25pt">
+    <v:shadow color="gray [2]"/>
+   </v:rect></v:group><v:group id="_x0000_s169995" style='position:absolute;
+   left:741;top:2500;width:561;height:231' coordorigin="897,3736" coordsize="561,231">
+   <v:rect id="_x0000_s169996" style='position:absolute;left:924;top:3774;
+    width:492;height:156;mso-wrap-style:none;v-text-anchor:middle' fillcolor="red"
+    stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+   </v:rect><v:shape id="_x0000_s169997" type="#_x0000_t202" style='position:absolute;
+    left:897;top:3736;width:561;height:231;mso-wrap-style:none;v-text-anchor:middle'
+    filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape></v:group></v:group><v:shape id="_x0000_s169998" type="#_x0000_t202"
+  style='position:absolute;left:25.75pt;top:294.75pt;width:127.625pt;height:55.25pt;
+  mso-wrap-style:none;v-text-anchor:middle' filled="f" stroked="f"
+  strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s169999" type="#_x0000_t202" style='position:absolute;
+  left:21pt;top:363pt;width:130.125pt;height:55.25pt;mso-wrap-style:none;
+  v-text-anchor:middle' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:line id="_x0000_s170000" style='position:absolute;flip:y;
+  mso-wrap-style:none;v-text-anchor:middle' from="153pt,306.75pt" to="153pt,345pt"
+  strokecolor="black [1]" strokeweight="2.25pt">
+  <v:stroke startarrow="block" endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s170001" style='position:absolute;flip:x y;
+  mso-wrap-style:none;v-text-anchor:middle' from="152.25pt,352.5pt" to="152.25pt,431.25pt"
+  strokecolor="black [1]" strokeweight="2.25pt">
+  <v:stroke startarrow="block" endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:shape id="_x0000_s170002" type="#_x0000_t202" style='position:absolute;
+  left:163pt;top:453pt;width:95.75pt;height:31.25pt;mso-wrap-style:none;
+  v-text-anchor:middle' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><![if !vml]><img border=0
+ v:shapes="_x0000_s169989,_x0000_s169990,_x0000_s169991,_x0000_s169993,_x0000_s169994,_x0000_s169996,_x0000_s169997,_x0000_s170000,_x0000_s170001"
+ src="slide0089_image049.gif" style='position:absolute;top:56.25%;left:20.41%;
+ width:15.35%;height:24.25%'><![endif]>
+ <div v:shape="_x0000_s169990" class=O style='text-align:center'><span
+ style='position:absolute;top:57.75%;left:24.71%;width:8.98%;height:5.25%'><span
+ style='color:white;mso-color-index:0;mso-special-format:lastCR;display:none'>&#13;</span></span></div>
+ <div v:shape="_x0000_s169991" class=O style='text-align:center;position:absolute;
+ top:56.25%;left:23.97%;width:10.86%;height:5.0%'><span style='font-family:
+ "Comic Sans MS";font-size:75%'>process</span><span style='font-size:75%;
+ mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s169993" class=O>
+ <div style='text-align:center;position:absolute;top:66.0%;left:23.22%;
+ width:12.54%;height:5.0%'><span style='font-family:"Comic Sans MS";font-size:
+ 75%'>TCP with&#13;</span></div>
+ <div style='text-align:center;position:absolute;top:70.0%;left:23.4%;
+ width:11.98%;height:5.0%'><span style='font-family:"Comic Sans MS";font-size:
+ 75%'>buffers,&#13;</span></div>
+ <div style='text-align:center;position:absolute;top:74.0%;left:23.03%;
+ width:12.73%;height:5.0%'><span style='font-family:"Comic Sans MS";font-size:
+ 75%'>variables</span><span style='font-size:75%;mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ </div>
+ <div v:shape="_x0000_s169997" class=O style='text-align:center;position:absolute;
+ top:62.0%;left:24.9%;width:9.55%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%;color:white;mso-color-index:0'>socket</span><span
+ style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s169998" class=O>
+ <div style='text-align:right;position:absolute;top:55.5%;left:1.49%;
+ width:19.1%;height:4.25%'><span style='font-size:83%;color:#3333CC;mso-color-index:
+ 5'>Lập trình viên&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:60.0%;left:4.49%;
+ width:15.91%;height:4.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'>kiểm soát </span></div>
+ </div>
+ <div v:shape="_x0000_s169999" class=O>
+ <div style='text-align:right;position:absolute;top:68.25%;left:.74%;
+ width:19.47%;height:4.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'>Hệ Điều Hành&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:72.5%;left:3.93%;
+ width:16.29%;height:4.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'>kiểm soát</span></div>
+ </div>
+ <div v:shape="_x0000_s170002" class=O style='text-align:center;position:absolute;
+ top:84.0%;left:22.47%;width:13.67%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>Máy tính</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ <v:shape id="_x0000_s170003" type="#_x0000_t75" style='position:absolute;
+  left:451.25pt;top:268.375pt;width:88.5pt;height:70.25pt'>
+  <v:imagedata src="slide0077_image025.wmz" o:title=""/>
+ </v:shape><o:OLEObject Type="Embed" ProgID="MS_ClipArt_Gallery.2"
+  ShapeID="_x0000_s170003" DrawAspect="Content" ObjectID="3481">
+  <p:oleclientdata subtype="clipart" menuname="ClipArt"
+   clipboardname="Microsoft ClipArt Gallery"/></o:OLEObject>
+ <![if !vml]><img border=0 v:shapes="_x0000_s170003"
+ src="slide0089_image050.gif" style='position:absolute;top:49.75%;left:62.73%;
+ width:12.35%;height:13.0%'><![endif]><v:group id="_x0000_s170004" style='position:absolute;
+  left:454.625pt;top:295.25pt;width:89.5pt;height:124.75pt' coordorigin="649,2260"
+  coordsize="716,998">
+  <v:rect id="_x0000_s170005" style='position:absolute;left:678;top:2280;
+   width:642;height:288;mso-wrap-style:none;v-text-anchor:middle' fillcolor="white [0]"
+   strokecolor="black [1]" strokeweight="2.25pt">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:shape id="_x0000_s170006" type="#_x0000_t202" style='position:absolute;
+   left:694;top:2260;width:631;height:231;mso-wrap-style:none;v-text-anchor:middle'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:group id="_x0000_s170007" style='position:absolute;left:649;
+   top:2628;width:716;height:630' coordorigin="637,2610" coordsize="716,630">
+   <v:shape id="_x0000_s170008" type="#_x0000_t202" style='position:absolute;
+    left:637;top:2658;width:716;height:577;mso-wrap-style:none;v-text-anchor:middle'
+    filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape><v:rect id="_x0000_s170009" style='position:absolute;left:672;
+    top:2610;width:642;height:630;mso-wrap-style:none;v-text-anchor:middle'
+    filled="f" strokecolor="black [1]" strokeweight="2.25pt">
+    <v:shadow color="gray [2]"/>
+   </v:rect></v:group><v:group id="_x0000_s170010" style='position:absolute;
+   left:741;top:2500;width:561;height:231' coordorigin="897,3736" coordsize="561,231">
+   <v:rect id="_x0000_s170011" style='position:absolute;left:924;top:3774;
+    width:492;height:156;mso-wrap-style:none;v-text-anchor:middle' fillcolor="red"
+    stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+   </v:rect><v:shape id="_x0000_s170012" type="#_x0000_t202" style='position:absolute;
+    left:897;top:3736;width:561;height:231;mso-wrap-style:none;v-text-anchor:middle'
+    filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape></v:group></v:group><v:shape id="_x0000_s170013" type="#_x0000_t202"
+  style='position:absolute;left:561.75pt;top:282.375pt;width:127.625pt;
+  height:60pt;mso-wrap-style:none;v-text-anchor:middle' filled="f" stroked="f"
+  strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><![if !vml]><img border=0
+ v:shapes="_x0000_s170004,_x0000_s170005,_x0000_s170006,_x0000_s170008,_x0000_s170009,_x0000_s170011,_x0000_s170012"
+ src="slide0089_image051.gif" style='position:absolute;top:54.75%;left:63.1%;
+ width:12.73%;height:23.75%'><![endif]>
+ <div v:shape="_x0000_s170005" class=O style='text-align:center'><span
+ style='position:absolute;top:56.25%;left:64.79%;width:8.98%;height:5.25%'><span
+ style='color:white;mso-color-index:0;mso-special-format:lastCR;display:none'>&#13;</span></span></div>
+ <div v:shape="_x0000_s170006" class=O style='text-align:center;position:absolute;
+ top:54.75%;left:64.04%;width:10.86%;height:5.0%'><span style='font-family:
+ "Comic Sans MS";font-size:75%'>process</span><span style='font-size:75%;
+ mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s170008" class=O>
+ <div style='text-align:center;position:absolute;top:64.5%;left:63.1%;
+ width:12.54%;height:5.0%'><span style='font-family:"Comic Sans MS";font-size:
+ 75%'>TCP with&#13;</span></div>
+ <div style='text-align:center;position:absolute;top:68.5%;left:63.48%;
+ width:11.98%;height:5.0%'><span style='font-family:"Comic Sans MS";font-size:
+ 75%'>buffers,&#13;</span></div>
+ <div style='text-align:center;position:absolute;top:72.5%;left:63.1%;
+ width:12.73%;height:5.0%'><span style='font-family:"Comic Sans MS";font-size:
+ 75%'>variables</span><span style='font-size:75%;mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ </div>
+ <div v:shape="_x0000_s170012" class=O style='text-align:center;position:absolute;
+ top:60.5%;left:64.98%;width:9.55%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%;color:white;mso-color-index:0'>socket</span><span
+ style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s170013" class=O>
+ <div style='text-align:center;position:absolute;top:53.25%;left:77.52%;
+ width:19.1%;height:4.25%'><span style='font-size:83%;color:#3333CC;mso-color-index:
+ 5'>Lập trình viên&#13;</span></div>
+ <div style='text-align:center;position:absolute;top:57.75%;left:79.02%;
+ width:15.91%;height:5.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'>kiểm soát</span> </div>
+ </div>
+ <v:line id="_x0000_s170014" style='position:absolute;flip:y;mso-wrap-style:none;
+  v-text-anchor:middle' from="553.5pt,296.25pt" to="553.5pt,334.5pt"
+  strokecolor="black [1]" strokeweight="2.25pt">
+  <v:stroke startarrow="block" endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s170015" style='position:absolute;flip:x y;
+  mso-wrap-style:none;v-text-anchor:middle' from="552.75pt,342pt" to="552.75pt,420.75pt"
+  strokecolor="black [1]" strokeweight="2.25pt">
+  <v:stroke startarrow="block" endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:shape id="_x0000_s170016" type="#_x0000_t202" style='position:absolute;
+  left:451pt;top:444.75pt;width:95.75pt;height:31.25pt;mso-wrap-style:none;
+  v-text-anchor:middle' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><![if !vml]><img border=0 v:shapes="_x0000_s170014,_x0000_s170015"
+ src="slide0089_image052.gif" style='position:absolute;top:54.75%;left:76.21%;
+ width:1.68%;height:24.0%'><![endif]>
+ <div v:shape="_x0000_s170016" class=O style='text-align:center;position:absolute;
+ top:82.5%;left:62.54%;width:13.67%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>Máy tính</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ <v:shape id="_x0000_s170017" style='position:absolute;left:283.25pt;top:333pt;
+  width:141.625pt;height:131.875pt;mso-wrap-style:none;v-text-anchor:middle'
+  coordsize="1292,1255" path="m239,7c120,14,70,71,35,157,,243,26,411,29,523,32,635,17,771,53,829v36,58,93,-8,192,42c344,921,522,1068,647,1129v125,61,256,126,348,108c1087,1219,1153,1153,1199,1021v46,-132,71,-441,72,-576c1272,310,1292,266,1205,211,1118,156,908,150,749,115,590,80,358,,239,7xe"
+  fillcolor="#cff" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:path arrowok="t"/>
+ </v:shape><v:shape id="_x0000_s170018" type="#_x0000_t202" style='position:absolute;
+  left:307.25pt;top:381pt;width:96.75pt;height:31.25pt;mso-wrap-style:none;
+  v-text-anchor:middle' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:line id="_x0000_s170019" style='position:absolute;flip:x;
+  mso-wrap-style:none;v-text-anchor:middle' from="254.25pt,372.75pt" to="453.75pt,373.5pt"
+  strokecolor="red" strokeweight="3pt">
+  <v:stroke startarrow="block" endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:shape id="_x0000_s170020" type="#_x0000_t202" style='position:absolute;
+  left:562pt;top:358.375pt;width:130.125pt;height:55.25pt;mso-wrap-style:none;
+  v-text-anchor:middle' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><![if !vml]><img border=0 v:shapes="_x0000_s170017,_x0000_s170019"
+ src="slide0089_image053.gif" style='position:absolute;top:61.75%;left:35.01%;
+ width:28.46%;height:24.75%'><![endif]>
+ <div v:shape="_x0000_s170018" class=O style='text-align:center;position:absolute;
+ top:70.75%;left:42.5%;width:13.85%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>Internet</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s170020" class=O>
+ <div style='text-align:right;position:absolute;top:67.25%;left:75.84%;
+ width:19.47%;height:4.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'>Hệ Điều Hành&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:71.75%;left:79.02%;
+ width:16.29%;height:4.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'>kiểm soát</span></div>
+ </div>
+</p:slide></div>
+
+</body>
+
+</html>

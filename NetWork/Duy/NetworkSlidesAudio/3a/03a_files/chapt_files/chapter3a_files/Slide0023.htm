@@ -1,0 +1,193 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../chapter3a.htm">
+<link rel=Preview href=preview.wmf>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Part I: Introduction</title>
+<meta name=Description content="11/24/2006: rdt2.2: Giao thức không sử dụng NAK">
+<link rel=Stylesheet href="master03_stylesheet.css">
+<![if !ppt]>
+
+<bgsound id=pptSound>
+
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:107% !important;}
+-->
+</style>
+<script src=script.js></script><script><!--
+gUseSldTimings=0;
+str=document.location.hash,idx=str.indexOf('#');if(idx>=0) str=str.substr(1);if (str == "0") g_showAnimation=0;else g_showAnimation=1;
+
+
+//if( !IsNts() ) Redirect( "PPTSld" );
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]><o:shapelayout v:ext="edit">
+ <o:idmap v:ext="edit" data="88"/>
+</o:shapelayout>
+
+<!--[if gte IE 5]>
+<object style="visibility:hidden" id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"
+	codebase="http://download.microsoft.com/download/vizact2000/Install/10/WIN98Me/EN-US/msorun.cab#version=10,0,0,1"></object>
+<![endif]-->
+</head>
+
+<body bgcolor="transparent" style='overflow:hidden' onkeypress="DocumentOnClick()" lang=EN-US style='margin:0px' onclick="DocumentOnClick()"
+onresize="_RSW()" onload="LoadSld()" onkeypresstemp="_KPH()">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:534px;height:400px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"
+ masterhref="master03.xml">
+ <p:shaperangetemp href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#_x0000_s1029"/>
+ <div v:shape="_x0000_s1029" class=O style='text-align:right;position:absolute;
+ top:93.5%;left:60.11%;width:29.77%;height:3.75%'><span style='font-family:
+ "Comic Sans MS";font-size:58%'>3: Transport Layer</span><span
+ style='font-size:58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <p:shaperange href="master03.xml#_x0000_s1030"/>
+ <div v:shape="_x0000_s1030" class=O>
+ <div style='text-align:right;position:absolute;top:94.25%;left:90.26%;
+ width:5.61%;height:3.0%'><span style='font-size:58%'>3a-</span><span
+ style='font-size:58%;mso-field-code:meta16'>30</span><span style='font-size:
+ 58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![endif]><p:shaperange href="master03.xml#_x0000_m1026"/><v:shape id="_x0000_s90114"
+  type="#_x0000_m1026" style='position:absolute;left:42pt;top:18pt;width:612pt;
+  height:90pt' o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <p:placeholder type="title"/></v:shape><p:shaperange
+  href="master03.xml#_x0000_m1027"/><v:shape id="_x0000_s90115" type="#_x0000_m1027"
+  style='position:absolute;left:33pt;top:124.5pt;width:304.5pt;height:366pt'
+  o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <p:placeholder type="body" position="1" size="half"/></v:shape>
+ <div v:shape="_x0000_s90114" class=T style='position:absolute;top:8.25%;
+ left:6.92%;width:98.87%;height:7.5%'><span style='font-size:90%'>rdt2.2: Giao
+ thức không sử dụng NAK</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s90115">
+ <div class=HB><span style='position:absolute;top:24.0%;left:9.36%;width:38.76%;
+ height:5.25%'><span class=HBB style='position:absolute;left:-9.66%;top:.16em'>r</span>Giống
+ hệt rdt2.1, nhưng </span><span style='position:absolute;top:29.5%;left:9.36%;
+ width:36.7%;height:5.25%'>không dùng NAK&#13;</span></div>
+ <div class=HB><span style='position:absolute;top:35.75%;left:9.36%;width:36.89%;
+ height:5.25%'><span class=HBB style='position:absolute;left:-10.15%;
+ top:.16em'>r</span>Thay vì sử dụng NAK, </span><span style='position:absolute;
+ top:41.0%;left:9.36%;width:41.38%;height:5.25%'>phía Gửi sẽ biên nhận gói </span><span
+ style='position:absolute;top:46.5%;left:9.36%;width:36.7%;height:5.25%'>cuối
+ cùng nhận đúng.&#13;</span></div>
+ <div class=HB1><span style='position:absolute;top:52.5%;left:13.67%;
+ width:38.2%;height:4.25%'><span class=HB1B style='position:absolute;
+ left:-7.84%;top:.3em'>m</span>Phía Nhận phải biên nhận rõ </span><span
+ style='position:absolute;top:57.0%;left:13.67%;width:32.39%;height:4.25%'>ràng
+ cho gói tin nào&#13;</span></div>
+ <div class=HB><span style='position:absolute;top:62.5%;left:9.36%;width:39.51%;
+ height:5.25%'><span class=HBB style='position:absolute;left:-9.47%;top:.16em'>r</span>Ở
+ phía Nhận, nhận được </span><span style='position:absolute;top:68.0%;
+ left:9.36%;width:36.7%;height:5.25%'>ACK trùng lặp tương </span><span
+ style='position:absolute;top:73.25%;left:9.36%;width:40.07%;height:5.25%'>đương
+ nhận được NAK : </span><span style='position:absolute;top:78.5%;left:9.36%;
+ width:36.7%;height:5.25%'><i>truyền lại.</i><span style='mso-special-format:
+ lastCR;display:none'>&#13;</span></span></div>
+ </div>
+ <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+  o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn="sum @0 1 0"/>
+   <v:f eqn="sum 0 0 @1"/>
+   <v:f eqn="prod @2 1 2"/>
+   <v:f eqn="prod @3 21600 pixelWidth"/>
+   <v:f eqn="prod @3 21600 pixelHeight"/>
+   <v:f eqn="sum @0 0 1"/>
+   <v:f eqn="prod @6 1 2"/>
+   <v:f eqn="prod @7 21600 pixelWidth"/>
+   <v:f eqn="sum @8 21600 0"/>
+   <v:f eqn="prod @7 21600 pixelHeight"/>
+   <v:f eqn="sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+  <o:lock v:ext="edit" aspectratio="t"/>
+ </v:shapetype><v:shape id="_x0000_s90119" type="#_x0000_t75" style='position:absolute;
+  left:341.375pt;top:160.125pt;width:351.75pt;height:307pt'>
+  <v:imagedata src="slide0023_image228.png" o:title="rdt22_sender_frag"/>
+ </v:shape><![if !vml]><img border=0 v:shapes="_x0000_s90119"
+ src="slide0023_image229.jpg" style='position:absolute;top:29.75%;left:47.37%;
+ width:48.87%;height:56.75%'><![endif]><v:shapetype id="_x0000_t202"
+  coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s90120" type="#_x0000_t202" style='position:absolute;
+  left:551.625pt;top:107.375pt;width:65.125pt;height:64.75pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:line id="_x0000_s90121" style='position:absolute;flip:x;
+  mso-wrap-style:none;v-text-anchor:middle' from="385.5pt,204.75pt" to="482.25pt,359.25pt"
+  strokecolor="red" strokeweight="1.5pt">
+  <v:stroke startarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s90122" style='position:absolute;flip:x;
+  mso-wrap-style:none;v-text-anchor:middle' from="386.25pt,248.25pt" to="588.75pt,358.5pt"
+  strokecolor="red" strokeweight="1.5pt">
+  <v:stroke startarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s90123" style='position:absolute;flip:x;
+  mso-wrap-style:none;v-text-anchor:middle' from="387pt,277.5pt" to="621pt,357.75pt"
+  strokecolor="red" strokeweight="1.5pt">
+  <v:stroke startarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s90124" style='position:absolute;flip:x;
+  mso-wrap-style:none;v-text-anchor:middle' from="387pt,346.5pt" to="637.5pt,358.75pt"
+  strokecolor="red" strokeweight="1.5pt">
+  <v:stroke startarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:shape id="_x0000_s90125" type="#_x0000_t202" style='position:absolute;
+  left:367.5pt;top:337.25pt;width:21.125pt;height:40.875pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><![if !vml]><img border=0
+ v:shapes="_x0000_s90121,_x0000_s90122,_x0000_s90123,_x0000_s90124"
+ src="slide0023_image230.gif" style='position:absolute;top:37.5%;left:53.37%;
+ width:35.58%;height:29.75%'><![endif]>
+ <div v:shape="_x0000_s90120" class=O>
+ <div style='position:absolute;top:20.75%;left:77.52%;width:8.61%;height:5.25%'><span
+ style='font-family:Arial;color:#3333CC;mso-color-index:5'>FSM&#13;</span></div>
+ <div style='position:absolute;top:26.25%;left:77.52%;width:7.86%;height:5.25%'><span
+ style='font-family:Arial;color:#3333CC;mso-color-index:5'>GỬI</span><span
+ style='font-family:Arial;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <div v:shape="_x0000_s90125" class=O style='text-align:center;position:absolute;
+ top:62.25%;left:51.87%;width:1.31%;height:7.5%'><span style='font-family:"Comic Sans MS";
+ font-size:117%;color:red'>!</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+</p:slide></div>
+
+</body>
+
+</html>

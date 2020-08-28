@@ -1,0 +1,250 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../chapter2b.htm">
+<link rel=Preview href=preview.wmf>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Part 2: Apprlications </title>
+<meta name=Description content="11/23/2006: Ví dụ về Java Server (TCP)">
+<link rel=Stylesheet href="master03_stylesheet.css">
+<![if !ppt]>
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:107% !important;}
+-->
+</style>
+<script src=script.js></script><script><!--
+gUseSldTimings=0;
+str=document.location.hash,idx=str.indexOf('#');if(idx>=0) str=str.substr(1);if (str == "0") g_showAnimation=0;else g_showAnimation=1;
+
+
+//if( !IsNts() ) Redirect( "PPTSld" );
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]><o:shapelayout v:ext="edit">
+ <o:idmap v:ext="edit" data="179"/>
+</o:shapelayout>
+
+<!--[if gte IE 5]>
+<object style="visibility:hidden" id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"
+	codebase="http://download.microsoft.com/download/vizact2000/Install/10/WIN98Me/EN-US/msorun.cab#version=10,0,0,1"></object>
+<![endif]-->
+</head>
+
+<body bgcolor="transparent" style='overflow:hidden' onkeypress="DocumentOnClick()" lang=EN-US style='margin:0px' onclick="DocumentOnClick()"
+onresize="_RSW()" onload="LoadSld()" onkeypresstemp="_KPH()">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:534px;height:400px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"
+ masterhref="master03.xml">
+ <p:shaperangetemp href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#_x0000_s1029"/>
+ <div v:shape="_x0000_s1029" class=O style='text-align:right;position:absolute;
+ top:94.25%;left:60.11%;width:29.77%;height:3.0%'><span style='font-size:58%'>2:
+ Tầng Ứng dụng</span></div>
+ <p:shaperange href="master03.xml#_x0000_s1030"/>
+ <div v:shape="_x0000_s1030" class=O>
+ <div style='text-align:right;position:absolute;top:94.25%;left:91.76%;
+ width:3.18%;height:3.0%'><span style='font-size:58%;mso-field-code:meta16'>29</span><span
+ style='font-size:58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![endif]><p:shaperange href="master03.xml#_x0000_m1026"/><v:shape id="_x0000_s183298"
+  type="#_x0000_m1026" style='position:absolute;left:42pt;top:18pt;width:612pt;
+  height:90pt' o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <o:lock v:ext="edit" text="f"/>
+  <p:placeholder type="title"/></v:shape><v:rect id="_x0000_s183299" style='position:absolute;
+  left:145.75pt;top:127.375pt;width:551.125pt;height:312.375pt;
+  mso-wrap-style:none;v-text-anchor:middle' filled="f" stroked="f">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:rect><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"
+  path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s183300" type="#_x0000_t202" style='position:absolute;
+  left:40.125pt;top:214.875pt;width:134.75pt;height:55.25pt;mso-wrap-style:none;
+  v-text-anchor:middle' filled="f" stroked="f">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s183301" type="#_x0000_t202" style='position:absolute;
+  left:10pt;top:133pt;width:164.875pt;height:79.25pt;v-text-anchor:middle'
+  filled="f" stroked="f">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape>
+ <div v:shape="_x0000_s183298" class=T style='text-align:center;position:absolute;
+ top:8.25%;left:6.92%;width:83.14%;height:7.5%'><span style='font-size:90%;
+ text-decoration:none'>Ví dụ về Java Server (TCP)</span></div>
+ <div v:shape="_x0000_s183299" class=O>
+ <div style='position:absolute;top:24.5%;left:21.16%;width:74.71%;height:3.5%'><span
+ style='font-family:Arial;font-size:67%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:28.0%;left:21.16%;width:74.71%;height:3.5%'><span
+ style='font-family:Arial;font-size:67%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:31.5%;left:21.16%;width:74.71%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span
+ style='mso-spacerun:yes'>           </span>DataOutputStream<span
+ style='mso-spacerun:yes'>  </span>outToClient = &#13;</span></div>
+ <div style='position:absolute;top:35.75%;left:21.16%;width:89.7%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span
+ style='mso-spacerun:yes'>             </span>new DataOutputStream</span><span
+ style='font-family:Arial;font-size:67%'>(connectionSocket.getOutputStream());</span><span
+ style='font-family:Arial;font-size:75%'> &#13;</span></div>
+ <div style='position:absolute;top:39.75%;left:21.16%;width:74.71%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:43.75%;left:21.16%;width:74.71%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span
+ style='mso-spacerun:yes'>           </span>clientSentence =
+ inFromClient.readLine(); &#13;</span></div>
+ <div style='position:absolute;top:47.75%;left:21.16%;width:74.71%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:51.75%;left:21.16%;width:88.57%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span
+ style='mso-spacerun:yes'>           </span>capitalizedSentence =
+ clientSentence.toUpperCase() + '\n'; &#13;</span></div>
+ <div style='position:absolute;top:55.75%;left:21.16%;width:74.71%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:59.75%;left:21.16%;width:74.71%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span
+ style='mso-spacerun:yes'>          
+ </span>outToClient.writeBytes(capitalizedSentence); &#13;</span></div>
+ <div style='position:absolute;top:63.75%;left:21.16%;width:74.71%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span style='mso-spacerun:yes'>       
+ </span>} &#13;</span></div>
+ <div style='position:absolute;top:67.75%;left:21.16%;width:74.71%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span style='mso-spacerun:yes'>   
+ </span>} &#13;</span></div>
+ <div style='position:absolute;top:71.75%;left:21.16%;width:74.71%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>}</span><span style='font-size:75%'>
+ &#13;</span></div>
+ <div style='position:absolute;top:75.75%;left:21.16%;width:74.71%;height:5.25%'><span
+ style='mso-spacerun:yes'> </span></div>
+ </div>
+ <div v:shape="_x0000_s183300" class=O>
+ <div style='text-align:right;position:absolute;top:40.75%;left:3.18%;
+ width:20.22%;height:4.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'>Đọc dòng kí tự&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:45.25%;left:5.99%;
+ width:17.41%;height:4.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'><span style='mso-spacerun:yes'> </span>trong socket</span></div>
+ </div>
+ <div v:shape="_x0000_s183301" class=O>
+ <div style='text-align:right;position:absolute;top:25.5%;left:-1.87%;
+ width:25.28%;height:4.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'>Tạo output stream,&#13;</span></div>
+ <div style='text-align:right'><span style='position:absolute;top:30.0%;
+ left:2.43%;width:20.97%;height:4.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'>đính kèm vào </span></span><span style='position:absolute;
+ top:34.5%;left:2.43%;width:20.97%;height:4.25%'><span style='font-size:83%;
+ color:#3333CC;mso-color-index:5'>socket</span></span></div>
+ </div>
+ <v:shape id="_x0000_s183302" style='position:absolute;left:159.75pt;top:221.625pt;
+  width:12.75pt;height:42pt;mso-wrap-style:square;mso-wrap-distance-left:9pt;
+  mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;v-text-anchor:middle' coordsize="78,342" path="m,l78,r,342l6,342e"
+  filled="f" strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:shadow color="gray [2]"/>
+  <v:path arrowok="t"/>
+ </v:shape><v:line id="_x0000_s183303" style='position:absolute;flip:y;
+  v-text-anchor:middle' from="174pt,245.25pt" to="200.25pt,245.625pt"
+  strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:shape id="_x0000_s183304" style='position:absolute;left:162pt;
+  top:141.375pt;width:10.5pt;height:64.125pt;mso-wrap-style:square;
+  mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;v-text-anchor:middle' coordsize="78,342" path="m,l78,r,342l6,342e"
+  filled="f" strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:shadow color="gray [2]"/>
+  <v:path arrowok="t"/>
+ </v:shape><v:line id="_x0000_s183305" style='position:absolute;flip:y;
+  v-text-anchor:middle' from="174.375pt,195.75pt" to="196.875pt,196.875pt"
+  strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:shape id="_x0000_s183306" type="#_x0000_t202" style='position:absolute;
+  left:1.875pt;top:305pt;width:169.25pt;height:55.25pt;mso-wrap-style:none;
+  v-text-anchor:middle' filled="f" stroked="f">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><![if !vml]><img border=0
+ v:shapes="_x0000_s183302,_x0000_s183303,_x0000_s183304,_x0000_s183305"
+ src="slide0099_image086.gif" style='position:absolute;top:26.0%;left:22.09%;
+ width:6.36%;height:23.5%'><![endif]>
+ <div v:shape="_x0000_s183306" class=O>
+ <div style='text-align:right;position:absolute;top:57.5%;left:-1.49%;
+ width:24.53%;height:4.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'>Ghi dòng kí tự đã &#13;</span></div>
+ <div style='text-align:right;position:absolute;top:61.75%;left:-2.99%;
+ width:26.02%;height:4.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'>biến đổi vào socket</span></div>
+ </div>
+ <v:shape id="_x0000_s183307" style='position:absolute;left:158.25pt;top:311.625pt;
+  width:12.75pt;height:45pt;mso-wrap-style:square;mso-wrap-distance-left:9pt;
+  mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;v-text-anchor:middle' coordsize="78,342" path="m,l78,r,342l6,342e"
+  filled="f" strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:shadow color="gray [2]"/>
+  <v:path arrowok="t"/>
+ </v:shape><v:line id="_x0000_s183308" style='position:absolute;flip:y;
+  v-text-anchor:middle' from="172.5pt,332.25pt" to="198.75pt,332.625pt"
+  strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:shape id="_x0000_s183309" type="#_x0000_t202" style='position:absolute;
+  left:257.5pt;top:381.5pt;width:233.75pt;height:79.25pt;mso-wrap-style:none;
+  v-text-anchor:middle' filled="f" stroked="f">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><![if !vml]><img border=0 v:shapes="_x0000_s183307,_x0000_s183308"
+ src="slide0099_image087.gif" style='position:absolute;top:57.5%;left:21.91%;
+ width:6.36%;height:9.25%'><![endif]>
+ <div v:shape="_x0000_s183309" class=O>
+ <div style='position:absolute;top:71.5%;left:36.7%;width:32.95%;height:4.25%'><span
+ style='font-size:83%;color:#3333CC;mso-color-index:5'>Kết thúc vòng lặp
+ while,&#13;</span></div>
+ <div style='position:absolute;top:76.0%;left:36.7%;width:36.7%;height:4.25%'><span
+ style='font-size:83%;color:#3333CC;mso-color-index:5'>quay trở về vòng lặp
+ chính,&#13;</span></div>
+ <div style='position:absolute;top:80.5%;left:36.7%;width:30.71%;height:4.25%'><span
+ style='font-size:83%;color:#3333CC;mso-color-index:5'>đợi kết nối khác</span></div>
+ </div>
+ <v:shape id="_x0000_s183310" style='position:absolute;left:251.25pt;top:384.25pt;
+  width:12.625pt;height:71.875pt;rotation:-11813804fd;mso-wrap-style:square;
+  mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;v-text-anchor:middle' coordsize="78,342" path="m,l78,r,342l6,342e"
+  filled="f" strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:shadow color="gray [2]"/>
+  <v:path arrowok="t"/>
+ </v:shape><v:line id="_x0000_s183311" style='position:absolute;flip:x y;
+  v-text-anchor:middle' from="200.25pt,358.5pt" to="251.25pt,406.125pt"
+  strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0 v:shapes="_x0000_s183310,_x0000_s183311"
+ src="slide0099_image088.gif" style='position:absolute;top:65.75%;left:27.34%;
+ width:9.92%;height:19.75%'><![endif]></p:slide></div>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../chapter4b.htm">
+<link rel=Preview href=preview.wmf>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Part I: Introduction</title>
+<meta name=Description content="12/11/2006: Phân cấp OSPF">
+<link rel=Stylesheet href="master03_stylesheet.css">
+<![if !ppt]>
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:107% !important;}
+-->
+</style>
+<script src=script.js></script><script><!--
+gUseSldTimings=0;
+str=document.location.hash,idx=str.indexOf('#');if(idx>=0) str=str.substr(1);if (str == "0") g_showAnimation=0;else g_showAnimation=1;
+
+
+//if( !IsNts() ) Redirect( "PPTSld" );
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]><o:shapelayout v:ext="edit">
+ <o:idmap v:ext="edit" data="165"/>
+</o:shapelayout>
+
+<!--[if gte IE 5]>
+<object style="visibility:hidden" id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"
+	codebase="http://download.microsoft.com/download/vizact2000/Install/10/WIN98Me/EN-US/msorun.cab#version=10,0,0,1"></object>
+<![endif]-->
+</head>
+
+<body bgcolor="transparent" style='overflow:hidden' onkeypress="DocumentOnClick()" lang=EN-US style='margin:0px' onclick="DocumentOnClick()"
+onresize="_RSW()" onload="LoadSld()" onkeypresstemp="_KPH()">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:534px;height:400px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"
+ masterhref="master03.xml">
+ <p:shaperangetemp href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#_x0000_s1029"/>
+ <div v:shape="_x0000_s1029" class=O style='text-align:right;position:absolute;
+ top:94.25%;left:60.11%;width:29.77%;height:3.0%'><span style='font-size:58%'>4:
+ Network Layer</span></div>
+ <p:shaperange href="master03.xml#_x0000_s1030"/>
+ <div v:shape="_x0000_s1030" class=O>
+ <div style='text-align:right;position:absolute;top:94.25%;left:90.26%;
+ width:5.61%;height:3.0%'><span style='font-size:58%'>4b-</span><span
+ style='font-size:58%;mso-field-code:meta16'>19</span><span style='font-size:
+ 58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![endif]><p:shaperange href="master03.xml#_x0000_m1026"/><v:shape id="_x0000_s168962"
+  type="#_x0000_m1026" style='position:absolute;left:42pt;top:18pt;width:612pt;
+  height:90pt' o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <p:placeholder type="title"/></v:shape><p:shaperange
+  href="master03.xml#_x0000_m1027"/><v:shape id="_x0000_s168963" type="#_x0000_m1027"
+  style='position:absolute;left:41pt;top:115.625pt;width:9in;height:315.625pt'
+  o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <p:placeholder type="body" position="1"/></v:shape>
+ <div v:shape="_x0000_s168962" class=T style='position:absolute;top:8.25%;
+ left:6.92%;width:83.14%;height:7.5%'><span style='font-size:90%'>Phân cấp OSPF</span><span
+ style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s168963">
+ <div class=B style='position:absolute;top:22.5%;left:6.74%;width:88.2%;
+ height:5.25%'><span style='position:absolute;top:0%;left:4.24%;width:95.75%;
+ height:100.0%'><span style='font-size:86%;color:red'><span class=BB
+ style='position:absolute;left:-4.43%;top:.16em'>r</span></span><span
+ style='font-size:86%;color:red'>Phân cấp hai mức:</span><span
+ style='font-size:86%'> cục bộ, trục chính.&#13;</span></span></div>
+ <div class=B1 style='position:absolute;top:28.75%;left:11.61%;width:83.14%;
+ height:5.25%'><span style='position:absolute;top:0%;left:3.82%;width:96.17%;
+ height:100.0%'><span class=B1B style='position:absolute;left:-3.98%;
+ top:.3em'>m</span>Quảng cáo Link-state trong một vùng cục bộ &#13;</span></div>
+ <div class=B1><span style='position:absolute;top:35.25%;left:14.79%;
+ width:84.83%;height:5.25%'><span class=B1B style='position:absolute;
+ left:-3.75%;top:.3em'>m</span>Mỗi nút chỉ biết topo trong một vùng; chỉ biết
+ hướng </span><span style='position:absolute;top:40.5%;left:14.79%;width:79.96%;
+ height:5.25%'>(đường đi tốt nhất) tới các vùng khác.<span style='font-size:
+ 83%;display:none'>&#13;</span></span></div>
+ <div class=B><span style='position:absolute;top:47.0%;left:10.48%;width:93.63%;
+ height:5.25%'><span style='font-size:86%;color:red'><span class=BB
+ style='position:absolute;left:-4.0%;top:.16em'>r</span></span><span
+ style='font-size:86%;color:red'><b>Area border router:</b></span><span
+ style='font-size:86%;color:#3333CC;mso-color-index:5'><b> </b></span><span
+ style='font-size:86%'>“tổng hợp” khoảng cách đến các nút </span></span><span
+ style='position:absolute;top:52.25%;left:10.48%;width:90.07%;height:5.25%'><span
+ style='font-size:86%'>trong vùng, quảng cáo đến các Area Border router
+ khác.&#13;</span></span></div>
+ <div class=B><span style='position:absolute;top:58.5%;left:10.48%;width:98.68%;
+ height:5.25%'><span style='font-size:86%;color:red'><span class=BB
+ style='position:absolute;left:-3.79%;top:.16em'>r</span></span><span
+ style='font-size:86%;color:red'><b>Backbone router:</b></span><span
+ style='font-size:86%'> chạy thuật toán định tuyến OSPF trên trục </span></span><span
+ style='position:absolute;top:64.0%;left:10.48%;width:84.45%;height:5.25%'><span
+ style='font-size:86%'>chính.&#13;</span></span></div>
+ <div class=B style='position:absolute;top:70.25%;left:6.74%;width:88.2%;
+ height:5.25%'><span style='position:absolute;top:0%;left:4.24%;width:95.75%;
+ height:100.0%'><span style='font-size:86%;color:red'><span class=BB
+ style='position:absolute;left:-4.43%;top:.16em'>r</span></span><span
+ style='font-size:86%;color:red'><b>Boundary router:</b></span><span
+ style='font-size:86%'> Kết nối tới các AS khác.</span><span style='font-size:
+ 71%;display:none'>&#13;</span></span></div>
+ <div class=B style='position:absolute;top:76.5%;left:6.74%;width:88.2%;
+ height:4.25%'><span style='position:absolute;top:0%;left:4.24%;width:95.75%;
+ height:100.0%'><span style='font-size:71%;visibility:hidden'><span class=BB
+ style='position:absolute;left:-4.43%'>r</span></span><span style='font-size:
+ 71%;mso-special-format:lastCR;display:none'>&#13;</span></span></div>
+ </div>
+</p:slide></div>
+
+</body>
+
+</html>

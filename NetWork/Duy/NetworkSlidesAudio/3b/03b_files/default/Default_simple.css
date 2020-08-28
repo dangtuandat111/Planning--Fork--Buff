@@ -1,0 +1,56 @@
+/* WMxxx tags store data to describe this file */
+#WMTemplate
+{
+	WMName: "";
+	WMDesc: "";
+}
+
+#HTML1Div
+{
+	VISIBILITY: visible;
+	POSITION: absolute;
+	TOP: 495px;
+	LEFT: 330px;
+	HEIGHT: 95px;
+	WIDTH: 639px;	
+}
+#LeftSideBackground
+{
+	POSITION: absolute;
+	TOP: 0px;
+	LEFT: 0px;
+	HEIGHT: 590px;
+	WIDTH: 320px;
+	VISIBILITY: visible;
+}
+#MediaPlayer
+{
+	HEIGHT: 219px;
+	WIDTH: 228px;
+}
+#MediaPlayerDiv
+{
+	POSITION: absolute;
+	TOP: 10px;
+	LEFT: 46px;
+	HEIGHT: 219px;
+	WIDTH: 228px;
+}
+#SlidesDiv
+{
+	POSITION: absolute;
+	TOP: 10px;
+	LEFT: 330px;
+	HEIGHT: 479px;
+	WIDTH: 639px;
+	OVERFLOW: hidden;
+}
+#TOCDiv
+{
+	POSITION: absolute;
+	TOP: 250px;
+	LEFT: 27px;
+	HEIGHT: 340px;
+	WIDTH: 293px;
+	OVERFLOW: auto;
+}

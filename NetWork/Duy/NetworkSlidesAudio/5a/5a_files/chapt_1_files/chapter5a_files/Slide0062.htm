@@ -1,0 +1,312 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../chapter5a.htm">
+<link rel=Preview href=preview.wmf>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Part I: Introduction</title>
+<meta name=Description content="12/12/2006: Sử dụng mã Hamming để sửa lỗi 1 bit">
+<link rel=Stylesheet href="master03_stylesheet.css">
+<![if !ppt]>
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:107% !important;}
+-->
+</style>
+<script src=script.js></script><script><!--
+gUseSldTimings=0;
+str=document.location.hash,idx=str.indexOf('#');if(idx>=0) str=str.substr(1);if (str == "0") g_showAnimation=0;else g_showAnimation=1;
+
+
+//if( !IsNts() ) Redirect( "PPTSld" );
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]><o:shapelayout v:ext="edit">
+ <o:idmap v:ext="edit" data="216"/>
+</o:shapelayout>
+
+<!--[if gte IE 5]>
+<object style="visibility:hidden" id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"
+	codebase="http://download.microsoft.com/download/vizact2000/Install/10/WIN98Me/EN-US/msorun.cab#version=10,0,0,1"></object>
+<![endif]-->
+</head>
+
+<body bgcolor="transparent" style='overflow:hidden' onkeypress="DocumentOnClick()" lang=EN-US style='margin:0px' onclick="DocumentOnClick()"
+onresize="_RSW()" onload="LoadSld()" onkeypresstemp="_KPH()">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:534px;height:400px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"
+ masterhref="master03.xml">
+ <p:shaperangetemp href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#_x0000_s1029"/>
+ <div v:shape="_x0000_s1029" class=O style='text-align:right;position:absolute;
+ top:94.25%;left:60.11%;width:29.77%;height:3.0%'><span style='font-size:58%'>5:
+ Liên kết dữ liệu</span></div>
+ <p:shaperange href="master03.xml#_x0000_s1030"/>
+ <div v:shape="_x0000_s1030" class=O>
+ <div style='text-align:right;position:absolute;top:94.25%;left:90.26%;
+ width:5.61%;height:3.0%'><span style='font-size:58%'>5a-</span><span
+ style='font-size:58%;mso-field-code:meta16'>18</span><span style='font-size:
+ 58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![endif]><p:shaperange href="master03.xml#_x0000_m1026"/><v:shape id="_x0000_s221186"
+  type="#_x0000_m1026" style='position:absolute;left:42pt;top:36.875pt;width:612pt;
+  height:57.875pt;mso-wrap-style:square;v-text-anchor:bottom' o:userdrawn="f"
+  filled="f" stroked="f" o:insetmode="custom">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <v:shadow on="f"/>
+  <o:lock v:ext="edit" text="f"/>
+  <v:textbox style='layout-flow:horizontal;mso-rotate:0;direction:LTR;
+   mso-rotate-with-shape:f;mso-fit-shape-to-text:f;mso-fit-text-to-shape:f'
+   inset="7.25pt,1.2788mm,7.25pt,1.2788mm" o:singleclick="t"/>
+  <p:placeholder type="title"/></v:shape><v:rect id="_x0000_s221187" style='position:absolute;
+  left:35.125pt;top:150.375pt;width:217pt;height:26.5pt' filled="f"
+  fillcolor="#0c9 [4]" stroked="f" strokecolor="black [1]">
+  <v:fill color2="white [0]"/>
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t' inset="7.25pt,1.2788mm,7.25pt,1.2788mm"/>
+ </v:rect><v:rect id="_x0000_s221188" style='position:absolute;left:235.5pt;
+  top:150.5pt;width:139.625pt;height:26.5pt;mso-wrap-style:none' filled="f"
+  fillcolor="#0c9 [4]" stroked="f" strokecolor="black [1]">
+  <v:fill color2="white [0]"/>
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t' inset="7.25pt,1.2788mm,7.25pt,1.2788mm"/>
+ </v:rect>
+ <div v:shape="_x0000_s221186" class=T style='position:absolute;top:9.5%;
+ left:6.92%;width:97.0%;height:7.5%'><span style='font-size:90%'>Sử dụng mã
+ Hamming để sửa lỗi 1 bit</span></div>
+ <div v:shape="_x0000_s221187" class=O style='position:absolute;top:28.75%;
+ left:5.8%;width:30.14%;height:3.5%'><span style='font-family:Arial;font-size:
+ 67%'><b>Thông điệp nhận được:</b></span></div>
+ <div v:shape="_x0000_s221188" class=O style='position:absolute;top:28.75%;
+ left:33.7%;width:20.97%;height:3.5%'><span style='font-family:Courier;
+ font-size:67%'><b>1 0 1 1 0 0 1</b></span></div>
+ <v:line id="_x0000_s221189" style='position:absolute;flip:x;mso-wrap-style:none;
+  v-text-anchor:middle' from="205.25pt,172.5pt" to="246.5pt,228.75pt"
+  strokecolor="black [3]" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrow="classic"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s221190" style='position:absolute;flip:x;
+  mso-wrap-style:none;v-text-anchor:middle' from="240.875pt,172.5pt" to="264.375pt,227.75pt"
+  strokecolor="black [3]" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrow="classic"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s221191" style='position:absolute;flip:x;
+  mso-wrap-style:none;v-text-anchor:middle' from="279.375pt,172.5pt" to="285pt,225.875pt"
+  strokecolor="black [3]" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrow="classic"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s221192" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="305.625pt,172.5pt" to="316.875pt,226.875pt"
+  strokecolor="black [3]" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrow="classic"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s221193" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="326.25pt,172.5pt" to="354.375pt,225.875pt"
+  strokecolor="black [3]" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrow="classic"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s221194" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="347.875pt,172.5pt" to="391pt,223.125pt"
+  strokecolor="black [3]" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrow="classic"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s221195" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="369.5pt,173.5pt" to="428.5pt,221.25pt"
+  strokecolor="black [3]" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrow="classic"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s221196" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="202.5pt,270.875pt" to="202.5pt,286.875pt"
+  strokecolor="black [3]" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrow="classic"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s221197" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="241pt,270.875pt" to="241pt,286.875pt"
+  strokecolor="black [3]" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrow="classic"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s221198" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="318pt,270.875pt" to="318pt,286.875pt"
+  strokecolor="black [3]" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrow="classic"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s221199" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="202.5pt,270.875pt" to="202.5pt,286.875pt"
+  strokecolor="black [3]" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrow="classic"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s221200" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="241pt,270.875pt" to="241pt,286.875pt"
+  strokecolor="black [3]" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrow="classic"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s221201" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="318pt,270.875pt" to="318pt,286.875pt"
+  strokecolor="black [3]" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrow="classic"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:rect id="_x0000_s221202" style='position:absolute;left:56.375pt;
+  top:282.875pt;width:118.625pt;height:26.5pt;mso-wrap-style:none' filled="f"
+  fillcolor="#0c9 [4]" stroked="f" strokecolor="black [1]">
+  <v:fill color2="white [0]"/>
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t' inset="7.25pt,1.2788mm,7.25pt,1.2788mm"/>
+ </v:rect><v:rect id="_x0000_s221203" style='position:absolute;left:23.625pt;
+  top:327.875pt;width:174.875pt;height:26.5pt;mso-wrap-style:none' filled="f"
+  fillcolor="#0c9 [4]" stroked="f" strokecolor="black [1]">
+  <v:fill color2="white [0]"/>
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t' inset="7.25pt,1.2788mm,7.25pt,1.2788mm"/>
+ </v:rect><v:rect id="_x0000_s221204" style='position:absolute;left:77.125pt;
+  top:356.875pt;width:294.25pt;height:84.25pt;mso-wrap-style:none' filled="f"
+  fillcolor="#0c9 [4]" stroked="f" strokecolor="black [1]">
+  <v:fill color2="white [0]"/>
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t' inset="7.25pt,1.2788mm,7.25pt,1.2788mm"/>
+ </v:rect><v:rect id="_x0000_s221205" style='position:absolute;left:190.625pt;
+  top:226.5pt;width:255.125pt;height:103.5pt;mso-wrap-style:none' filled="f"
+  fillcolor="#0c9 [4]" stroked="f" strokecolor="black [1]">
+  <v:fill color2="white [0]"/>
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t' inset="7.25pt,1.2788mm,7.25pt,1.2788mm"/>
+ </v:rect><v:rect id="_x0000_s221206" style='position:absolute;left:93.875pt;
+  top:246.25pt;width:47.5pt;height:26.5pt;mso-wrap-style:none' filled="f"
+  fillcolor="#0c9 [4]" stroked="f" strokecolor="black [1]">
+  <v:fill color2="white [0]"/>
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t' inset="7.25pt,1.2788mm,7.25pt,1.2788mm"/>
+ </v:rect><![if !vml]><img border=0
+ v:shapes="_x0000_s221189,_x0000_s221190,_x0000_s221191,_x0000_s221192,_x0000_s221193,_x0000_s221194,_x0000_s221195,_x0000_s221196,_x0000_s221197,_x0000_s221198,_x0000_s221199,_x0000_s221200,_x0000_s221201"
+ src="slide0062_image074.gif" style='position:absolute;top:31.75%;left:27.52%;
+ width:32.58%;height:21.75%'><![endif]>
+ <div v:shape="_x0000_s221202" class=O style='position:absolute;top:53.25%;
+ left:8.8%;width:17.6%;height:3.5%'><span style='font-family:Arial;font-size:
+ 67%;color:black;mso-color-index:3'>2</span><span style='font-family:Arial;
+ font-size:44%;color:black;mso-color-index:3;position:relative;top:-.45em;
+ mso-text-raise:30%'>n</span><span style='font-family:Arial;font-size:67%;
+ color:black;mso-color-index:3'>: Bit kiểm tra</span></div>
+ <div v:shape="_x0000_s221203" class=O style='position:absolute;top:61.5%;
+ left:4.3%;width:26.96%;height:3.5%'><span style='font-family:Arial;font-size:
+ 67%'><b>Tính các bit kiểm tra:</b></span></div>
+ <div v:shape="_x0000_s221204" class=O>
+ <div style='position:absolute;top:67.0%;left:11.79%;width:46.81%;height:3.5%'><span
+ style='font-family:Courier;font-size:67%'><b>3<span style='mso-spacerun:yes'> 
+ </span>=<span style='mso-spacerun:yes'>   </span></b></span><span
+ style='font-family:Courier;font-size:44%;position:relative;top:-.45em;
+ mso-text-raise:30%'><b> </b></span><span style='font-family:Courier;
+ font-size:67%'><b><span style='mso-spacerun:yes'>   </span>2</b></span><span
+ style='font-family:Courier;font-size:44%;position:relative;top:-.45em;
+ mso-text-raise:30%'><b>1</b></span><span style='font-family:Courier;
+ font-size:67%'><b><span style='mso-spacerun:yes'> </span>+ 2</b></span><span
+ style='font-family:Courier;font-size:44%;position:relative;top:-.45em;
+ mso-text-raise:30%'><b>0</b></span><span style='font-family:Courier;
+ font-size:67%'><b><span style='mso-spacerun:yes'>  </span>=<span
+ style='mso-spacerun:yes'>  </span>0<span style='mso-spacerun:yes'> 
+ </span>1<span style='mso-spacerun:yes'>  </span>1&#13;</b></span></div>
+ <div style='position:absolute;top:70.5%;left:11.79%;width:46.81%;height:3.5%'><span
+ style='font-family:Courier;font-size:67%'><b>5<span style='mso-spacerun:yes'> 
+ </span>=<span style='mso-spacerun:yes'>  </span>2</b></span><span
+ style='font-family:Courier;font-size:44%;position:relative;top:-.45em;
+ mso-text-raise:30%'><b>2</b></span><span style='font-family:Courier;
+ font-size:67%'><b><span style='mso-spacerun:yes'>    </span></b></span><span
+ style='font-family:Courier;font-size:44%;position:relative;top:-.45em;
+ mso-text-raise:30%'><b><span style='mso-spacerun:yes'> </span></b></span><span
+ style='font-family:Courier;font-size:67%'><b><span
+ style='mso-spacerun:yes'> </span>+ 2</b></span><span style='font-family:Courier;
+ font-size:44%;position:relative;top:-.45em;mso-text-raise:30%'><b>0</b></span><span
+ style='font-family:Courier;font-size:67%'><b><span style='mso-spacerun:yes'> 
+ </span>=<span style='mso-spacerun:yes'>  </span>1<span
+ style='mso-spacerun:yes'>  </span>0<span style='mso-spacerun:yes'> 
+ </span>1&#13;</b></span></div>
+ <div style='position:absolute;top:74.0%;left:11.79%;width:46.81%;height:3.5%'><span
+ style='font-family:Courier;font-size:67%'><b>6<span style='mso-spacerun:yes'> 
+ </span>=<span style='mso-spacerun:yes'>  </span>2</b></span><span
+ style='font-family:Courier;font-size:44%;position:relative;top:-.45em;
+ mso-text-raise:30%'><b>2</b></span><span style='font-family:Courier;
+ font-size:67%'><b><span style='mso-spacerun:yes'> </span>+ 2</b></span><span
+ style='font-family:Courier;font-size:44%;position:relative;top:-.45em;
+ mso-text-raise:30%'><b>1</b></span><span style='font-family:Courier;
+ font-size:67%'><b><span style='mso-spacerun:yes'>    </span></b></span><span
+ style='font-family:Courier;font-size:44%;position:relative;top:-.45em;
+ mso-text-raise:30%'><b><span style='mso-spacerun:yes'> </span></b></span><span
+ style='font-family:Courier;font-size:67%'><b><span
+ style='mso-spacerun:yes'>  </span>=<span style='mso-spacerun:yes'> 
+ </span>1<span style='mso-spacerun:yes'>  </span>1<span
+ style='mso-spacerun:yes'>  </span>0&#13;</b></span></div>
+ <div style='position:absolute;top:77.5%;left:11.79%;width:46.81%;height:3.5%'><span
+ style='font-family:Courier;font-size:67%'><b>7<span style='mso-spacerun:yes'> 
+ </span>=<span style='mso-spacerun:yes'>  </span>2</b></span><span
+ style='font-family:Courier;font-size:44%;position:relative;top:-.45em;
+ mso-text-raise:30%'><b>2</b></span><span style='font-family:Courier;
+ font-size:67%'><b><span style='mso-spacerun:yes'> </span>+ 2</b></span><span
+ style='font-family:Courier;font-size:44%;position:relative;top:-.45em;
+ mso-text-raise:30%'><b>1</b></span><span style='font-family:Courier;
+ font-size:67%'><b><span style='mso-spacerun:yes'> </span>+ 2</b></span><span
+ style='font-family:Courier;font-size:44%;position:relative;top:-.45em;
+ mso-text-raise:30%'><b>0</b></span><span style='font-family:Courier;
+ font-size:67%'><b><span style='mso-spacerun:yes'>  </span>=<span
+ style='mso-spacerun:yes'>  </span>1<span style='mso-spacerun:yes'> 
+ </span>1<span style='mso-spacerun:yes'>  </span>1</b></span></div>
+ </div>
+ <div v:shape="_x0000_s221205" class=O>
+ <div style='position:absolute;top:42.75%;left:27.52%;width:40.26%;height:3.5%'><span
+ style='font-family:Courier;font-size:67%'><b>1<span
+ style='mso-spacerun:yes'>   </span>0<span style='mso-spacerun:yes'>  
+ </span>1<span style='mso-spacerun:yes'>   </span>1<span
+ style='mso-spacerun:yes'>   </span>0<span style='mso-spacerun:yes'>  
+ </span>0<span style='mso-spacerun:yes'>   </span>1&#13;</b></span></div>
+ <div style='position:absolute;top:46.25%;left:27.52%;width:40.26%;height:3.5%'><span
+ style='font-family:Courier;font-size:67%;color:black;mso-color-index:3'><b>1<span
+ style='mso-spacerun:yes'>   </span>2<span style='mso-spacerun:yes'>  
+ </span>3<span style='mso-spacerun:yes'>   </span>4<span
+ style='mso-spacerun:yes'>   </span>5<span style='mso-spacerun:yes'>  
+ </span>6<span style='mso-spacerun:yes'>   </span>7</b></span><span
+ style='font-family:Courier;font-size:67%;display:none'><b>&#13;</b></span></div>
+ <div style='position:absolute;top:50.0%;left:27.52%;width:33.52%;height:3.5%'><span
+ style='font-family:Courier;font-size:67%;display:none'><b>&#13;</b></span></div>
+ <div style='position:absolute;top:53.5%;left:27.52%;width:33.52%;height:3.5%'><span
+ style='font-family:Courier;font-size:67%;color:black;mso-color-index:3'><b>2</b></span><span
+ style='font-family:Courier;font-size:44%;color:black;mso-color-index:3;
+ position:relative;top:-.45em;mso-text-raise:30%'><b>0</b></span><span
+ style='font-family:Courier;font-size:67%;color:black;mso-color-index:3'><b><span
+ style='mso-spacerun:yes'>  </span>2</b></span><span style='font-family:Courier;
+ font-size:44%;color:black;mso-color-index:3;position:relative;top:-.45em;
+ mso-text-raise:30%'><b>1</b></span><span style='font-family:Courier;
+ font-size:67%;color:black;mso-color-index:3'><b><span
+ style='mso-spacerun:yes'>      </span>2</b></span><span style='font-family:
+ Courier;font-size:44%;color:black;mso-color-index:3;position:relative;
+ top:-.45em;mso-text-raise:30%'><b>2</b></span><span style='font-family:Courier;
+ font-size:67%;display:none'><b>&#13;</b></span></div>
+ <div style='position:absolute;top:57.0%;left:27.52%;width:33.52%;height:3.5%'><span
+ style='font-family:Courier;font-size:67%;mso-special-format:lastCR;display:
+ none'><b>&#13;</b></span></div>
+ </div>
+ <div v:shape="_x0000_s221206" class=O style='position:absolute;top:46.5%;
+ left:14.04%;width:5.61%;height:3.5%'><span style='font-family:Arial;
+ font-size:67%;color:black;mso-color-index:3'>Vị trí</span></div>
+</p:slide></div>
+
+</body>
+
+</html>

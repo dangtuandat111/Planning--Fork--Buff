@@ -1,0 +1,298 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../chapter3b.htm">
+<link rel=Preview href=preview.wmf>
+<link rel=OLE-Object-Data href=oledata.mso>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Part I: Introduction</title>
+<meta name=Description content="11/25/2006: TCP: Quản lý Kết nối (tiếp)">
+<link rel=Stylesheet href="master03_stylesheet.css">
+<![if !ppt]>
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:107% !important;}
+-->
+</style>
+<script src=script.js></script><script><!--
+gUseSldTimings=0;
+str=document.location.hash,idx=str.indexOf('#');if(idx>=0) str=str.substr(1);if (str == "0") g_showAnimation=0;else g_showAnimation=1;
+
+
+//if( !IsNts() ) Redirect( "PPTSld" );
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]><o:shapelayout v:ext="edit">
+ <o:idmap v:ext="edit" data="118"/>
+ <o:regrouptable v:ext="edit">
+  <o:entry new="1" old="0"/>
+  <o:entry new="2" old="0"/>
+ </o:regrouptable>
+</o:shapelayout>
+
+<!--[if gte IE 5]>
+<object style="visibility:hidden" id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"
+	codebase="http://download.microsoft.com/download/vizact2000/Install/10/WIN98Me/EN-US/msorun.cab#version=10,0,0,1"></object>
+<![endif]-->
+</head>
+
+<body bgcolor="transparent" style='overflow:hidden' onkeypress="DocumentOnClick()" lang=EN-US style='margin:0px' onclick="DocumentOnClick()"
+onresize="_RSW()" onload="LoadSld()" onkeypresstemp="_KPH()">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:534px;height:400px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"
+ masterhref="master03.xml">
+ <p:shaperangetemp href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#_x0000_s1029"/>
+ <div v:shape="_x0000_s1029" class=O style='text-align:right;position:absolute;
+ top:94.25%;left:60.11%;width:29.77%;height:3.0%'><span style='font-size:58%'>3:
+ Transport Layer</span></div>
+ <p:shaperange href="master03.xml#_x0000_s1030"/>
+ <div v:shape="_x0000_s1030" class=O>
+ <div style='text-align:right;position:absolute;top:94.25%;left:90.26%;
+ width:5.61%;height:3.0%'><span style='font-size:58%'>3b-</span><span
+ style='font-size:58%;mso-field-code:meta16'>16</span><span style='font-size:
+ 58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![endif]><p:shaperange href="master03.xml#_x0000_m1026"/><v:shape id="_x0000_s119810"
+  type="#_x0000_m1026" style='position:absolute;left:46.5pt;top:40.5pt;width:612pt;
+  height:70.5pt' o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <p:placeholder type="title"/></v:shape><p:shaperange
+  href="master03.xml#_x0000_m1027"/><v:shape id="_x0000_s119812" type="#_x0000_m1027"
+  style='position:absolute;left:42.75pt;top:133.5pt;width:296.25pt;height:272.25pt'
+  o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <p:placeholder type="body" position="2" size="half"/></v:shape>
+ <div v:shape="_x0000_s119810" class=T style='position:absolute;top:11.0%;
+ left:7.49%;width:83.14%;height:6.75%'><span style='font-size:80%'>TCP: Quản lý
+ Kết nối (tiếp)</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119812" class=HB>
+ <div style='mso-line-spacing:"100 60 0";position:absolute;top:25.75%;
+ left:6.92%;width:39.32%;height:5.25%'><span style='mso-special-format:nobullet;
+ display:none;color:#3333CC;mso-color-index:5;font-family:ZapfDingbats;
+ font-size:85%'>r</span><span style='color:red'><u>Đóng một kết nối:&#13;</u></span></div>
+ <div style='mso-line-spacing:"100 60 0"'><span style='position:absolute;
+ top:34.25%;left:6.92%;width:39.32%;height:5.25%'><span style='mso-special-format:
+ nobullet;display:none;color:#3333CC;mso-color-index:5;font-family:ZapfDingbats;
+ font-size:85%'>r</span><span style='font-size:83%'>client đóng socket:</span><span
+ style='color:red'><u> </u></span></span><span style='position:absolute;
+ top:39.5%;left:10.67%;width:42.13%;height:4.5%'><span style='font-family:"Courier New";
+ font-size:83%'><b>clientSocket.close();</b></span><span style='font-family:
+ Arial;font-size:75%'> </span><span style='color:red;display:none'><u>&#13;</u></span></span></div>
+ <div style='mso-line-spacing:"100 60 0"'><span style='position:absolute;
+ top:47.25%;left:6.92%;width:46.44%;height:5.25%'><span style='mso-special-format:
+ nobullet;display:none;color:#3333CC;mso-color-index:5;font-family:ZapfDingbats;
+ font-size:85%'>r</span><span style='color:red'><u>Bước 1:</u></span> <span
+ style='font-size:83%;color:#3333CC;mso-color-index:5'>client</span><span
+ style='font-size:83%'> gửi gói điều khiển </span></span><span
+ style='position:absolute;top:52.5%;left:10.67%;width:35.58%;height:4.25%'><span
+ style='font-size:83%'>FIN tới server</span><span style='color:red;display:
+ none'><u>&#13;</u></span></span></div>
+ <div style='mso-line-spacing:"100 60 0"'><span style='position:absolute;
+ top:60.25%;left:6.92%;width:42.13%;height:5.25%'><span style='mso-special-format:
+ nobullet;display:none;color:#3333CC;mso-color-index:5;font-family:ZapfDingbats;
+ font-size:85%'>r</span><span style='color:red'><u>Bước 2:</u></span> <span
+ style='font-size:83%;color:#3333CC;mso-color-index:5'>server</span><span
+ style='font-size:83%'> nhận được gói </span></span><span style='position:absolute;
+ top:65.5%;left:10.67%;width:41.76%;height:4.25%'><span style='font-size:83%'>FIN,
+ biên nhận cho gói tin này. </span></span><span style='position:absolute;
+ top:69.75%;left:10.67%;width:35.76%;height:4.25%'><span style='font-size:83%'>Đóng
+ kết nối, gửi gói FIN. </span></span></div>
+ </div>
+ <v:group id="_x0000_s119852" style='position:absolute;left:340pt;top:136.375pt;
+  width:335pt;height:329.625pt' coordorigin="2720,1091" coordsize="2680,2637">
+  <v:line id="_x0000_s119817" style='position:absolute;mso-wrap-style:none;
+   v-text-anchor:middle' from="3396,1512" to="4992,1884" o:regroupid="2"
+   strokecolor="#33c [5]" strokeweight="2.25pt">
+   <v:stroke endarrow="block"/>
+   <v:shadow color="gray [2]"/>
+  </v:line><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+   o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+    <v:f eqn="sum @0 1 0"/>
+    <v:f eqn="sum 0 0 @1"/>
+    <v:f eqn="prod @2 1 2"/>
+    <v:f eqn="prod @3 21600 pixelWidth"/>
+    <v:f eqn="prod @3 21600 pixelHeight"/>
+    <v:f eqn="sum @0 0 1"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="prod @7 21600 pixelWidth"/>
+    <v:f eqn="sum @8 21600 0"/>
+    <v:f eqn="prod @7 21600 pixelHeight"/>
+    <v:f eqn="sum @10 21600 0"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t"/>
+  </v:shapetype><v:shape id="_x0000_s119818" type="#_x0000_t75" style='position:absolute;
+   left:3136;top:1091;width:306;height:243' o:regroupid="2">
+   <v:imagedata src="slide0006_image009.wmz" o:title=""/>
+  </v:shape><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"
+   path="m,l,21600r21600,l21600,xe">
+   <v:stroke joinstyle="miter"/>
+   <v:path gradientshapeok="t" o:connecttype="rect"/>
+  </v:shapetype><v:shape id="_x0000_s119819" type="#_x0000_t202" style='position:absolute;
+   left:3437;top:1091;width:450;height:212;mso-wrap-style:none;v-text-anchor:top-baseline'
+   o:regroupid="2" filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s119820" type="#_x0000_t202" style='position:absolute;
+   left:4083;top:1538;width:296;height:192;rotation:771961fd;mso-wrap-style:none;
+   v-text-anchor:top-baseline' o:regroupid="2" filled="f" stroked="f"
+   strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s119829" type="#_x0000_t75" style='position:absolute;
+   left:4810;top:1097;width:306;height:243' o:regroupid="2">
+   <v:imagedata src="slide0006_image009.wmz" o:title=""/>
+  </v:shape><v:shape id="_x0000_s119830" type="#_x0000_t202" style='position:absolute;
+   left:4363;top:1103;width:504;height:212;mso-wrap-style:none;v-text-anchor:top-baseline'
+   o:regroupid="2" filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:line id="_x0000_s119832" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="3402,2796" to="4998,3168"
+   o:regroupid="2" strokecolor="#33c [5]" strokeweight="2.25pt">
+   <v:stroke endarrow="block"/>
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s119834" style='position:absolute;flip:x;
+   mso-wrap-style:none;v-text-anchor:middle' from="3294,2706" to="3294,3552"
+   o:regroupid="2" strokecolor="black [1]" strokeweight="2.25pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s119835" style='position:absolute;flip:x;
+   mso-wrap-style:none;v-text-anchor:middle' from="4992,1368" to="4992,3516"
+   o:regroupid="2" strokecolor="black [1]" strokeweight="1.5pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s119836" style='position:absolute;flip:x;
+   mso-wrap-style:none;v-text-anchor:middle' from="3378,1974" to="4950,2448"
+   o:regroupid="2" strokecolor="#33c [5]" strokeweight="2.25pt">
+   <v:stroke endarrow="block"/>
+   <v:shadow color="gray [2]"/>
+  </v:line><v:shape id="_x0000_s119837" type="#_x0000_t202" style='position:absolute;
+   left:3302;top:2034;width:1721;height:192;rotation:-1012386fd' o:regroupid="2"
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s119840" type="#_x0000_t202" style='position:absolute;
+   left:4010;top:2799;width:347;height:192;rotation:771961fd;mso-wrap-style:none;
+   v-text-anchor:top-baseline' o:regroupid="2" filled="f" stroked="f"
+   strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:line id="_x0000_s119842" style='position:absolute;flip:x;
+   mso-wrap-style:none;v-text-anchor:middle' from="3408,2232" to="4980,2706"
+   strokecolor="#33c [5]" strokeweight="2.25pt">
+   <v:stroke endarrow="block"/>
+   <v:shadow color="gray [2]"/>
+  </v:line><v:shape id="_x0000_s119843" type="#_x0000_t202" style='position:absolute;
+   left:3332;top:2292;width:1721;height:192;rotation:-1012386fd' filled="f"
+   stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:line id="_x0000_s119844" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="3390,1464" to="3390,3570"
+   strokecolor="black [1]" strokeweight="1.5pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:shape id="_x0000_s119845" type="#_x0000_t202" style='position:absolute;
+   left:2930;top:1388;width:454;height:231;mso-wrap-style:none;v-text-anchor:top-baseline'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s119846" type="#_x0000_t202" style='position:absolute;
+   left:4946;top:2102;width:454;height:231;mso-wrap-style:none;v-text-anchor:top-baseline'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s119847" type="#_x0000_t202" style='position:absolute;
+   left:2720;top:3497;width:539;height:231;mso-wrap-style:none;v-text-anchor:top-baseline'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:line id="_x0000_s119849" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="3228,2694" to="3348,2694"
+   strokecolor="black [1]" strokeweight="2.25pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s119850" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="3237,3564" to="3357,3564"
+   strokecolor="black [1]" strokeweight="2.25pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:shape id="_x0000_s119851" type="#_x0000_t202" style='position:absolute;
+   left:2759;top:3026;width:824;height:231;rotation:-90;mso-wrap-style:none;
+   v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape></v:group><![if !ppt]><img border=0
+ v:shapes="_x0000_s119852,_x0000_s119817,_x0000_s119818,_x0000_s119819,_x0000_s119820,_x0000_s119829,_x0000_s119830,_x0000_s119832,_x0000_s119834,_x0000_s119835,_x0000_s119836,_x0000_s119837,_x0000_s119840,_x0000_s119842,_x0000_s119843,_x0000_s119844,_x0000_s119845,_x0000_s119846,_x0000_s119847,_x0000_s119849,_x0000_s119850,_x0000_s119851"
+ src="slide0015_image082.gif" style='position:absolute;top:25.25%;left:47.19%;
+ width:46.81%;height:61.5%'><![endif]><o:OLEObject Type="Embed"
+  ProgID="MS_ClipArt_Gallery.2" ShapeID="_x0000_s119818" DrawAspect="Content"
+  ObjectID="860">
+  <p:oleclientdata subtype="clipart" menuname="Clip"
+   clipboardname="Microsoft Clip Gallery"/></o:OLEObject>
+ <div v:shape="_x0000_s119819" class=O style='text-align:center;position:absolute;
+ top:25.5%;left:60.11%;width:7.11%;height:4.25%'><span style='font-family:"Comic Sans MS";
+ font-size:67%'>client</span><span style='font-size:42%;mso-special-format:
+ lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119820" class=O style='text-align:center;position:absolute;
+ top:36.5%;left:71.53%;width:3.93%;height:3.25%;visibility:hidden'><span
+ style='font-family:Arial;font-size:58%'>FIN</span><span style='font-size:42%;
+ mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <o:OLEObject Type="Embed" ProgID="MS_ClipArt_Gallery.2"
+  ShapeID="_x0000_s119829" DrawAspect="Content" ObjectID="861">
+  <p:oleclientdata subtype="clipart" menuname="Clip"
+   clipboardname="Microsoft Clip Gallery"/></o:OLEObject>
+ <div v:shape="_x0000_s119830" class=O style='text-align:center;position:absolute;
+ top:25.75%;left:76.02%;width:8.23%;height:4.25%'><span style='font-family:
+ "Comic Sans MS";font-size:67%'>server</span><span style='font-size:42%;
+ mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119837" class=O style='text-align:center;position:absolute;
+ top:48.0%;left:58.42%;width:28.08%;height:3.25%;visibility:hidden'><span
+ style='font-family:Arial;font-size:58%'>ACK</span><span style='font-size:42%;
+ mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119840" class=O style='text-align:center;position:absolute;
+ top:65.75%;left:70.22%;width:5.05%;height:3.25%;visibility:hidden'><span
+ style='font-family:Arial;font-size:58%'>ACK</span></div>
+ <div v:shape="_x0000_s119843" class=O style='text-align:center;position:absolute;
+ top:54.0%;left:58.8%;width:28.08%;height:3.25%;visibility:hidden'><span
+ style='font-family:Arial;font-size:58%'>FIN</span><span style='font-size:42%;
+ mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119845" class=O style='text-align:center;position:absolute;
+ top:32.25%;left:51.31%;width:7.3%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>close</span></div>
+ <div v:shape="_x0000_s119846" class=O style='text-align:center;position:absolute;
+ top:48.75%;left:86.32%;width:7.3%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>close</span></div>
+ <div v:shape="_x0000_s119847" class=O style='text-align:center;position:absolute;
+ top:81.0%;left:47.56%;width:8.98%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>closed</span></div>
+ <div v:shape="_x0000_s119851" class=O style='text-align:center;position:absolute;
+ top:70.25%;left:47.75%;width:14.98%;height:5.0%;visibility:hidden'><span
+ style='font-family:"Comic Sans MS";font-size:75%'>timed wait</span></div>
+</p:slide></div>
+
+</body>
+
+</html>

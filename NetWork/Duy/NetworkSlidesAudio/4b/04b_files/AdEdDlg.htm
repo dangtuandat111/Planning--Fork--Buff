@@ -1,0 +1,226 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=utf-8">
+<script id=SCRIPTDATA language="JavaScript" src="project.js"></script>
+<TITLE>Discussion</TITLE>
+
+<SCRIPT LANGUAGE=javascript FOR="window" EVENT="onload()">
+<!--
+	var arg = dialogArguments;
+	if ( arg != null )
+	{
+		var dlgView = "";
+		
+		dlgView += "<P style=\"font-family:Tahoma;font-size:10pt;font-weight:bold\">" + g_szDiscussionDlgTimeRef + ": " + arg[0] + "</P>";
+		
+		dlgView += "<Span ID=spanTopic style=\"font-family:Tahoma;font-size:9pt;Line-height:14pt;vertical-align:middle\">" + g_szDiscussionDlgTopic + ": </SPAN><BR><INPUT TABINDEX=1 ID=txtTopic style=\"width:420px; height:22px\"><BR><Span style=\"font-family:Tahoma;font-size:9pt;Line-height:14pt;vertical-align:middle\">";
+			
+		dlgView += g_szDiscussionSubject  + ": </Span><BR><INPUT ID=txtSubject TABINDEX=2 style=\"width:420px; height:22px\"><BR><Span style=\"font-family:Tahoma;font-size:9pt;Line-height:14pt;vertical-align:middle\">";
+		dlgView += g_szDiscussionDlgComment + ": </Span><BR><TEXTAREA ID=txtComment TABINDEX=3 style=\"position:absolute;top:152px;width:420px; height:118px;font-family:Tahoma;font-size:9pt;Line-height:14pt;\" rows=10 cols=50></TEXTAREA><BR><BR>";
+
+		dlgView += "<INPUT type=Button TABINDEX=5 value=\" " + g_szDiscussionDlgCancel + " \" ID=btnCancel style=\"position:absolute;top:285px;left:360;width:75px;height:25px;font-family:Tahoma;font-size:9pt\">";
+		dlgView += "<INPUT type=Button TABINDEX=4 value=\"" + g_szDiscussionDlgOk + "\" ID=btnOK style=\"position:absolute;top:285px;left:275;width:75px;height:25px;font-family:Tahoma;font-size:9pt\">";
+		
+		DialogDiv.innerHTML = dlgView;
+	}
+	InitDialog();
+	returnValue = null;
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE=javascript>
+<!--
+	function InitDialog()
+	{
+		var arg = dialogArguments;
+		var str2 = new String(arg[2]);
+		var str3 = new String(arg[3]);
+		var str4 = new String(arg[4]);
+
+		str2 = UnescapeString(str2);
+		str3 = UnescapeString(str3);
+		str4 = UnescapeString(str4);
+		
+		if ( arg[1] != "AddTopic" )
+		{
+			txtTopic.value = str4;
+			txtTopic.disabled = true;
+		}
+		txtSubject.value = str2;
+		txtComment.value = str3;	
+
+		if (txtTopic.disabled)
+ 		   txtComment.focus();
+		else
+		   txtTopic.focus();
+		btnOK.disabled = true;	
+	}
+//-->
+</SCRIPT>
+
+
+<SCRIPT language=javascript FOR="btnOK" EVENT="onclick()">
+<!--
+	var str1 = new String(txtTopic.value);
+	var str2 = new String(txtSubject.value);
+	var str3 = new String(txtComment.value);
+	
+	var arg = dialogArguments;
+	
+	str1 = trim(str1);
+	str2 = trim(str2);
+	str3 = trim(str3);
+	
+	if ( arg[1] == "AddTopic" )
+	{
+		if ( str1 == "" || str2 == "" || str3 == "" )
+		{
+			alert(top.g_szDiscussionRequiredField );
+			return;
+		}
+	}
+	else
+	{
+		if ( str2 == "" || str3 == "" )
+		{
+			alert(top.g_szDiscussionRequiredField );
+			return;
+		}
+	}
+	
+	var text = new Array();
+	text[0] = EscapeString(str1);
+	text[1] = EscapeString(str2);
+	text[2] = EscapeString(str3);
+	returnValue = text;
+	parent.window.close();
+//-->	
+</SCRIPT>
+
+<SCRIPT language=javascript>
+<!--
+	function ToggleButtonOK()
+	{
+		var str1 = new String(txtTopic.value);
+		var str2 = new String(txtSubject.value);
+		var str3 = new String(txtComment.value);
+		str1 = trim(str1);
+		str2 = trim(str2);
+		str3 = trim(str3);
+		
+		if (!txtTopic.disabled)
+		{
+			if (str1 !="" && str2 != "" && str3 != "")
+				btnOK.disabled=false;
+			else
+				btnOK.disabled=true;
+		}
+		else
+		{
+			if (str2 != "" && str3 != "")
+				btnOK.disabled=false;
+			else
+				btnOK.disabled=true;
+		}
+	}
+//-->	
+</SCRIPT>
+
+<SCRIPT language=javascript FOR="txtTopic" EVENT="onpropertychange()">
+<!--
+	ToggleButtonOK();
+//-->	
+</SCRIPT>
+<SCRIPT language=javascript FOR="txtTopic" EVENT="oncut()">
+<!--
+	ToggleButtonOK();
+//-->	
+</SCRIPT>
+<SCRIPT language=javascript FOR="txtTopic" EVENT="onpaste()">
+<!--
+	ToggleButtonOK();
+//-->	
+</SCRIPT>
+<SCRIPT language=javascript FOR="txtSubject" EVENT="onpropertychange()">
+<!--
+	ToggleButtonOK();
+//-->	
+</SCRIPT>
+<SCRIPT language=javascript FOR="txtSubject" EVENT="oncut()">
+<!--
+	ToggleButtonOK();
+//-->	
+</SCRIPT>
+<SCRIPT language=javascript FOR="txtSubject" EVENT="onpaste()">
+<!--
+	ToggleButtonOK();
+//-->	
+</SCRIPT>
+<SCRIPT language=javascript FOR="txtComment" EVENT="onpropertychange()">
+<!--
+	ToggleButtonOK();
+//-->	
+</SCRIPT>
+
+<SCRIPT language=javascript FOR="txtComment" EVENT="oncut();">
+<!--
+	ToggleButtonOK();
+//-->	
+</SCRIPT>
+
+<SCRIPT language=javascript FOR="txtComment" EVENT="onpaste();">
+<!--
+	ToggleButtonOK();
+//-->	
+</SCRIPT>
+
+<SCRIPT language=javascript FOR="btnCancel" EVENT="onclick()">
+<!--
+	returnValue = null;
+	parent.window.close();
+//-->	
+</SCRIPT>
+</HEAD>
+
+<SCRIPT LANGUAGE=javascript>
+<!--
+	function trim(s) 
+	{
+		return s.replace(/^[ \t]+/, "").replace(/[ \t]+$/, ""); 
+	}
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE=javascript>
+<!--
+	function Escape()
+	{
+		if ( event.keyCode == 27 )
+		{
+			returnValue= null;
+			parent.window.close();
+		}
+	}
+	function EscapeString(s)
+	{
+		var re = /</g;
+		s = s.replace(re, "&lt");
+		return s;
+	}
+	function UnescapeString(s)
+	{
+		var re = /&lt/g;
+		s = s.replace(re, "<");
+		return s;
+	}
+//-->
+</SCRIPT>
+
+<BODY style="margin-top:10px;margin-left:15px;background-color:#CCCCCC" onkeyup="Escape();">
+
+<DIV ID="DialogDiv">
+</DIV>
+
+</BODY>
+</HTML>

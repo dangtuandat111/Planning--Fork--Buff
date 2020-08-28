@@ -1,0 +1,420 @@
+/* Basic styles */
+#DiscussionDiv
+{
+	VISIBILITY: hidden;
+	PADDING-BOTTOM: 10px;
+	WIDTH: expression(document.body.clientWidth + document.body.offsetLeft);
+	WMBodyHeight: 0;
+}
+#DiscussionGripImage
+{
+	POSITION: absolute;
+	TOP: -7px;
+	HEIGHT: 20px;
+	WIDTH: 770px;
+	Z-INDEX: 11;
+	CURSOR: move;
+	BACKGROUND-COLOR: transparent;
+}
+#DiscussionHR
+{
+	POSITION: absolute;
+	LEFT: 0;
+	TOP: 0px;
+	WIDTH: expression(document.body.clientWidth + document.body.offsetLeft);
+	CURSOR: move;
+}
+#DiscussionContentDiv
+{
+	position:absolute;
+	OVERFLOW-Y: auto;
+	WMMinHEIGHT: 50px;
+	TOP: 15px;
+	WIDTH: expression(document.body.clientWidth + document.body.offsetLeft);
+	HEIGHT: expression(document.body.clientHeight + document.body.scrollTop);
+}
+.DiscussAddRefreshTopic
+{
+	CURSOR: hand;
+	FONT-SIZE: 90%;
+	FONT-WEIGHT: bold;
+	FONT-STYLE: italic;
+	TEXT-DECORATION: underline;
+}
+.DiscussReplyEditDelete
+{
+	COLOR: #660000;
+	CURSOR: hand;
+	FONT-SIZE: 80%;
+	FONT-STYLE: italic;
+	FONT-WEIGHT: normal;
+	TEXT-DECORATION: underline;
+	BACKGROUND-COLOR: #CCCCCC;
+}
+.DiscussTopic
+{
+	COLOR: #000000;
+	FONT-SIZE: 90%;
+	FONT-WEIGHT: bold;
+	CURSOR: hand;
+	BACKGROUND-COLOR: #666666;
+}
+.DiscussSubject
+{
+	COLOR: #FFFFFF;
+	FONT-SIZE: 80%;
+	TEXT-INDENT: 10px;
+	PADDING: 3px;
+	BACKGROUND-COLOR: #660000;
+}
+.DiscussAuthor
+{
+	COLOR: #000000;
+	FONT-SIZE: 80%;
+	FONT-WEIGHT: bold;
+	TEXT-INDENT: 20px;
+	PADDING: 3px;
+	BACKGROUND-COLOR: #CCCCCC;
+}
+.DiscussTimeStamp
+{
+	COLOR: #000000;
+	FONT-SIZE: 80%;
+	FONT-WEIGHT: normal;
+	PADDING: 5px;
+	BACKGROUND-COLOR: #CCCCCC;
+}
+.DiscussText
+{
+	COLOR: #000000;
+	FONT-SIZE: 75%;
+	PADDING: 3px 3px 3px 25px;
+	BACKGROUND-COLOR: #FFFFFF;
+}
+.DiscussErrorText
+{
+	FONT-SIZE: normal;
+	FONT-WEIGHT: bold;
+}
+.DiscussShowHide
+{
+	WIDTH: 40%;
+	CURSOR: hand;
+	FONT-SIZE: normal;
+	FONT-WEIGHT: bold;
+}
+#HTML1Frame
+{
+	HEIGHT: 100%;
+	WIDTH: 100%;
+}
+#LeftSideBackground
+{
+	POSITION: absolute;
+	TOP: 0px;
+	LEFT: 0px;
+	HEIGHT: 1px;
+	WIDTH: 1px;
+}
+#LoadingWaitDiv
+{
+	POSITION: absolute;
+	TOP: 0px;
+	LEFT: 160;
+	HEIGHT: expression(document.body.clientHeight + document.body.scrollTop);
+	WIDTH: expression(document.body.clientWidth + document.body.offsetLeft - 160);
+	OVERFLOW-X: hidden;
+}
+#ProducerLogoDiv
+{
+	POSITION: absolute;
+	TOP: 100px;
+	LEFT: 0;
+	HEIGHT: 200;
+	WIDTH: 200;
+}
+#LoadingWaitDiv_Other
+{
+	POSITION: absolute;
+	TOP: 0px;
+	LEFT: 0px;
+	WIDTH: 100%;
+	PADDING-LEFT: 160px;
+	MARGIN-LEFT: 10px;
+	TEXT-ALIGN: center;
+}
+#LoadingWaitDividerDiv
+{
+	POSITION: absolute;
+	TOP: 0px;
+	LEFT: 159px;
+	HEIGHT: expression(document.body.clientHeight + document.body.scrollTop);
+	WIDTH: 1px;
+	BACKGROUND-COLOR: #999999;
+}
+#LoadingWaitDiv_LeftSideDiv
+{
+	POSITION: absolute;
+	TOP: 0px;
+	LEFT: 0px;
+	WIDTH: 159px;
+	HEIGHT: expression(document.body.clientHeight + document.body.scrollTop);
+	BACKGROUND-COLOR: #FFFFFF;
+	PADDING: 55px 10px;
+}
+#LoadingWaitDiv_ImgAnm
+{
+	POSITION: absolute;
+	TOP: 43px;
+	LEFT: 34px;
+}
+#LoadingWaitDiv_ImgDiv
+{
+	TEXT-ALIGN: center;
+}
+#LoadingWaitDiv_TitleDiv
+{
+	FONT-SIZE: 18pt;
+	FONT-WEIGHT: bold;
+	TEXT-ALIGN: center;
+	MARGIN-LEFT: 50px;
+	MARGIN-RIGHT: 50px;
+}
+#LoadingWaitDiv_PresenterDiv
+{
+	FONT-SIZE: 16pt;
+	FONT-WEIGHT: bold;
+	TEXT-ALIGN: center;
+	MARGIN-LEFT: 50px;
+	MARGIN-RIGHT: 50px;
+}
+#LoadingWaitDiv_DescDiv
+{
+	LEFT: 120px;
+	FONT-SIZE: 14pt;
+	FONT-SIZE: normal;
+	FONT-WEIGHT: normal;
+	TEXT-ALIGN: left;
+	MARGIN-LEFT: 50px;
+	MARGIN-RIGHT: 50px;
+}
+.LoadingWaitDiv_Play_NotReady
+{
+	COLOR: #000000;
+	FONT-SIZE: 10pt;
+	FONT-WEIGHT: normal;
+	PADDING-TOP: 20px;
+	CURSOR: default;
+}
+.LoadingWaitDiv_Play_Ready
+{
+	COLOR: #000000;
+	FONT-SIZE: 14pt;
+	FONT-WEIGHT: bold;
+	PADDING-TOP: 20px;
+	CURSOR: hand;
+}
+#MainDiv
+{
+	POSITION: absolute;
+	TOP: 0px;
+	LEFT: 0px;
+	WIDTH: expression(document.body.clientWidth + document.body.offsetLeft);
+	HEIGHT: expression(document.body.clientHeight + document.body.scrollTop);
+}
+#MediaPlayerControlsDiv
+{
+	WMPlayerClockOffset: 1;
+}
+#Misc1Div
+{
+	POSITION: absolute;
+	DISPLAY: none;
+	TOP: 0px;
+	LEFT: 0px;
+	WIDTH: 1px;
+	HEIGHT: 1px;
+	BACKGROUND-COLOR: transparent;
+}
+#Misc2Div
+{
+	POSITION: absolute;
+	DISPLAY: none;
+	TOP: 0px;
+	LEFT: 0px;
+	WIDTH: 1px;
+	HEIGHT: 1px;
+	BACKGROUND-COLOR: transparent;
+}
+#Misc3Div
+{
+	POSITION: absolute;
+	DISPLAY: none;
+	TOP: 0px;
+	LEFT: 0px;
+	WIDTH: 1px;
+	HEIGHT: 1px;
+	BACKGROUND-COLOR: transparent;
+}
+#Misc4Div
+{
+	POSITION: absolute;
+	DISPLAY: none;
+	TOP: 0px;
+	LEFT: 0px;
+	WIDTH: 1px;
+	HEIGHT: 1px;
+	BACKGROUND-COLOR: transparent;
+}
+#Misc5Div
+{
+	POSITION: absolute;
+	DISPLAY: none;
+	TOP: 0px;
+	LEFT: 0px;
+	WIDTH: 1px;
+	HEIGHT: 1px;
+	BACKGROUND-COLOR: transparent;
+}
+#Misc6Div
+{
+	POSITION: absolute;
+	DISPLAY: none;
+	TOP: 0px;
+	LEFT: 0px;
+	WIDTH: 1px;
+	HEIGHT: 1px;
+	BACKGROUND-COLOR: transparent;
+}
+#Misc7Div
+{
+	POSITION: absolute;
+	DISPLAY: none;
+	TOP: 0px;
+	LEFT: 0px;
+	WIDTH: 1px;
+	HEIGHT: 1px;
+	BACKGROUND-COLOR: transparent;
+}
+#Misc8Div
+{
+	POSITION: absolute;
+	DISPLAY: none;
+	TOP: 0px;
+	LEFT: 0px;
+	WIDTH: 1px;
+	HEIGHT: 1px;
+	BACKGROUND-COLOR: transparent;
+}
+#PlayerBL
+{
+	POSITION: absolute;
+	LEFT: 0px;
+	WIDTH: 15px;
+	HEIGHT: 38px;
+}
+#PlayerBC
+{
+	POSITION: absolute;
+	LEFT: 15px;
+	HEIGHT: 38px;
+}
+#PlayerBR
+{
+	POSITION: absolute;
+	WIDTH: 15px;
+	HEIGHT: 38px;
+}
+#PlayerPlayPause
+{
+	POSITION: absolute;
+	TOP: 8px;
+	LEFT: 8px;
+	HEIGHT: 24px;
+	WIDTH: 24px;
+	BACKGROUND-REPEAT: no-repeat;
+	CURSOR: hand;
+	z-index:2;
+}
+#PlayerPrevious
+{
+	POSITION: absolute;
+	LEFT: 40px;
+	WIDTH: 24px;
+	HEIGHT: 24px;
+	TOP: 8px;
+	BACKGROUND-REPEAT: no-repeat;
+	FILTER: Alpha(opacity=40,enabled=false) Gray(enabled=false) BlendTrans(duration=0.5);
+	CURSOR: hand;
+	z-index:2;
+}
+#PlayerNext
+{
+	POSITION: absolute;
+	TOP: 8px;
+	LEFT: 72px;
+	HEIGHT: 24px;
+	WIDTH: 24px;
+	BACKGROUND-REPEAT: no-repeat;
+	FILTER: Alpha(opacity=40,enabled=false) Gray(enabled=false) BlendTrans(duration=0.5);
+	CURSOR: hand;
+	z-index:2;
+}
+#PlayerDiscussion
+{
+	POSITION: absolute;
+	TOP: 8px;
+	LEFT: 104px;
+	HEIGHT: 24px;
+	WIDTH: 24px;
+	BACKGROUND-REPEAT: no-repeat;
+	CURSOR: hand;
+	z-index:2;
+}
+#PlayerClock
+{
+	POSITION: absolute;
+	TOP: 12px;
+	HEIGHT: 24px;
+	WIDTH: 24px;
+	BACKGROUND-REPEAT: no-repeat;
+	COLOR: #FFFFFF;
+	font-family:arial;
+	FONT-SIZE: 10pt;
+	z-index:1;
+}
+#ProducerLogoDiv
+{
+	POSITION: absolute;
+	TOP: 150px;
+	LEFT: -20px;
+	HEIGHT: expression(document.body.clientHeight + document.body.scrollTop - 170);
+	PADDING-TOP: expression(document.body.clientHeight + document.body.scrollTop - 278);
+	CURSOR: hand;
+}
+#SlidesFrame
+{
+	HEIGHT: 100%;
+	WIDTH: 100%;
+}
+#TOCContentDiv
+{
+	WIDTH: 100%;
+	OVERFLOW-X: hidden;
+	OVERFLOW-Y: auto;
+	text-overflow: ellipsis;
+}
+.TOCEntryNormal
+{
+	CURSOR: hand;
+	FONT-WEIGHT: normal;
+	LIST-STYLE: none;
+	text-indent:-39px;
+}
+.TOCEntryNowPlaying
+{
+	CURSOR: hand;
+	FONT-WEIGHT: bold;
+	LIST-STYLE: none;
+	text-indent:-39px;
+}

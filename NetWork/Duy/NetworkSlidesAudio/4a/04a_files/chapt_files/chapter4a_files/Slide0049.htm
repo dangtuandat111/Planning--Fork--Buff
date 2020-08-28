@@ -1,0 +1,868 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../chapter4a.htm">
+<link rel=Preview href=preview.wmf>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Part I: Introduction</title>
+<meta name=Description content="12/4/2006: Ví dụ về Thuật toán Dijsktra">
+<link rel=Stylesheet href="master03_stylesheet.css">
+<!--[if gte IE 5]>
+<object id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"></object>
+<object id=MSOTIME classid="CLSID:A4639D29-774E-11D3-A490-00C04F6843FB"></object>
+<![endif]-->
+<![if !ppt]>
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:107% !important;}
+-->
+</style>
+<style>
+<!--
+oa\:* { BEHAVIOR: url(#MSOANIM#ANIM) url(#MSOTIME#TIME) }
+oa\:par,oa\:seq,oa\:iterate { BEHAVIOR:url(#MSOTIME) }
+oa\:video,oa\:audio {BEHAVIOR:url(#MSOTIME) url(#MSOTIME#MEDIA) }
+-->
+</style>
+<script src=script.js></script><script><!--
+gUseSldTimings=0;
+str=document.location.hash,idx=str.indexOf('#');if(idx>=0) str=str.substr(1);if (str == "0") g_showAnimation=0;else g_showAnimation=1;
+
+
+//if( !IsNts() ) Redirect( "PPTSld" );
+//--></script><script><!--
+g_animItemsToHide=new Array("_x0000_s118879","_x0000_s118874","_x0000_s118878","_x0000_s118873","_x0000_s118877","_x0000_s118872","_x0000_s118876","_x0000_s118871","_x0000_s118875","_x0000_s118870");
+
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]><o:shapelayout v:ext="edit">
+ <o:idmap v:ext="edit" data="116"/>
+</o:shapelayout>
+
+<!--[if gte IE 5]>
+<object style="visibility:hidden" id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"
+	codebase="http://download.microsoft.com/download/vizact2000/Install/10/WIN98Me/EN-US/msorun.cab#version=10,0,0,1"></object>
+<![endif]-->
+</head>
+
+<body bgcolor="transparent" style='overflow:hidden' onkeypress="DocumentOnClick()" lang=EN-US style='margin:0px' onclick="DocumentOnClick()"
+onresize="_RSW()" onload="LoadSld()" onkeypresstemp="_KPH()" oa:clockstart="onstart">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:534px;height:400px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"
+ masterhref="master03.xml">
+ <p:shaperangetemp href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#_x0000_s1029"/>
+ <div v:shape="_x0000_s1029" class=O style='text-align:right;position:absolute;
+ top:94.25%;left:60.11%;width:29.77%;height:3.0%'><span style='font-size:58%'>4:
+ Network Layer</span></div>
+ <p:shaperange href="master03.xml#_x0000_s1030"/>
+ <div v:shape="_x0000_s1030" class=O>
+ <div style='text-align:right;position:absolute;top:94.25%;left:90.26%;
+ width:5.61%;height:3.0%'><span style='font-size:58%'>4a-</span><span
+ style='font-size:58%;mso-field-code:meta16'>18</span><span style='font-size:
+ 58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![endif]><p:shaperange href="master03.xml#_x0000_m1026"/><v:shape id="_x0000_s118786"
+  type="#_x0000_m1026" style='position:absolute;left:42pt;top:18pt;width:612pt;
+  height:90pt' o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <p:placeholder type="title"/></v:shape><v:shapetype id="_x0000_t202"
+  coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s118787" type="#_x0000_t202" style='position:absolute;
+  left:10.125pt;top:118.625pt;width:64.375pt;height:175.25pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s118788" type="#_x0000_t202" style='position:absolute;
+  left:82.875pt;top:119.375pt;width:95.875pt;height:175.25pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s118789" type="#_x0000_t202" style='position:absolute;
+  left:190.125pt;top:117.875pt;width:98.875pt;height:103.25pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s118790" type="#_x0000_t202" style='position:absolute;
+  left:288.75pt;top:118.25pt;width:101.125pt;height:127.25pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s118791" type="#_x0000_t202" style='position:absolute;
+  left:389.25pt;top:117.875pt;width:101.125pt;height:55.25pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s118792" type="#_x0000_t202" style='position:absolute;
+  left:493.5pt;top:118.25pt;width:98.875pt;height:79.25pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s118793" type="#_x0000_t202" style='position:absolute;
+  left:594.375pt;top:119.375pt;width:96.625pt;height:151.25pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape>
+ <div v:shape="_x0000_s118786" class=T style='position:absolute;top:8.25%;
+ left:6.92%;width:83.14%;height:7.5%'><span style='font-size:90%'>Ví dụ về
+ Thuật toán Dijsktra</span></div>
+ <div v:shape="_x0000_s118787" class=O>
+ <div style='text-align:right;position:absolute;top:23.0%;left:.93%;width:8.42%;
+ height:4.5%'><span style='font-family:Arial;font-size:83%'>Bước&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:27.25%;left:2.43%;
+ width:7.11%;height:4.5%'><span style='font-family:Arial;font-size:83%'>0&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:31.75%;left:2.43%;
+ width:7.11%;height:4.5%'><span style='font-family:Arial;font-size:83%'>1&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:36.25%;left:2.43%;
+ width:7.11%;height:4.5%'><span style='font-family:Arial;font-size:83%'>2&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:40.75%;left:2.43%;
+ width:7.11%;height:4.5%'><span style='font-family:Arial;font-size:83%'>3&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:45.0%;left:2.43%;
+ width:7.11%;height:4.5%'><span style='font-family:Arial;font-size:83%'>4&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:49.5%;left:2.43%;
+ width:7.11%;height:4.5%'><span style='font-family:Arial;font-size:83%'>5</span></div>
+ </div>
+ <div v:shape="_x0000_s118788" class=O>
+ <div style='text-align:right;position:absolute;top:23.0%;left:12.54%;
+ width:11.42%;height:4.5%'><span style='font-family:Arial;font-size:83%'>Tập
+ N&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:27.5%;left:12.54%;
+ width:11.42%;height:4.5%'><span style='font-family:Arial;font-size:83%'>A&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:32.0%;left:12.54%;
+ width:11.42%;height:4.5%'><span style='font-family:Arial;font-size:83%'>AD&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:36.25%;left:12.54%;
+ width:11.42%;height:4.5%'><span style='font-family:Arial;font-size:83%'>ADE&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:40.75%;left:12.54%;
+ width:11.42%;height:4.5%'><span style='font-family:Arial;font-size:83%'>ADEB&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:45.25%;left:12.35%;
+ width:11.79%;height:4.5%'><span style='font-family:Arial;font-size:83%'>ADEBC&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:49.75%;left:10.29%;
+ width:13.85%;height:4.5%'><span style='font-family:Arial;font-size:83%'>ADEBCF</span></div>
+ </div>
+ <div v:shape="_x0000_s118789" class=O>
+ <div style='text-align:right;position:absolute;top:22.75%;left:25.09%;
+ width:14.23%;height:4.5%'><span style='font-family:Arial;font-size:83%'>D(B),p(B)&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:27.25%;left:27.34%;
+ width:11.98%;height:4.5%'><span style='font-family:Arial;font-size:83%'>2,A&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:31.75%;left:27.34%;
+ width:11.98%;height:4.5%'><span style='font-family:Arial;font-size:83%'>2,A&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:36.0%;left:27.34%;
+ width:11.98%;height:4.5%'><span style='font-family:Arial;font-size:83%'>2,A</span></div>
+ </div>
+ <div v:shape="_x0000_s118790" class=O>
+ <div style='text-align:right;position:absolute;top:22.75%;left:38.76%;
+ width:14.6%;height:4.5%'><span style='font-family:Arial;font-size:83%'>D(C),p(C)&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:27.25%;left:41.19%;
+ width:12.17%;height:4.5%'><span style='font-family:Arial;font-size:83%'>5,A&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:31.75%;left:41.19%;
+ width:12.17%;height:4.5%'><span style='font-family:Arial;font-size:83%'>4,D&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:36.25%;left:41.19%;
+ width:12.17%;height:4.5%'><span style='font-family:Arial;font-size:83%'>3,E&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:40.5%;left:41.19%;
+ width:12.17%;height:4.5%'><span style='font-family:Arial;font-size:83%'>3,E</span></div>
+ </div>
+ <div v:shape="_x0000_s118791" class=O>
+ <div style='text-align:right;position:absolute;top:22.75%;left:52.62%;
+ width:14.6%;height:4.5%'><span style='font-family:Arial;font-size:83%'>D(D),p(D)&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:27.25%;left:55.05%;
+ width:12.17%;height:4.5%'><span style='font-family:Arial;font-size:83%'>1,A</span></div>
+ </div>
+ <div v:shape="_x0000_s118792" class=O>
+ <div style='text-align:right;position:absolute;top:22.75%;left:67.22%;
+ width:14.23%;height:4.5%'><span style='font-family:Arial;font-size:83%'>D(E),p(E)&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:27.25%;left:69.47%;
+ width:11.98%;height:4.5%'><span style='font-family:Arial;font-size:83%'>vô
+ cùng&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:31.75%;left:69.47%;
+ width:11.98%;height:4.5%'><span style='font-family:Arial;font-size:83%'>2,D</span></div>
+ </div>
+ <div v:shape="_x0000_s118793" class=O>
+ <div style='text-align:right;position:absolute;top:23.0%;left:81.27%;
+ width:13.85%;height:4.5%'><span style='font-family:Arial;font-size:83%'>D(F),p(F)&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:27.5%;left:83.33%;
+ width:11.79%;height:4.5%'><span style='font-family:Arial;font-size:83%'>vô
+ cùng&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:32.0%;left:83.33%;
+ width:11.79%;height:4.5%'><span style='font-family:Arial;font-size:83%'>vô
+ cùng&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:36.25%;left:83.52%;
+ width:11.61%;height:4.5%'><span style='font-family:Arial;font-size:83%'>4,E&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:40.75%;left:83.52%;
+ width:11.61%;height:4.5%'><span style='font-family:Arial;font-size:83%'>4,E&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:45.25%;left:83.52%;
+ width:11.61%;height:4.5%'><span style='font-family:Arial;font-size:83%'>4,E</span></div>
+ </div>
+ <v:line id="_x0000_s118794" style='position:absolute;mso-wrap-style:none;
+  v-text-anchor:middle' from="28.5pt,146.25pt" to="698.25pt,147pt"
+  strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0 v:shapes="_x0000_s118794"
+ src="slide0049_image061.gif" style='position:absolute;top:27.0%;left:3.74%;
+ width:93.63%;height:1.0%'><![endif]><v:line id="_x0000_s118795" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="40.875pt,170.25pt" to="694.125pt,170.25pt"
+  strokecolor="#33c [5]" strokeweight="1.5pt">
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0 v:shapes="_x0000_s118795"
+ src="slide0049_image062.gif" style='position:absolute;top:31.5%;left:5.61%;
+ width:91.19%;height:.75%'><![endif]><v:line id="_x0000_s118796" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="42.375pt,193.5pt" to="693.375pt,193.875pt"
+  strokecolor="#33c [5]" strokeweight="1.5pt">
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0 v:shapes="_x0000_s118796"
+ src="slide0049_image063.gif" style='position:absolute;top:35.75%;left:5.8%;
+ width:91.01%;height:.75%'><![endif]><v:line id="_x0000_s118797" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="43.125pt,217.875pt" to="693pt,218.625pt"
+  strokecolor="#33c [5]" strokeweight="1.5pt">
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0 v:shapes="_x0000_s118797"
+ src="slide0049_image064.gif" style='position:absolute;top:40.25%;left:5.8%;
+ width:90.82%;height:.75%'><![endif]><v:line id="_x0000_s118798" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="43.875pt,241.875pt" to="694.875pt,242.625pt"
+  strokecolor="#33c [5]" strokeweight="1.5pt">
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0 v:shapes="_x0000_s118798"
+ src="slide0049_image065.gif" style='position:absolute;top:44.75%;left:5.99%;
+ width:91.01%;height:.75%'><![endif]><v:line id="_x0000_s118799" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="45pt,266.625pt" to="695.625pt,267pt"
+  strokecolor="#33c [5]" strokeweight="1.5pt">
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0 v:shapes="_x0000_s118799"
+ src="slide0049_image066.gif" style='position:absolute;top:49.25%;left:6.17%;
+ width:90.82%;height:.75%'><![endif]><v:group id="_x0000_s118800" style='position:absolute;
+  left:209.25pt;top:314.625pt;width:281.25pt;height:176.125pt' coordorigin="3066,1107"
+  coordsize="2250,1409">
+  <v:shape id="_x0000_s118801" style='position:absolute;left:3066;top:1107;
+   width:2250;height:1409;mso-wrap-style:none;v-text-anchor:middle'
+   coordsize="2250,1409" path="m,624c5,506,131,419,219,321,307,223,307,70,529,35,751,,1311,36,1551,111v240,75,309,240,417,372c2076,615,2250,767,2199,906v-51,139,-339,328,-540,408c1458,1394,1192,1379,993,1386v-199,7,-380,23,-528,-30c317,1303,180,1190,102,1068,24,946,21,716,,624xe"
+   fillcolor="#cff" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:shape id="_x0000_s118802" style='position:absolute;left:3402;
+   top:1656;width:342;height:186;mso-wrap-style:none;v-text-anchor:middle'
+   coordsize="342,186" path="m,186l342,e" filled="f" strokecolor="black [1]"
+   strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:oval id="_x0000_s118803" style='position:absolute;left:3142;
+   top:1898;width:313;height:81;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:oval><v:line id="_x0000_s118804" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="3142,1891" to="3142,1941"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s118805" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="3455,1891" to="3455,1941"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:rect id="_x0000_s118806" style='position:absolute;left:3142;
+   top:1891;width:310;height:49;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" stroked="f" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:oval id="_x0000_s118807" style='position:absolute;left:3139;
+   top:1832;width:313;height:95;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:oval><v:oval id="_x0000_s118808" style='position:absolute;left:3616;
+   top:2285;width:313;height:81;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:oval><v:line id="_x0000_s118809" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="3616,2278" to="3616,2328"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s118810" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="3929,2278" to="3929,2328"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:rect id="_x0000_s118811" style='position:absolute;left:3616;
+   top:2278;width:310;height:49;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" stroked="f" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:oval id="_x0000_s118812" style='position:absolute;left:3613;
+   top:2219;width:313;height:95;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:oval><v:oval id="_x0000_s118813" style='position:absolute;left:3612;
+   top:1595;width:313;height:81;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:oval><v:line id="_x0000_s118814" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="3612,1588" to="3612,1638"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s118815" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="3925,1588" to="3925,1638"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:rect id="_x0000_s118816" style='position:absolute;left:3612;
+   top:1588;width:310;height:49;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" stroked="f" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:oval id="_x0000_s118817" style='position:absolute;left:3609;
+   top:1529;width:313;height:95;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:oval><v:oval id="_x0000_s118818" style='position:absolute;left:4295;
+   top:1591;width:312;height:81;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:oval><v:line id="_x0000_s118819" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="4295,1584" to="4295,1634"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s118820" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="4607,1584" to="4607,1634"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:rect id="_x0000_s118821" style='position:absolute;left:4295;
+   top:1584;width:309;height:49;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" stroked="f" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:oval id="_x0000_s118822" style='position:absolute;left:4298;
+   top:1528;width:312;height:95;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:oval><v:oval id="_x0000_s118823" style='position:absolute;left:4305;
+   top:2282;width:313;height:81;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:oval><v:line id="_x0000_s118824" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="4305,2275" to="4305,2325"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s118825" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="4618,2275" to="4618,2325"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:rect id="_x0000_s118826" style='position:absolute;left:4305;
+   top:2275;width:310;height:49;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" stroked="f" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:oval id="_x0000_s118827" style='position:absolute;left:4302;
+   top:2216;width:313;height:95;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:oval><v:oval id="_x0000_s118828" style='position:absolute;left:4870;
+   top:1941;width:313;height:81;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:oval><v:line id="_x0000_s118829" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="4870,1934" to="4870,1984"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s118830" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="5183,1934" to="5183,1984"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:rect id="_x0000_s118831" style='position:absolute;left:4870;
+   top:1934;width:310;height:49;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" stroked="f" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:oval id="_x0000_s118832" style='position:absolute;left:4867;
+   top:1875;width:313;height:95;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:oval><v:shape id="_x0000_s118833" style='position:absolute;left:4461;
+   top:1683;width:1;height:522;mso-wrap-style:none;v-text-anchor:middle'
+   coordsize="1,522" path="m,l,522e" filled="f" strokecolor="black [1]"
+   strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:shape id="_x0000_s118834" style='position:absolute;left:3768;
+   top:1689;width:1;height:537;mso-wrap-style:none;v-text-anchor:middle'
+   coordsize="1,537" path="m,l,537e" filled="f" strokecolor="black [1]"
+   strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:shape id="_x0000_s118835" style='position:absolute;left:3933;
+   top:1674;width:504;height:600;mso-wrap-style:none;v-text-anchor:middle'
+   coordsize="378,174" path="m,174l378,e" filled="f" strokecolor="black [1]"
+   strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:shape id="_x0000_s118836" style='position:absolute;left:4620;
+   top:2022;width:366;height:270;mso-wrap-style:none;v-text-anchor:middle'
+   coordsize="366,270" path="m,270l366,e" filled="f" strokecolor="black [1]"
+   strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:shape id="_x0000_s118837" style='position:absolute;left:3939;
+   top:2304;width:366;height:1;mso-wrap-style:none;v-text-anchor:middle'
+   coordsize="366,1" path="m366,l,e" filled="f" strokecolor="black [1]"
+   strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:shape id="_x0000_s118838" style='position:absolute;left:3348;
+   top:1980;width:276;height:264;mso-wrap-style:none;v-text-anchor:middle'
+   coordsize="276,264" path="m276,264l,e" filled="f" strokecolor="black [1]"
+   strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:shape id="_x0000_s118839" style='position:absolute;left:3933;
+   top:1614;width:366;height:1;mso-wrap-style:none;v-text-anchor:middle'
+   coordsize="366,1" path="m366,l,e" filled="f" strokecolor="black [1]"
+   strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:shape id="_x0000_s118840" style='position:absolute;left:4608;
+   top:1611;width:396;height:267;mso-wrap-style:none;v-text-anchor:middle'
+   coordsize="396,267" path="m396,267l,e" filled="f" strokecolor="black [1]"
+   strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:shape id="_x0000_s118841" style='position:absolute;left:3291;
+   top:1182;width:1110;height:645;mso-wrap-style:none;v-text-anchor:middle'
+   coordsize="1110,645" path="m1110,342hhc1104,,21,63,,645e" filled="f"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:group id="_x0000_s118842" style='position:absolute;left:3177;
+   top:1784;width:233;height:250' coordorigin="2940,2429" coordsize="236,250">
+   <v:rect id="_x0000_s118843" style='position:absolute;left:2982;top:2490;
+    width:144;height:132;mso-wrap-style:none;v-text-anchor:middle' fillcolor="#ccf [6]"
+    stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+   </v:rect><v:shape id="_x0000_s118844" type="#_x0000_t202" style='position:absolute;
+    left:2940;top:2429;width:236;height:250;mso-wrap-style:none;
+    v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape></v:group><v:group id="_x0000_s118845" style='position:absolute;
+   left:4355;top:2168;width:216;height:250' coordorigin="2948,2429"
+   coordsize="219,250">
+   <v:rect id="_x0000_s118846" style='position:absolute;left:2982;top:2490;
+    width:144;height:132;mso-wrap-style:none;v-text-anchor:middle' fillcolor="#ccf [6]"
+    stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+   </v:rect><v:shape id="_x0000_s118847" type="#_x0000_t202" style='position:absolute;
+    left:2948;top:2429;width:219;height:250;mso-wrap-style:none;
+    v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape></v:group><v:group id="_x0000_s118848" style='position:absolute;
+   left:3667;top:2165;width:231;height:250' coordorigin="2941,2429"
+   coordsize="234,250">
+   <v:rect id="_x0000_s118849" style='position:absolute;left:2982;top:2490;
+    width:144;height:132;mso-wrap-style:none;v-text-anchor:middle' fillcolor="#ccf [6]"
+    stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+   </v:rect><v:shape id="_x0000_s118850" type="#_x0000_t202" style='position:absolute;
+    left:2941;top:2429;width:234;height:250;mso-wrap-style:none;
+    v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape></v:group><v:group id="_x0000_s118851" style='position:absolute;
+   left:4351;top:1478;width:212;height:250' coordorigin="2950,2429"
+   coordsize="215,250">
+   <v:rect id="_x0000_s118852" style='position:absolute;left:2982;top:2490;
+    width:144;height:132;mso-wrap-style:none;v-text-anchor:middle' fillcolor="#ccf [6]"
+    stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+   </v:rect><v:shape id="_x0000_s118853" type="#_x0000_t202" style='position:absolute;
+    left:2950;top:2429;width:215;height:250;mso-wrap-style:none;
+    v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape></v:group><v:group id="_x0000_s118854" style='position:absolute;
+   left:3665;top:1478;width:217;height:250' coordorigin="2948,2429"
+   coordsize="220,250">
+   <v:rect id="_x0000_s118855" style='position:absolute;left:2982;top:2490;
+    width:144;height:132;mso-wrap-style:none;v-text-anchor:middle' fillcolor="#ccf [6]"
+    stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+   </v:rect><v:shape id="_x0000_s118856" type="#_x0000_t202" style='position:absolute;
+    left:2948;top:2429;width:220;height:250;mso-wrap-style:none;
+    v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape></v:group><v:group id="_x0000_s118857" style='position:absolute;
+   left:4929;top:1826;width:213;height:250' coordorigin="2949,2429"
+   coordsize="216,250">
+   <v:rect id="_x0000_s118858" style='position:absolute;left:2982;top:2490;
+    width:144;height:132;mso-wrap-style:none;v-text-anchor:middle' fillcolor="#ccf [6]"
+    stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+   </v:rect><v:shape id="_x0000_s118859" type="#_x0000_t202" style='position:absolute;
+    left:2949;top:2429;width:216;height:250;mso-wrap-style:none;
+    v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape></v:group><v:shape id="_x0000_s118860" type="#_x0000_t202"
+   style='position:absolute;left:3393;top:1607;width:204;height:231;
+   mso-wrap-style:none;v-text-anchor:top-baseline' filled="f" stroked="f"
+   strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s118861" type="#_x0000_t202" style='position:absolute;
+   left:3741;top:1826;width:204;height:231;mso-wrap-style:none;v-text-anchor:top-baseline'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s118862" type="#_x0000_t202" style='position:absolute;
+   left:3317;top:2039;width:181;height:231;mso-wrap-style:none;v-text-anchor:top-baseline'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s118863" type="#_x0000_t202" style='position:absolute;
+   left:4125;top:1919;width:204;height:231;mso-wrap-style:none;v-text-anchor:top-baseline'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s118864" type="#_x0000_t202" style='position:absolute;
+   left:4073;top:2273;width:181;height:231;mso-wrap-style:none;v-text-anchor:top-baseline'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s118865" type="#_x0000_t202" style='position:absolute;
+   left:4433;top:1844;width:181;height:231;mso-wrap-style:none;v-text-anchor:top-baseline'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s118866" type="#_x0000_t202" style='position:absolute;
+   left:4782;top:2108;width:204;height:231;mso-wrap-style:none;v-text-anchor:top-baseline'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s118867" type="#_x0000_t202" style='position:absolute;
+   left:4755;top:1571;width:204;height:231;mso-wrap-style:none;v-text-anchor:top-baseline'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s118868" type="#_x0000_t202" style='position:absolute;
+   left:4020;top:1421;width:204;height:231;mso-wrap-style:none;v-text-anchor:top-baseline'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s118869" type="#_x0000_t202" style='position:absolute;
+   left:3669;top:1154;width:204;height:231;mso-wrap-style:none;v-text-anchor:top-baseline'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape></v:group><![if !vml]><img border=0
+ v:shapes="_x0000_s118800,_x0000_s118801,_x0000_s118802,_x0000_s118803,_x0000_s118804,_x0000_s118805,_x0000_s118806,_x0000_s118807,_x0000_s118808,_x0000_s118809,_x0000_s118810,_x0000_s118811,_x0000_s118812,_x0000_s118813,_x0000_s118814,_x0000_s118815,_x0000_s118816,_x0000_s118817,_x0000_s118818,_x0000_s118819,_x0000_s118820,_x0000_s118821,_x0000_s118822,_x0000_s118823,_x0000_s118824,_x0000_s118825,_x0000_s118826,_x0000_s118827,_x0000_s118828,_x0000_s118829,_x0000_s118830,_x0000_s118831,_x0000_s118832,_x0000_s118833,_x0000_s118834,_x0000_s118835,_x0000_s118836,_x0000_s118837,_x0000_s118838,_x0000_s118839,_x0000_s118840,_x0000_s118841,_x0000_s118843,_x0000_s118844,_x0000_s118846,_x0000_s118847,_x0000_s118849,_x0000_s118850,_x0000_s118852,_x0000_s118853,_x0000_s118855,_x0000_s118856,_x0000_s118858,_x0000_s118859,_x0000_s118860,_x0000_s118861,_x0000_s118862,_x0000_s118863,_x0000_s118864,_x0000_s118865,_x0000_s118866,_x0000_s118867,_x0000_s118868,_x0000_s118869"
+ src="slide0049_image067.gif" style='position:absolute;top:58.25%;left:29.02%;
+ width:39.32%;height:33.0%'><![endif]>
+ <div v:shape="_x0000_s118844" class=O style='text-align:center;position:absolute;
+ top:74.0%;left:31.83%;width:2.62%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>A</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s118847" class=O style='text-align:center;position:absolute;
+ top:83.0%;left:52.24%;width:2.24%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>E</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s118850" class=O style='text-align:center;position:absolute;
+ top:82.75%;left:40.26%;width:2.62%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>D</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s118853" class=O style='text-align:center;position:absolute;
+ top:67.0%;left:52.24%;width:2.24%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>C</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s118856" class=O style='text-align:center;position:absolute;
+ top:67.0%;left:40.26%;width:2.24%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>B</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s118859" class=O style='text-align:center;position:absolute;
+ top:75.0%;left:62.17%;width:2.24%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>F</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s118860" class=O style='text-align:center;position:absolute;
+ top:70.0%;left:35.58%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>2</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s118861" class=O style='text-align:center;position:absolute;
+ top:75.0%;left:41.57%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>2</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s118862" class=O style='text-align:center;position:absolute;
+ top:80.0%;left:34.26%;width:1.49%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>1</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s118863" class=O style='text-align:center;position:absolute;
+ top:77.25%;left:48.31%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>3</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s118864" class=O style='text-align:center;position:absolute;
+ top:85.5%;left:47.37%;width:1.49%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>1</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s118865" class=O style='text-align:center;position:absolute;
+ top:75.5%;left:53.74%;width:1.49%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>1</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s118866" class=O style='text-align:center;position:absolute;
+ top:81.5%;left:59.73%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>2</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s118867" class=O style='text-align:center;position:absolute;
+ top:69.25%;left:59.17%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>5</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s118868" class=O style='text-align:center;position:absolute;
+ top:65.75%;left:46.44%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>3</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s118869" class=O style='text-align:center;position:absolute;
+ top:59.5%;left:40.44%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>5</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <v:line id="_x0000_s118870" style='position:absolute;mso-wrap-style:none;
+  v-text-anchor:middle' from="243.75pt,422.25pt" to="279pt,457.5pt"
+  strokecolor="red" strokeweight="3pt">
+  <v:shadow color="gray [2]"/>
+  <p:animation number="1" delay="1000" type="object" effect="dissolve"
+   flag="17408"/></v:line><![if !vml]><img border=0 v:shapes="_x0000_s118870"
+ src="slide0049_image068.gif" style='position:absolute;top:78.0%;left:33.7%;
+ width:5.61%;height:7.5%'><![endif]><v:line id="_x0000_s118871" style='position:absolute;
+  flip:y;mso-wrap-style:none;v-text-anchor:middle' from="318pt,464.25pt" to="363.75pt,465pt"
+  strokecolor="red" strokeweight="3pt">
+  <v:shadow color="gray [2]"/>
+  <p:animation number="3" delay="0" type="object" effect="dissolve" flag="17408"/></v:line><![if !vml]><img
+ border=0 v:shapes="_x0000_s118871" src="slide0049_image069.gif"
+ style='position:absolute;top:85.75%;left:44.0%;width:7.11%;height:1.0%'><![endif]><v:line
+  id="_x0000_s118872" style='position:absolute;flip:y;mso-wrap-style:none;
+  v-text-anchor:middle' from="251.25pt,386.25pt" to="290.25pt,406.5pt"
+  strokecolor="red" strokeweight="3pt">
+  <v:shadow color="gray [2]"/>
+  <p:animation number="5" delay="0" type="object" effect="dissolve" flag="17408"/></v:line><![if !vml]><img
+ border=0 v:shapes="_x0000_s118872" src="slide0049_image070.gif"
+ style='position:absolute;top:71.25%;left:34.64%;width:6.17%;height:4.75%'><![endif]><v:line
+  id="_x0000_s118873" style='position:absolute;flip:y;mso-wrap-style:none;
+  v-text-anchor:middle' from="382.5pt,386.25pt" to="382.5pt,453pt"
+  strokecolor="red" strokeweight="3pt">
+  <v:shadow color="gray [2]"/>
+  <p:animation number="7" delay="0" type="object" effect="dissolve" flag="17408"/></v:line><![if !vml]><img
+ border=0 v:shapes="_x0000_s118873" src="slide0049_image071.gif"
+ style='position:absolute;top:71.25%;left:52.99%;width:.74%;height:13.25%'><![endif]><v:line
+  id="_x0000_s118874" style='position:absolute;flip:y;mso-wrap-style:none;
+  v-text-anchor:middle' from="403.5pt,428.25pt" to="451.5pt,463.5pt"
+  strokecolor="red" strokeweight="3pt">
+  <v:shadow color="gray [2]"/>
+  <p:animation number="9" delay="0" type="object" effect="dissolve" flag="17408"/></v:line><![if !vml]><img
+ border=0 v:shapes="_x0000_s118874" src="slide0049_image072.gif"
+ style='position:absolute;top:79.0%;left:55.8%;width:7.3%;height:7.5%'><![endif]><v:line
+  id="_x0000_s118875" style='position:absolute;mso-wrap-style:none;
+  v-text-anchor:middle' from="13.5pt,159.75pt" to="54pt,159.75pt"
+  strokecolor="red" strokeweight="3pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+  <p:animation number="2" delay="0" type="object" effect="fly" direction="left"
+   afterbuild="hide" flag="17412"/></v:line><![if !vml]><img border=0
+ v:shapes="_x0000_s118875" src="slide0049_image073.gif" style='position:absolute;
+ top:28.5%;left:1.68%;width:6.36%;height:2.75%'><![endif]><v:line id="_x0000_s118876"
+  style='position:absolute;mso-wrap-style:none;v-text-anchor:middle' from="13.5pt,181.5pt"
+  to="54pt,181.5pt" strokecolor="red" strokeweight="3pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+  <p:animation number="4" delay="0" type="object" effect="fly" direction="left"
+   afterbuild="hide" flag="17412"/></v:line><![if !vml]><img border=0
+ v:shapes="_x0000_s118876" src="slide0049_image074.gif" style='position:absolute;
+ top:32.5%;left:1.68%;width:6.36%;height:2.75%'><![endif]><v:line id="_x0000_s118877"
+  style='position:absolute;mso-wrap-style:none;v-text-anchor:middle' from="12.75pt,207.75pt"
+  to="53.25pt,207.75pt" strokecolor="red" strokeweight="3pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+  <p:animation number="6" delay="0" type="object" effect="fly" direction="left"
+   afterbuild="hide" flag="17412"/></v:line><![if !vml]><img border=0
+ v:shapes="_x0000_s118877" src="slide0049_image075.gif" style='position:absolute;
+ top:37.25%;left:1.49%;width:6.36%;height:2.75%'><![endif]><v:line id="_x0000_s118878"
+  style='position:absolute;mso-wrap-style:none;v-text-anchor:middle' from="13.5pt,231.75pt"
+  to="54pt,231.75pt" strokecolor="red" strokeweight="3pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+  <p:animation number="8" delay="0" type="object" effect="fly" direction="left"
+   afterbuild="hide" flag="17412"/></v:line><![if !vml]><img border=0
+ v:shapes="_x0000_s118878" src="slide0049_image076.gif" style='position:absolute;
+ top:41.75%;left:1.68%;width:6.36%;height:2.75%'><![endif]><v:line id="_x0000_s118879"
+  style='position:absolute;mso-wrap-style:none;v-text-anchor:middle' from="14.25pt,255.75pt"
+  to="54.75pt,255.75pt" strokecolor="red" strokeweight="3pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+  <p:animation number="10" delay="0" type="object" effect="fly" direction="left"
+   afterbuild="hide" flag="17412"/></v:line><![if !vml]><img border=0
+ v:shapes="_x0000_s118879" src="slide0049_image077.gif" style='position:absolute;
+ top:46.25%;left:1.68%;width:6.36%;height:2.75%'><![endif]></p:slide></div>
+
+<p:animation number="-253333376"/><oa:par id="TimeNode0" dur="indefinite"
+ restart="never" p:nodeType="timingRoot">
+ <oa:seq id="TimeNode1" dur="indefinite" prev="document.onpptprev"
+  next="document.onpptnext" concurrent="enabled" nextAction="seek"
+  p:nodeType="mainSeq">
+  <oa:par id="TimeNode2" begin="indefinite" fill="hold">
+   <oa:par id="TimeNode3" begin="0.0" fill="hold">
+    <oa:par id="TimeNode4" o:presetID="ppt_9" o:presetClass="entrance"
+     o:presetSubType="0x0" begin="0.0" fill="hold" p:nodeType="clickEffect">
+     <oa:set id="TimeNode5" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s118870" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode6" dur="0.5" targetElement="_x0000_s118870"
+      transition="in" filter="dissolve"/>
+    </oa:par>
+   </oa:par>
+   <oa:par id="TimeNode7" begin="0.5" fill="hold">
+    <oa:par id="TimeNode8" o:presetID="ppt_2" o:presetClass="entrance"
+     o:presetSubType="0x8" begin="0.0" fill="hold" p:nodeType="afterEffect">
+     <oa:set id="TimeNode9" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s118875" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animate id="TimeNode10" dur="0.5" fill="hold"
+      targetElement="_x0000_s118875" additive="base" attributeName="ppt_x"
+      calcmode="linear" valueType="number" keyTimes="0.0;1.0"
+      values="0-#ppt_w/2;#ppt_x"/>
+     <oa:animate id="TimeNode11" dur="0.5" fill="hold"
+      targetElement="_x0000_s118875" additive="base" attributeName="ppt_y"
+      calcmode="linear" valueType="number" keyTimes="0.0;1.0"
+      values="#ppt_y;#ppt_y"/>
+    </oa:par>
+   </oa:par>
+  </oa:par>
+  <oa:par id="TimeNode12" begin="indefinite" fill="hold">
+   <oa:par id="TimeNode13" begin="0.0" fill="hold">
+    <oa:par id="TimeNode14" o:presetID="ppt_9" o:presetClass="entrance"
+     o:presetSubType="0x0" begin="0.0" fill="hold" p:nodeType="clickEffect">
+     <oa:set id="TimeNode15" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s118871" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode16" dur="0.5" targetElement="_x0000_s118871"
+      transition="in" filter="dissolve"/>
+    </oa:par>
+    <oa:set id="TimeNode17" begin="0.0" dur="0.001" fill="hold" o:display="hidden"
+     o:master="TimeNode8" o:masterRel="nextClick" o:afterEffect="true"
+     p:nodeType="withEffect" targetElement="_x0000_s118875"
+     attributeName="style.visibility" override="childStyle" to="hidden"/>
+   </oa:par>
+   <oa:par id="TimeNode18" begin="0.5" fill="hold">
+    <oa:par id="TimeNode19" o:presetID="ppt_2" o:presetClass="entrance"
+     o:presetSubType="0x8" begin="0.0" fill="hold" p:nodeType="afterEffect">
+     <oa:set id="TimeNode20" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s118876" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animate id="TimeNode21" dur="0.5" fill="hold"
+      targetElement="_x0000_s118876" additive="base" attributeName="ppt_x"
+      calcmode="linear" valueType="number" keyTimes="0.0;1.0"
+      values="0-#ppt_w/2;#ppt_x"/>
+     <oa:animate id="TimeNode22" dur="0.5" fill="hold"
+      targetElement="_x0000_s118876" additive="base" attributeName="ppt_y"
+      calcmode="linear" valueType="number" keyTimes="0.0;1.0"
+      values="#ppt_y;#ppt_y"/>
+    </oa:par>
+   </oa:par>
+  </oa:par>
+  <oa:par id="TimeNode23" begin="indefinite" fill="hold">
+   <oa:par id="TimeNode24" begin="0.0" fill="hold">
+    <oa:par id="TimeNode25" o:presetID="ppt_9" o:presetClass="entrance"
+     o:presetSubType="0x0" begin="0.0" fill="hold" p:nodeType="clickEffect">
+     <oa:set id="TimeNode26" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s118872" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode27" dur="0.5" targetElement="_x0000_s118872"
+      transition="in" filter="dissolve"/>
+    </oa:par>
+    <oa:set id="TimeNode28" begin="0.0" dur="0.001" fill="hold" o:display="hidden"
+     o:master="TimeNode19" o:masterRel="nextClick" o:afterEffect="true"
+     p:nodeType="withEffect" targetElement="_x0000_s118876"
+     attributeName="style.visibility" override="childStyle" to="hidden"/>
+   </oa:par>
+   <oa:par id="TimeNode29" begin="0.5" fill="hold">
+    <oa:par id="TimeNode30" o:presetID="ppt_2" o:presetClass="entrance"
+     o:presetSubType="0x8" begin="0.0" fill="hold" p:nodeType="afterEffect">
+     <oa:set id="TimeNode31" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s118877" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animate id="TimeNode32" dur="0.5" fill="hold"
+      targetElement="_x0000_s118877" additive="base" attributeName="ppt_x"
+      calcmode="linear" valueType="number" keyTimes="0.0;1.0"
+      values="0-#ppt_w/2;#ppt_x"/>
+     <oa:animate id="TimeNode33" dur="0.5" fill="hold"
+      targetElement="_x0000_s118877" additive="base" attributeName="ppt_y"
+      calcmode="linear" valueType="number" keyTimes="0.0;1.0"
+      values="#ppt_y;#ppt_y"/>
+    </oa:par>
+   </oa:par>
+  </oa:par>
+  <oa:par id="TimeNode34" begin="indefinite" fill="hold">
+   <oa:par id="TimeNode35" begin="0.0" fill="hold">
+    <oa:par id="TimeNode36" o:presetID="ppt_9" o:presetClass="entrance"
+     o:presetSubType="0x0" begin="0.0" fill="hold" p:nodeType="clickEffect">
+     <oa:set id="TimeNode37" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s118873" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode38" dur="0.5" targetElement="_x0000_s118873"
+      transition="in" filter="dissolve"/>
+    </oa:par>
+    <oa:set id="TimeNode39" begin="0.0" dur="0.001" fill="hold" o:display="hidden"
+     o:master="TimeNode30" o:masterRel="nextClick" o:afterEffect="true"
+     p:nodeType="withEffect" targetElement="_x0000_s118877"
+     attributeName="style.visibility" override="childStyle" to="hidden"/>
+   </oa:par>
+   <oa:par id="TimeNode40" begin="0.5" fill="hold">
+    <oa:par id="TimeNode41" o:presetID="ppt_2" o:presetClass="entrance"
+     o:presetSubType="0x8" begin="0.0" fill="hold" p:nodeType="afterEffect">
+     <oa:set id="TimeNode42" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s118878" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animate id="TimeNode43" dur="0.5" fill="hold"
+      targetElement="_x0000_s118878" additive="base" attributeName="ppt_x"
+      calcmode="linear" valueType="number" keyTimes="0.0;1.0"
+      values="0-#ppt_w/2;#ppt_x"/>
+     <oa:animate id="TimeNode44" dur="0.5" fill="hold"
+      targetElement="_x0000_s118878" additive="base" attributeName="ppt_y"
+      calcmode="linear" valueType="number" keyTimes="0.0;1.0"
+      values="#ppt_y;#ppt_y"/>
+    </oa:par>
+   </oa:par>
+  </oa:par>
+  <oa:par id="TimeNode45" begin="indefinite" fill="hold">
+   <oa:par id="TimeNode46" begin="0.0" fill="hold">
+    <oa:par id="TimeNode47" o:presetID="ppt_9" o:presetClass="entrance"
+     o:presetSubType="0x0" begin="0.0" fill="hold" p:nodeType="clickEffect">
+     <oa:set id="TimeNode48" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s118874" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode49" dur="0.5" targetElement="_x0000_s118874"
+      transition="in" filter="dissolve"/>
+    </oa:par>
+    <oa:set id="TimeNode50" begin="0.0" dur="0.001" fill="hold" o:display="hidden"
+     o:master="TimeNode41" o:masterRel="nextClick" o:afterEffect="true"
+     p:nodeType="withEffect" targetElement="_x0000_s118878"
+     attributeName="style.visibility" override="childStyle" to="hidden"/>
+   </oa:par>
+   <oa:par id="TimeNode51" begin="0.5" fill="hold">
+    <oa:par id="TimeNode52" o:presetID="ppt_2" o:presetClass="entrance"
+     o:presetSubType="0x8" begin="0.0" fill="hold" p:nodeType="afterEffect">
+     <oa:set id="TimeNode53" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s118879" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animate id="TimeNode54" dur="0.5" fill="hold"
+      targetElement="_x0000_s118879" additive="base" attributeName="ppt_x"
+      calcmode="linear" valueType="number" keyTimes="0.0;1.0"
+      values="0-#ppt_w/2;#ppt_x"/>
+     <oa:animate id="TimeNode55" dur="0.5" fill="hold"
+      targetElement="_x0000_s118879" additive="base" attributeName="ppt_y"
+      calcmode="linear" valueType="number" keyTimes="0.0;1.0"
+      values="#ppt_y;#ppt_y"/>
+    </oa:par>
+   </oa:par>
+  </oa:par>
+  <oa:par id="TimeNode56" begin="indefinite" fill="hold">
+   <oa:par id="TimeNode57" begin="0.0" fill="hold">
+    <oa:set id="TimeNode58" begin="0.0" dur="0.001" fill="hold" o:display="hidden"
+     o:master="TimeNode52" o:masterRel="nextClick" o:afterEffect="true"
+     p:nodeType="clickEffect" targetElement="_x0000_s118879"
+     attributeName="style.visibility" override="childStyle" to="hidden"/>
+   </oa:par>
+  </oa:par>
+ </oa:seq>
+</oa:par>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+/* WMxxx tags store data to describe this file */
+#WMTemplate
+{
+	WMName: "Simple";
+	WMDesc: "Simple Default template. Small video display (240 x 180) with resizable slide and HTML areas. This template has solid background colors.";
+}
+#HTML1Div
+{
+	VISIBILITY: visible;
+	POSITION: absolute;
+	TOP: 500px;
+	LEFT: 330px;
+	HEIGHT: 90px;
+	WIDTH: 639px;	
+}
+#LeftSideBackground
+{
+	POSITION: absolute;
+	TOP: 0px;
+	LEFT: 0px;
+	HEIGHT: 590px;
+	WIDTH: 320px;
+	VISIBILITY: visible;
+}
+#LoadingWaitDiv
+{
+	HEIGHT: 590px;
+	WIDTH: 815px;
+	OVERFLOW: hidden;
+}
+#LoadingWaitDiv_Anm
+{
+	POSITION: absolute;
+	TOP: 0px;
+	LEFT: 0px;
+}
+#LoadingWaitDiv_DescDiv
+{
+	FONT-SIZE: 10pt;
+	FONT-WEIGHT: bold;
+}
+#LoadingWaitDiv_LeftSideDiv
+{
+	HEIGHT: 590px;
+	PADDING: 0px;
+}
+#LoadingWaitDiv_Link
+{
+	POSITION: absolute;
+	TOP: 55px;
+	LEFT: 10px;
+	WIDTH: 138px;
+}
+#LoadingWaitDiv_Other
+{
+	POSITION: absolute;
+	TOP: 0px;
+	LEFT: 0px;
+	HEIGHT: 300px;
+	WIDTH: 300px;
+	PADDING-LEFT: 160px;
+	MARGIN-LEFT: 10px;
+	TEXT-ALIGN: center;
+}
+#LoadingWaitDividerDiv
+{
+	HEIGHT: 590px;
+}
+#MediaPlayer
+{
+	HEIGHT: 228px;
+	WIDTH: 240px;
+}
+#MediaPlayerDiv
+{
+	POSITION: absolute;
+	TOP: 10px;
+	LEFT: 40px;
+	HEIGHT: 228px;
+	WIDTH: 240px;
+}
+#ProducerLogoDiv
+{
+	POSITION: absolute;
+	TOP: 480px;
+	LEFT: -20px;
+	HEIGHT: 80px;
+	WIDTH: 200px;
+	PADDING-TOP: 0px;
+}
+#SlidesDiv
+{
+	POSITION: absolute;
+	TOP: 10px;
+	LEFT: 330px;
+	HEIGHT: 479px;
+	WIDTH: 639px;
+	OVERFLOW: hidden;
+}
+#TOCDiv
+{
+	POSITION: absolute;
+	TOP: 250px;
+	LEFT: 27px;
+	HEIGHT: 340px;
+	WIDTH: 293px;
+	OVERFLOW: auto;
+}

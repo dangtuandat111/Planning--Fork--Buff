@@ -1,0 +1,102 @@
+<!--
+Created using Microsoft(R) Producer for PowerPoint(R) 2002.
+Copyright (c) Microsoft 2001.
+http://www.microsoft.com
+-->
+
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=utf-8">
+<META HTTP-EQUIV="Expires" CONTENT="0">
+<META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+
+<!-- Script file -->
+<script id=SCRIPTDATA src="projecta.js" language="JavaScript" ></script>
+
+<!-- Inline script to initialize our two script modules -->
+<script id=SCRIPTCODE src="ClientCaps.js" language="JavaScript" ></script>
+<script language="JavaScript">
+<!--
+//Check which script file to load, unicode or ansi.  NT+ uses unicode
+if (ClientCaps & Browser_SupportsUNICODE)
+	document.getElementById("SCRIPTDATA").src = "project.js";
+-->
+</script>
+
+<!-- Script files -->
+<script id=SCRIPTCODE src="gogoprod.js" language="JavaScript" ></script>
+<script language="JavaScript"> document.title = g_szLoadingTitleNoEscape; </script>
+
+<!-- CSS files -->
+<LINK id=LINKTHEME href="theme.css" rel="stylesheet" type="text/css">
+<LINK id=LINKBASIC href="basicstyles.css" rel="stylesheet" type="text/css">
+<LINK id=LINKLAYOUT href="simple.css" rel="stylesheet" rev="stylesheet" type="text/css">
+<script language="JavaScript">
+<!--
+// this will be set in script if the browsing technology supports navigating to CSS
+if (ClientCaps & Browser_SupportsNavigateCSS)
+	document.getElementById("LINKLAYOUT").href="";
+
+// this will be set in script if the browsing technology supports navigating to CSS
+	szInitialCSS=g_InitialCSSFileSimple
+if (ClientCaps & Browser_SupportsNavigateCSS)
+	szInitialCSS="";
+	document.write("<LINK id=LINKLAYOUT href=\""+szInitialCSS+"\" rel=\"stylesheet\" rev=\"stylesheet\" type=\"text/css\">");
+
+function Load()
+{
+	AssignObjects();
+	g_nPlayStatus=CONST_PS_INIT;
+	PrerollScreen_SetStatus(false);
+	g_nPlayStatus=CONST_PS_READY;
+	PrerollScreen_SetStatus(false);
+	LoadingWaitDiv_A.href="fdeflt.htm"+parent.location.hash+parent.location.search;	
+	if ( g_szProducerLink != "" )
+		document.getElementById("ProducerLink").href = g_szProducerLink;
+}
+
+
+-->
+</script>
+
+
+</HEAD>
+
+
+<BODY onLoad="Load()" onresize="Window_OnResize()" onscroll="Window_OnScroll()">
+	<!-- ---------------- PREROLL FRAME   ---------------------------- -->
+	<div id=LoadingWaitDiv_LeftSideDiv>
+		<CENTER>
+			<div id=LoadingWaitDiv_Link>
+				<A ID=LoadingWaitDiv_A href="" TABINDEX=1><div id=LoadingWaitDiv_Play class=LoadingWaitDiv_Play></div></A>
+			</div>
+			<div id=LoadingWaitDiv_Bitrate class=LoadingWaitDiv_Play style="display:none"></div>
+			<div id=LoadingWaitDiv_ImgAnm><IMG id=LoadingWaitDiv_Anm SRC="" border=0></div>
+			<div id=ProducerLogoDiv>
+				<CENTER>					
+					<a id=ProducerLink class=ProdLogoText href="" target="_blank">
+						<img id=ProducerLogoImg src="producerlogo.gif" border=0>
+					</a>						
+				</CENTER>
+			</div>	
+		</CENTER>
+	</div>
+
+	<div id=LoadingWaitDividerDiv>
+	</div>
+
+	<div id=LoadingWaitDiv>
+		<BR>
+		<div id=LoadingWaitDiv_Other></div>
+		<BR>
+		<div id=LoadingWaitDiv_TitleDiv></div>
+		<BR>
+		<div id=LoadingWaitDiv_ImgDiv><IMG id=LoadingWaitDiv_Img SRC=""></div>
+		<BR>
+		<div id=LoadingWaitDiv_PresenterDiv></div>
+		<BR>
+		<div id=LoadingWaitDiv_DescDiv></div>
+	</div>	
+</BODY>
+</HTML>

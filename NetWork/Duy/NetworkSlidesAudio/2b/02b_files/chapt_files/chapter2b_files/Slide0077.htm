@@ -1,0 +1,467 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../chapter2b.htm">
+<link rel=Preview href=preview.wmf>
+<link rel=OLE-Object-Data href=oledata.mso>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Part 2: Apprlications </title>
+<meta name=Description content="11/23/2006: DNS : Ví dụ đơn giản">
+<link rel=Stylesheet href="master03_stylesheet.css">
+<![if !ppt]>
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:107% !important;}
+-->
+</style>
+<script src=script.js></script><script><!--
+gUseSldTimings=0;
+str=document.location.hash,idx=str.indexOf('#');if(idx>=0) str=str.substr(1);if (str == "0") g_showAnimation=0;else g_showAnimation=1;
+
+
+//if( !IsNts() ) Redirect( "PPTSld" );
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]><o:shapelayout v:ext="edit">
+ <o:idmap v:ext="edit" data="150"/>
+</o:shapelayout>
+
+<!--[if gte IE 5]>
+<object style="visibility:hidden" id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"
+	codebase="http://download.microsoft.com/download/vizact2000/Install/10/WIN98Me/EN-US/msorun.cab#version=10,0,0,1"></object>
+<![endif]-->
+</head>
+
+<body bgcolor="transparent" style='overflow:hidden' onkeypress="DocumentOnClick()" lang=EN-US style='margin:0px' onclick="DocumentOnClick()"
+onresize="_RSW()" onload="LoadSld()" onkeypresstemp="_KPH()">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:534px;height:400px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"
+ masterhref="master03.xml">
+ <p:shaperangetemp href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#_x0000_s1029"/>
+ <div v:shape="_x0000_s1029" class=O style='text-align:right;position:absolute;
+ top:94.25%;left:60.11%;width:29.77%;height:3.0%'><span style='font-size:58%'>2:
+ Tầng Ứng dụng</span></div>
+ <p:shaperange href="master03.xml#_x0000_s1030"/>
+ <div v:shape="_x0000_s1030" class=O>
+ <div style='text-align:right;position:absolute;top:94.25%;left:91.76%;
+ width:3.18%;height:3.0%'><span style='font-size:58%;mso-field-code:meta16'>7</span><span
+ style='font-size:58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![endif]><p:shaperange href="master03.xml#_x0000_m1026"/><v:shape id="_x0000_s153602"
+  type="#_x0000_m1026" style='position:absolute;left:42pt;top:18pt;width:612pt;
+  height:90pt' o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <o:lock v:ext="edit" text="f"/>
+  <p:placeholder type="title"/></v:shape><p:shaperange
+  href="master03.xml#_x0000_m1027"/><v:shape id="_x0000_s153603" type="#_x0000_m1027"
+  style='position:absolute;left:42pt;top:126pt;width:300pt;height:366pt'
+  o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <o:lock v:ext="edit" text="f"/>
+  <p:placeholder type="body" position="1" size="half"/></v:shape>
+ <div v:shape="_x0000_s153602" class=T style='position:absolute;top:8.25%;
+ left:6.92%;width:83.14%;height:7.5%'><span style='font-size:90%;text-decoration:
+ none'>DNS : Ví dụ đơn giản</span></div>
+ <div v:shape="_x0000_s153603" class=HB>
+ <div style='mso-line-spacing:"90 20 0"'><span style='position:absolute;
+ top:24.0%;left:6.92%;width:47.37%;height:4.75%'><span style='mso-special-format:
+ nobullet;display:none;color:#3333CC;mso-color-index:5;font-family:Wingdings;
+ font-size:70%'>q</span><span style='font-size:92%'>host </span><span
+ style='font-size:92%;color:#3333CC;mso-color-index:5'><b>surf.eurecom.fr</b></span><span
+ style='font-size:92%'> muốn biết </span></span><span style='position:absolute;
+ top:28.25%;left:10.67%;width:36.14%;height:4.75%'><span style='font-size:92%'>địa
+ chỉ IP của </span></span><span style='position:absolute;top:32.75%;left:10.67%;
+ width:36.14%;height:4.75%'><span style='font-size:92%;color:#3333CC;
+ mso-color-index:5'><b>gaia.cs.umass.edu&#13;</b></span></span></div>
+ <div style='mso-line-spacing:"90 20 0"'><span style='position:absolute;
+ top:38.0%;left:6.92%;width:39.88%;height:4.75%'><span style='mso-special-format:
+ nobullet;display:none;color:#3333CC;mso-color-index:5;font-family:Wingdings;
+ font-size:70%'>q</span><span style='font-size:92%;color:red'><b>1</b></span><span
+ style='font-size:92%;color:red'>.</span><span style='font-size:92%'> Hỏi local
+ DNS server </span></span><span style='position:absolute;top:42.5%;left:10.67%;
+ width:36.14%;height:4.75%'><span style='font-size:92%'>(</span><span
+ style='font-size:92%;color:#3333CC;mso-color-index:5'><b>dns.eurecom.fr</b></span><span
+ style='font-size:92%'><b>)</b></span><span style='font-size:92%;display:none'>&#13;</span></span></div>
+ <div style='mso-line-spacing:"90 20 0"'><span style='position:absolute;
+ top:47.75%;left:6.92%;width:39.88%;height:4.75%'><span style='mso-special-format:
+ nobullet;display:none;color:#3333CC;mso-color-index:5;font-family:Wingdings;
+ font-size:70%'>q</span><span style='font-size:92%;color:red'><b>2</b></span><span
+ style='font-size:92%;color:red'>.</span><span style='font-size:92%'> </span><span
+ style='font-size:92%;color:#3333CC;mso-color-index:5'><b>dns.eurecom.fr</b></span><span
+ style='font-size:92%'> hỏi root </span></span><span style='position:absolute;
+ top:52.25%;left:10.67%;width:37.64%;height:4.75%'><span style='font-size:92%'>name
+ server nếu cần thiết&#13;</span></span></div>
+ <div style='mso-line-spacing:"90 20 0"'><span style='position:absolute;
+ top:57.5%;left:6.92%;width:39.88%;height:4.75%'><span style='mso-special-format:
+ nobullet;display:none;color:#3333CC;mso-color-index:5;font-family:Wingdings;
+ font-size:70%'>q</span><span style='font-size:92%;color:red'><b>3</b></span><span
+ style='font-size:92%;color:red'>.</span><span style='font-size:92%'> root name
+ server hỏi </span></span><span style='position:absolute;top:62.0%;left:10.67%;
+ width:38.38%;height:4.75%'><span style='font-size:92%'>authoritative name
+ server, </span></span><span style='position:absolute;top:66.5%;left:10.67%;
+ width:36.14%;height:4.75%'><span style='font-size:92%;color:#3333CC;
+ mso-color-index:5'><b>dns.umass.edu</b></span><span style='font-size:92%'> nếu
+ cần </span></span><span style='position:absolute;top:70.75%;left:10.67%;
+ width:36.14%;height:4.75%'><span style='font-size:92%'>thiết.</span></span></div>
+ </div>
+ <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+  o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn="sum @0 1 0"/>
+   <v:f eqn="sum 0 0 @1"/>
+   <v:f eqn="prod @2 1 2"/>
+   <v:f eqn="prod @3 21600 pixelWidth"/>
+   <v:f eqn="prod @3 21600 pixelHeight"/>
+   <v:f eqn="sum @0 0 1"/>
+   <v:f eqn="prod @6 1 2"/>
+   <v:f eqn="prod @7 21600 pixelWidth"/>
+   <v:f eqn="sum @8 21600 0"/>
+   <v:f eqn="prod @7 21600 pixelHeight"/>
+   <v:f eqn="sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+  <o:lock v:ext="edit" aspectratio="t"/>
+ </v:shapetype><v:shape id="_x0000_s153604" type="#_x0000_t75" style='position:absolute;
+  left:401.875pt;top:365pt;width:65.625pt;height:50.25pt'>
+  <v:imagedata src="slide0077_image025.wmz" o:title=""/>
+ </v:shape><o:OLEObject Type="Embed" ProgID="MS_ClipArt_Gallery.2"
+  ShapeID="_x0000_s153604" DrawAspect="Content" ObjectID="3474">
+  <p:oleclientdata subtype="clipart" menuname="ClipArt"
+   clipboardname="Microsoft ClipArt Gallery"/></o:OLEObject>
+ <![if !vml]><img border=0 v:shapes="_x0000_s153604"
+ src="slide0077_image026.gif" style='position:absolute;top:67.5%;left:55.8%;
+ width:9.17%;height:9.25%'><![endif]><v:shapetype id="_x0000_t202" coordsize="21600,21600"
+  o:spt="202" path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s153605" type="#_x0000_t202" style='position:absolute;
+  left:322.875pt;top:411.25pt;width:158.875pt;height:48.125pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s153606" type="#_x0000_t202" style='position:absolute;
+  left:523.25pt;top:420.875pt;width:178.125pt;height:26.5pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape>
+ <div v:shape="_x0000_s153605" class=O>
+ <div style='text-align:center;position:absolute;top:76.25%;left:44.94%;
+ width:21.91%;height:5.0%'><span style='font-family:"Comic Sans MS";font-size:
+ 75%'>requesting host</span>&#13;</div>
+ <div style='text-align:center;position:absolute;top:81.0%;left:43.82%;
+ width:24.34%;height:3.75%'><span style='font-family:"Courier New";font-size:
+ 67%'><b>surf.eurecom.fr</b></span><span style='font-size:67%;mso-special-format:
+ lastCR;display:none'>&#13;</span></div>
+ </div>
+ <div v:shape="_x0000_s153606" class=O style='text-align:center;position:absolute;
+ top:78.75%;left:71.34%;width:27.52%;height:3.75%'><span style='font-family:
+ "Courier New";font-size:67%'><b>gaia.cs.umass.edu</b></span><span
+ style='font-size:67%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <v:shape id="_x0000_s153607" type="#_x0000_t75" style='position:absolute;
+  left:548.875pt;top:362pt;width:65.625pt;height:50.25pt'>
+  <v:imagedata src="slide0077_image025.wmz" o:title=""/>
+ </v:shape><o:OLEObject Type="Embed" ProgID="MS_ClipArt_Gallery.2"
+  ShapeID="_x0000_s153607" DrawAspect="Content" ObjectID="3475">
+  <p:oleclientdata subtype="clipart" menuname="ClipArt"
+   clipboardname="Microsoft ClipArt Gallery"/></o:OLEObject>
+ <![if !vml]><img border=0 v:shapes="_x0000_s153607"
+ src="slide0077_image027.gif" style='position:absolute;top:67.0%;left:76.21%;
+ width:9.17%;height:9.25%'><![endif]><v:group id="_x0000_s153608" style='position:absolute;
+  left:414.625pt;top:202.375pt;width:29.125pt;height:51.75pt' coordorigin="4180,783"
+  coordsize="150,307">
+  <v:shapetype id="_x0000_t7" coordsize="21600,21600" o:spt="7" adj="5400"
+   path="m@0,l,21600@1,21600,21600,xe">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="val #0"/>
+    <v:f eqn="sum width 0 #0"/>
+    <v:f eqn="prod #0 1 2"/>
+    <v:f eqn="sum width 0 @2"/>
+    <v:f eqn="mid #0 width"/>
+    <v:f eqn="mid @1 0"/>
+    <v:f eqn="prod height width #0"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="sum height 0 @7"/>
+    <v:f eqn="prod width 1 2"/>
+    <v:f eqn="sum #0 0 @9"/>
+    <v:f eqn="if @10 @8 0"/>
+    <v:f eqn="if @10 @7 height"/>
+   </v:formulas>
+   <v:path gradientshapeok="t" o:connecttype="custom" o:connectlocs="@4,0;10800,@11;@3,10800;@5,21600;10800,@12;@2,10800"
+    textboxrect="1800,1800,19800,19800;8100,8100,13500,13500;10800,10800,10800,10800"/>
+   <v:handles>
+    <v:h position="#0,topLeft" xrange="0,21600"/>
+   </v:handles>
+  </v:shapetype><v:shape id="_x0000_s153609" type="#_x0000_t7" style='position:absolute;
+   left:4180;top:1019;width:150;height:71;mso-wrap-style:none;v-text-anchor:middle'
+   adj="8321" fillcolor="#3cc" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:shape><v:rect id="_x0000_s153610" style='position:absolute;left:4256;
+   top:785;width:69;height:236;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#3cc" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:rect id="_x0000_s153611" style='position:absolute;left:4181;
+   top:852;width:95;height:236;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#3cc" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:shape id="_x0000_s153612" type="#_x0000_t7" style='position:absolute;
+   left:4180;top:783;width:150;height:71;mso-wrap-style:none;v-text-anchor:middle'
+   adj="8321" fillcolor="#3cc" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:shape><v:line id="_x0000_s153613" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="4330,788" to="4330,1019"
+   strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s153614" style='position:absolute;flip:x;
+   mso-wrap-style:none;v-text-anchor:middle' from="4276,1019" to="4330,1088"
+   strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:rect id="_x0000_s153615" style='position:absolute;left:4193;
+   top:883;width:63;height:136;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#33c [5]" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:rect id="_x0000_s153616" style='position:absolute;left:4202;
+   top:924;width:48;height:48;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="white [0]" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:rect></v:group><v:shape id="_x0000_s153617" type="#_x0000_t202" style='position:absolute;
+  left:456pt;top:58pt;width:158.375pt;height:28.875pt' filled="f" stroked="f"
+  strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s153618" type="#_x0000_t202" style='position:absolute;
+  left:515.25pt;top:268.375pt;width:204.75pt;height:45.75pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:line id="_x0000_s153619" style='position:absolute;flip:x y;
+  mso-wrap-style:none;v-text-anchor:middle' from="418.5pt,256.5pt" to="418.5pt,5in"
+  strokecolor="red" strokeweight="2.25pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s153620" style='position:absolute;flip:y;
+  mso-wrap-style:none;v-text-anchor:middle' from="427.5pt,123pt" to="499.5pt,199.5pt"
+  strokecolor="red" strokeweight="2.25pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s153621" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="530.25pt,137.25pt" to="574.5pt,200.25pt"
+  strokecolor="red" strokeweight="2.25pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s153622" style='position:absolute;flip:x y;
+  mso-wrap-style:none;v-text-anchor:middle' from="537pt,123.75pt" to="588pt,197.25pt"
+  strokecolor="red" strokeweight="2.25pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s153623" style='position:absolute;flip:x;
+  mso-wrap-style:none;v-text-anchor:middle' from="442.5pt,139.5pt" to="500.25pt,199.5pt"
+  strokecolor="red" strokeweight="2.25pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><v:line id="_x0000_s153624" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="433.5pt,258.75pt" to="434.25pt,363pt"
+  strokecolor="red" strokeweight="2.25pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0
+ v:shapes="_x0000_s153608,_x0000_s153609,_x0000_s153610,_x0000_s153611,_x0000_s153612,_x0000_s153613,_x0000_s153614,_x0000_s153615,_x0000_s153616,_x0000_s153619,_x0000_s153620,_x0000_s153621,_x0000_s153622,_x0000_s153623,_x0000_s153624"
+ src="slide0077_image028.gif" style='position:absolute;top:22.0%;left:57.49%;
+ width:24.71%;height:45.75%'><![endif]>
+ <div v:shape="_x0000_s153617" class=O style='text-align:center;position:absolute;
+ top:11.0%;left:62.35%;width:24.15%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>root name server</span><span style='font-size:67%;mso-special-format:
+ lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s153618" class=O>
+ <div style='text-align:center;position:absolute;top:50.0%;left:69.85%;
+ width:31.83%;height:4.25%'><span style='font-family:"Comic Sans MS";
+ font-size:67%'>authorititive name server</span>&#13;</div>
+ <div style='text-align:center;position:absolute;top:54.0%;left:72.65%;
+ width:26.59%;height:3.75%'><span style='font-family:"Courier New";font-size:
+ 67%'><b>dns.umass.edu</b></span><span style='font-size:67%;mso-special-format:
+ lastCR;display:none'>&#13;</span></div>
+ </div>
+ <v:group id="_x0000_s153625" style='position:absolute;left:348.625pt;top:266.5pt;
+  width:160pt;height:48.125pt' coordorigin="2789,2132" coordsize="1280,385">
+  <v:rect id="_x0000_s153626" style='position:absolute;left:2838;top:2178;
+   width:1182;height:300;mso-wrap-style:none;v-text-anchor:middle' fillcolor="white [0]"
+   stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:shape id="_x0000_s153627" type="#_x0000_t202" style='position:absolute;
+   left:2789;top:2132;width:1280;height:385;mso-wrap-style:none;
+   v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape></v:group><v:shape id="_x0000_s153628" type="#_x0000_t202" style='position:absolute;
+  left:395.75pt;top:323.875pt;width:24.5pt;height:28.875pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s153629" type="#_x0000_t202" style='position:absolute;
+  left:438.5pt;top:140.125pt;width:24.5pt;height:28.875pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s153630" type="#_x0000_t202" style='position:absolute;
+  left:528.5pt;top:159.625pt;width:24.5pt;height:28.875pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s153631" type="#_x0000_t202" style='position:absolute;
+  left:558.5pt;top:140.125pt;width:24.5pt;height:28.875pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s153632" type="#_x0000_t202" style='position:absolute;
+  left:467.75pt;top:165.625pt;width:24.5pt;height:28.875pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s153633" type="#_x0000_t202" style='position:absolute;
+  left:437.75pt;top:326.875pt;width:24.5pt;height:28.875pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><![if !vml]><img border=0
+ v:shapes="_x0000_s153625,_x0000_s153626,_x0000_s153627"
+ src="slide0077_image029.gif" style='position:absolute;top:49.25%;left:48.5%;
+ width:22.47%;height:9.25%'><![endif]>
+ <div v:shape="_x0000_s153627" class=O>
+ <div style='text-align:center;position:absolute;top:49.5%;left:47.37%;
+ width:24.53%;height:5.0%'><span style='font-family:"Comic Sans MS";font-size:
+ 75%'>local name server</span>&#13;</div>
+ <div style='text-align:center;position:absolute;top:54.0%;left:48.31%;
+ width:22.65%;height:3.75%'><span style='font-family:"Courier New";font-size:
+ 67%'><b>dns.eurecom.fr</b></span><span style='font-size:67%;mso-special-format:
+ lastCR;display:none'>&#13;</span></div>
+ </div>
+ <div v:shape="_x0000_s153628" class=O style='text-align:center;position:absolute;
+ top:61.0%;left:55.8%;width:1.87%;height:4.0%'><span style='font-family:Arial;
+ font-size:75%;color:red'>1</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s153629" class=O style='text-align:center;position:absolute;
+ top:26.75%;left:61.79%;width:1.87%;height:4.0%'><span style='font-family:Arial;
+ font-size:75%;color:red'>2</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s153630" class=O style='text-align:center;position:absolute;
+ top:30.5%;left:74.34%;width:1.87%;height:4.0%'><span style='font-family:Arial;
+ font-size:75%;color:red'>3</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s153631" class=O style='text-align:center;position:absolute;
+ top:26.75%;left:78.46%;width:1.87%;height:4.0%'><span style='font-family:Arial;
+ font-size:75%;color:red'>4</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s153632" class=O style='text-align:center;position:absolute;
+ top:31.5%;left:65.73%;width:1.87%;height:4.0%'><span style='font-family:Arial;
+ font-size:75%;color:red'>5</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s153633" class=O style='text-align:center;position:absolute;
+ top:61.5%;left:61.61%;width:1.87%;height:4.0%'><span style='font-family:Arial;
+ font-size:75%;color:red'>6</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ <v:group id="_x0000_s153634" style='position:absolute;left:502.375pt;top:90.625pt;
+  width:29.125pt;height:51.75pt' coordorigin="4180,783" coordsize="150,307">
+  <v:shape id="_x0000_s153635" type="#_x0000_t7" style='position:absolute;
+   left:4180;top:1019;width:150;height:71;mso-wrap-style:none;v-text-anchor:middle'
+   adj="8321" fillcolor="#3cc" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:shape><v:rect id="_x0000_s153636" style='position:absolute;left:4256;
+   top:785;width:69;height:236;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#3cc" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:rect id="_x0000_s153637" style='position:absolute;left:4181;
+   top:852;width:95;height:236;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#3cc" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:shape id="_x0000_s153638" type="#_x0000_t7" style='position:absolute;
+   left:4180;top:783;width:150;height:71;mso-wrap-style:none;v-text-anchor:middle'
+   adj="8321" fillcolor="#3cc" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:shape><v:line id="_x0000_s153639" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="4330,788" to="4330,1019"
+   strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s153640" style='position:absolute;flip:x;
+   mso-wrap-style:none;v-text-anchor:middle' from="4276,1019" to="4330,1088"
+   strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:rect id="_x0000_s153641" style='position:absolute;left:4193;
+   top:883;width:63;height:136;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#33c [5]" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:rect id="_x0000_s153642" style='position:absolute;left:4202;
+   top:924;width:48;height:48;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="white [0]" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:rect></v:group><![if !vml]><img border=0
+ v:shapes="_x0000_s153634,_x0000_s153635,_x0000_s153636,_x0000_s153637,_x0000_s153638,_x0000_s153639,_x0000_s153640,_x0000_s153641,_x0000_s153642"
+ src="slide0077_image030.gif" style='position:absolute;top:16.75%;left:69.66%;
+ width:4.68%;height:10.0%'><![endif]><v:group id="_x0000_s153643" style='position:absolute;
+  left:567.625pt;top:203.125pt;width:29.125pt;height:51.75pt' coordorigin="4180,783"
+  coordsize="150,307">
+  <v:shape id="_x0000_s153644" type="#_x0000_t7" style='position:absolute;
+   left:4180;top:1019;width:150;height:71;mso-wrap-style:none;v-text-anchor:middle'
+   adj="8321" fillcolor="#3cc" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:shape><v:rect id="_x0000_s153645" style='position:absolute;left:4256;
+   top:785;width:69;height:236;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#3cc" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:rect id="_x0000_s153646" style='position:absolute;left:4181;
+   top:852;width:95;height:236;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#3cc" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:shape id="_x0000_s153647" type="#_x0000_t7" style='position:absolute;
+   left:4180;top:783;width:150;height:71;mso-wrap-style:none;v-text-anchor:middle'
+   adj="8321" fillcolor="#3cc" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:shape><v:line id="_x0000_s153648" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="4330,788" to="4330,1019"
+   strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s153649" style='position:absolute;flip:x;
+   mso-wrap-style:none;v-text-anchor:middle' from="4276,1019" to="4330,1088"
+   strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:rect id="_x0000_s153650" style='position:absolute;left:4193;
+   top:883;width:63;height:136;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#33c [5]" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:rect id="_x0000_s153651" style='position:absolute;left:4202;
+   top:924;width:48;height:48;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="white [0]" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+  </v:rect></v:group><![if !vml]><img border=0
+ v:shapes="_x0000_s153643,_x0000_s153644,_x0000_s153645,_x0000_s153646,_x0000_s153647,_x0000_s153648,_x0000_s153649,_x0000_s153650,_x0000_s153651"
+ src="slide0077_image031.gif" style='position:absolute;top:37.5%;left:78.65%;
+ width:4.68%;height:10.0%'><![endif]></p:slide></div>
+
+</body>
+
+</html>

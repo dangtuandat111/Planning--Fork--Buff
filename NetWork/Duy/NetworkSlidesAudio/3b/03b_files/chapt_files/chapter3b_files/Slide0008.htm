@@ -1,0 +1,210 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../chapter3b.htm">
+<link rel=Preview href=preview.wmf>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Part I: Introduction</title>
+<meta name=Description
+content="11/25/2006: TCP: Chính sách ACK [RFC 1122, RFC 2581]">
+<link rel=Stylesheet href="master03_stylesheet.css">
+<![if !ppt]>
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:107% !important;}
+-->
+</style>
+<script src=script.js></script><script><!--
+gUseSldTimings=0;
+str=document.location.hash,idx=str.indexOf('#');if(idx>=0) str=str.substr(1);if (str == "0") g_showAnimation=0;else g_showAnimation=1;
+
+
+//if( !IsNts() ) Redirect( "PPTSld" );
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]><o:shapelayout v:ext="edit">
+ <o:idmap v:ext="edit" data="110"/>
+</o:shapelayout>
+
+<!--[if gte IE 5]>
+<object style="visibility:hidden" id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"
+	codebase="http://download.microsoft.com/download/vizact2000/Install/10/WIN98Me/EN-US/msorun.cab#version=10,0,0,1"></object>
+<![endif]-->
+</head>
+
+<body bgcolor="transparent" style='overflow:hidden' onkeypress="DocumentOnClick()" lang=EN-US style='margin:0px' onclick="DocumentOnClick()"
+onresize="_RSW()" onload="LoadSld()" onkeypresstemp="_KPH()">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:534px;height:400px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"
+ masterhref="master03.xml">
+ <p:shaperangetemp href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#_x0000_s1029"/>
+ <div v:shape="_x0000_s1029" class=O style='text-align:right;position:absolute;
+ top:94.25%;left:60.11%;width:29.77%;height:3.0%'><span style='font-size:58%'>3:
+ Transport Layer</span></div>
+ <p:shaperange href="master03.xml#_x0000_s1030"/>
+ <div v:shape="_x0000_s1030" class=O>
+ <div style='text-align:right;position:absolute;top:94.25%;left:90.26%;
+ width:5.61%;height:3.0%'><span style='font-size:58%'>3b-</span><span
+ style='font-size:58%;mso-field-code:meta16'>8</span><span style='font-size:
+ 58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![endif]><p:shaperange href="master03.xml#_x0000_m1026"/><v:shape id="_x0000_s112642"
+  type="#_x0000_m1026" style='position:absolute;left:42pt;top:18pt;width:612pt;
+  height:90pt' o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <p:placeholder type="title"/></v:shape><v:shapetype id="_x0000_t202"
+  coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s112643" type="#_x0000_t202" style='position:absolute;
+  left:53.25pt;top:122.375pt;width:261.5pt;height:394pt' filled="f" stroked="f"
+  strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s112644" type="#_x0000_t202" style='position:absolute;
+  left:355.5pt;top:121.625pt;width:314.5pt;height:394pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape>
+ <div v:shape="_x0000_s112642" class=T style='position:absolute;top:7.75%;
+ left:6.92%;width:93.63%;height:8.5%'><span style='font-size:80%'>TCP: Chính
+ sách ACK</span><span style='text-decoration:none'> </span><span
+ style='font-size:60%;text-decoration:none'>[RFC 1122, RFC 2581]</span><span
+ style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s112643" class=O>
+ <div style='position:absolute;top:23.5%;left:8.42%;width:34.45%;height:5.25%'><span
+ style='font-family:Arial;color:red'><b>Sự kiện</b></span><span
+ style='font-family:Arial;font-size:75%;display:none'><b>&#13;</b></span></div>
+ <div style='position:absolute;top:29.0%;left:8.42%;width:34.45%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'><b>&#13;</b></span></div>
+ <div style='position:absolute;top:33.0%;left:8.42%;width:39.51%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>Segment theo đúng STT đến, &#13;</span></div>
+ <div style='position:absolute;top:37.0%;left:8.42%;width:34.45%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>Không thiếu dữ liệu,&#13;</span></div>
+ <div style='position:absolute;top:41.0%;left:8.42%;width:34.45%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>Không có ACK treo&#13;</span></div>
+ <div style='position:absolute;top:45.0%;left:8.42%;width:34.45%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:49.0%;left:8.42%;width:39.51%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>Segment theo đúng STT đến, &#13;</span></div>
+ <div style='position:absolute;top:53.0%;left:8.42%;width:34.45%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>Không thiếu dữ liệu,&#13;</span></div>
+ <div style='position:absolute;top:57.0%;left:8.42%;width:34.45%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>Có một ACK bị treo&#13;</span></div>
+ <div style='position:absolute;top:61.0%;left:8.42%;width:34.45%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:65.0%;left:8.42%;width:38.76%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>Segment theo đúng STT đến&#13;</span></div>
+ <span style='position:absolute;top:69.0%;left:8.42%;width:36.32%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>(STT đến lớn hơn số mong </span></span><span
+ style='position:absolute;top:73.0%;left:8.42%;width:34.45%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>đợi). Thiếu dữ liệu&#13;</span></span>
+ <div style='position:absolute;top:77.0%;left:8.42%;width:34.45%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <span style='position:absolute;top:81.0%;left:8.42%;width:35.58%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>Một segment đến điền vào </span></span><span
+ style='position:absolute;top:85.0%;left:8.42%;width:34.45%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>đoạn dữ liệu bị khuyết&#13;</span></span>
+ <div style='position:absolute;top:89.0%;left:8.42%;width:34.45%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:92.75%;left:8.42%;width:34.45%;height:2.25%'><span
+ style='font-size:42%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <div v:shape="_x0000_s112644" class=O>
+ <div style='position:absolute;top:23.5%;left:50.37%;width:41.76%;height:5.25%'><span
+ style='font-family:Arial;color:red'><b>Bên nhận (TCP)</b></span><span
+ style='font-family:Arial;font-size:75%;display:none'><b>&#13;</b></span></div>
+ <div style='position:absolute;top:28.75%;left:50.37%;width:41.76%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:32.75%;left:50.37%;width:46.81%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>Trì hoãn ACK. Đợi segment kế tiếp&#13;</span></div>
+ <div style='position:absolute;top:36.75%;left:50.37%;width:50.18%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>trong 500ms. Nếu không có
+ segment,&#13;</span></div>
+ <div style='position:absolute;top:40.75%;left:50.37%;width:41.76%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>gửi ACK&#13;</span></div>
+ <div style='position:absolute;top:44.75%;left:50.37%;width:41.76%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:48.75%;left:50.37%;width:48.31%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>Ngay lập tức gửi một ACK mang giá&#13;</span></div>
+ <div style='position:absolute;top:52.75%;left:50.37%;width:41.76%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>trị tích lũy&#13;</span></div>
+ <div style='position:absolute;top:56.75%;left:50.37%;width:41.76%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:60.75%;left:50.37%;width:41.76%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:64.75%;left:50.37%;width:43.25%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>Gửi ACK trùng lặp, chỉ STT của &#13;</span></div>
+ <div style='position:absolute;top:68.75%;left:50.37%;width:41.76%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>byte dữ liệu mình muốn nhận&#13;</span></div>
+ <div style='position:absolute;top:72.75%;left:50.37%;width:41.76%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:76.75%;left:50.37%;width:41.76%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:80.75%;left:50.37%;width:50.18%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>Biên nhận STT bên nhận mong muốn&#13;</span></div>
+ <div style='position:absolute;top:84.75%;left:50.37%;width:41.76%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>nhận&#13;</span></div>
+ <div style='position:absolute;top:88.75%;left:50.37%;width:41.76%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:92.75%;left:50.37%;width:41.76%;height:2.25%'><span
+ style='font-size:42%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <v:line id="_x0000_s112645" style='position:absolute;mso-wrap-style:none;
+  v-text-anchor:middle' from="69pt,158.25pt" to="657pt,159pt" strokecolor="#33c [5]"
+  strokeweight="2.25pt">
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0 v:shapes="_x0000_s112645"
+ src="slide0008_image024.gif" style='position:absolute;top:29.0%;left:9.36%;
+ width:82.2%;height:1.0%'><![endif]><v:line id="_x0000_s112646" style='position:absolute;
+  flip:y;mso-wrap-style:none;v-text-anchor:middle' from="66.75pt,251.25pt"
+  to="655.5pt,252pt" strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0 v:shapes="_x0000_s112646"
+ src="slide0008_image025.gif" style='position:absolute;top:46.25%;left:9.17%;
+ width:82.39%;height:1.0%'><![endif]><v:line id="_x0000_s112647" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="67.5pt,339pt" to="658.5pt,339pt"
+  strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0 v:shapes="_x0000_s112647"
+ src="slide0008_image026.gif" style='position:absolute;top:62.5%;left:9.17%;
+ width:82.77%;height:.75%'><![endif]><v:line id="_x0000_s112648" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="68.25pt,426pt" to="657.75pt,426.75pt"
+  strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0 v:shapes="_x0000_s112648"
+ src="slide0008_image027.gif" style='position:absolute;top:78.75%;left:9.36%;
+ width:82.58%;height:1.0%'><![endif]><v:line id="_x0000_s112649" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="340.5pt,134.25pt" to="340.5pt,477pt"
+  strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0 v:shapes="_x0000_s112649"
+ src="slide0008_image028.gif" style='position:absolute;top:24.75%;left:47.19%;
+ width:.56%;height:64.25%'><![endif]></p:slide></div>
+
+</body>
+
+</html>

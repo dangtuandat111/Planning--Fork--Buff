@@ -1,0 +1,224 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../chapter2b.htm">
+<link rel=Preview href=preview.wmf>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Part 2: Apprlications </title>
+<meta name=Description content="11/23/2006: Ví dụ Java Client (TCP)">
+<link rel=Stylesheet href="master03_stylesheet.css">
+<![if !ppt]>
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:107% !important;}
+-->
+</style>
+<script src=script.js></script><script><!--
+gUseSldTimings=0;
+str=document.location.hash,idx=str.indexOf('#');if(idx>=0) str=str.substr(1);if (str == "0") g_showAnimation=0;else g_showAnimation=1;
+
+
+//if( !IsNts() ) Redirect( "PPTSld" );
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]><o:shapelayout v:ext="edit">
+ <o:idmap v:ext="edit" data="176"/>
+</o:shapelayout>
+
+<!--[if gte IE 5]>
+<object style="visibility:hidden" id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"
+	codebase="http://download.microsoft.com/download/vizact2000/Install/10/WIN98Me/EN-US/msorun.cab#version=10,0,0,1"></object>
+<![endif]-->
+</head>
+
+<body bgcolor="transparent" style='overflow:hidden' onkeypress="DocumentOnClick()" lang=EN-US style='margin:0px' onclick="DocumentOnClick()"
+onresize="_RSW()" onload="LoadSld()" onkeypresstemp="_KPH()">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:534px;height:400px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"
+ masterhref="master03.xml">
+ <p:shaperangetemp href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#_x0000_s1029"/>
+ <div v:shape="_x0000_s1029" class=O style='text-align:right;position:absolute;
+ top:94.25%;left:60.11%;width:29.77%;height:3.0%'><span style='font-size:58%'>2:
+ Tầng Ứng dụng</span></div>
+ <p:shaperange href="master03.xml#_x0000_s1030"/>
+ <div v:shape="_x0000_s1030" class=O>
+ <div style='text-align:right;position:absolute;top:94.25%;left:91.76%;
+ width:3.18%;height:3.0%'><span style='font-size:58%;mso-field-code:meta16'>26</span><span
+ style='font-size:58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![endif]><p:shaperange href="master03.xml#_x0000_m1026"/><v:shape id="_x0000_s180226"
+  type="#_x0000_m1026" style='position:absolute;left:42pt;top:18pt;width:612pt;
+  height:90pt' o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <o:lock v:ext="edit" text="f"/>
+  <p:placeholder type="title"/></v:shape><v:rect id="_x0000_s180227" style='position:absolute;
+  left:172.125pt;top:118.75pt;width:537.5pt;height:394.125pt;mso-wrap-style:none;
+  v-text-anchor:middle' filled="f" stroked="f">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:rect><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"
+  path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s180228" type="#_x0000_t202" style='position:absolute;
+  left:26.125pt;top:309.625pt;width:149.75pt;height:31.25pt;mso-wrap-style:none;
+  v-text-anchor:middle' filled="f" stroked="f">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s180229" type="#_x0000_t202" style='position:absolute;
+  left:15.125pt;top:363.25pt;width:160.875pt;height:55.25pt;mso-wrap-style:none;
+  v-text-anchor:middle' filled="f" stroked="f">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s180230" type="#_x0000_t202" style='position:absolute;
+  left:-9.75pt;top:435.25pt;width:184.25pt;height:55.25pt;mso-wrap-style:none;
+  v-text-anchor:middle' filled="f" stroked="f">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape>
+ <div v:shape="_x0000_s180226" class=T style='text-align:center;position:absolute;
+ top:8.25%;left:6.92%;width:83.14%;height:7.5%'><span style='font-size:90%;
+ text-decoration:none'>Ví dụ Java Client (TCP)</span></div>
+ <div v:shape="_x0000_s180227" class=O>
+ <div style='position:absolute;top:23.0%;left:24.9%;width:72.84%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>import java.io.*; &#13;</span></div>
+ <div style='position:absolute;top:27.0%;left:24.9%;width:72.84%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>import java.net.*; &#13;</span></div>
+ <div style='position:absolute;top:31.0%;left:24.9%;width:72.84%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'>class TCPClient { &#13;</span></div>
+ <div style='position:absolute;top:35.0%;left:24.9%;width:72.84%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:39.0%;left:24.9%;width:75.46%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span style='mso-spacerun:yes'>   
+ </span>public static void main(String argv[]) throws Exception &#13;</span></div>
+ <div style='position:absolute;top:43.0%;left:24.9%;width:72.84%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span style='mso-spacerun:yes'>   
+ </span>{ &#13;</span></div>
+ <div style='position:absolute;top:47.0%;left:24.9%;width:72.84%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span style='mso-spacerun:yes'>       
+ </span>String sentence; &#13;</span></div>
+ <div style='position:absolute;top:51.0%;left:24.9%;width:72.84%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span style='mso-spacerun:yes'>       
+ </span>String modifiedSentence; &#13;</span></div>
+ <div style='position:absolute;top:55.0%;left:24.9%;width:72.84%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:59.0%;left:24.9%;width:72.84%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span style='mso-spacerun:yes'>       
+ </span>BufferedReader inFromUser = &#13;</span></div>
+ <div style='position:absolute;top:63.0%;left:24.9%;width:87.45%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span
+ style='mso-spacerun:yes'>          </span>new BufferedReader(new
+ InputStreamReader(System.in)); &#13;</span></div>
+ <div style='position:absolute;top:67.0%;left:24.9%;width:72.84%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:71.0%;left:24.9%;width:80.14%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span style='mso-spacerun:yes'>       
+ </span>Socket clientSocket = new Socket (&quot;hostname&quot;, 6789); &#13;</span></div>
+ <div style='position:absolute;top:75.0%;left:24.9%;width:72.84%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:79.0%;left:24.9%;width:72.84%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span style='mso-spacerun:yes'>       
+ </span>DataOutputStream outToServer = &#13;</span></div>
+ <div style='position:absolute;top:83.0%;left:24.9%;width:85.2%;height:4.0%'><span
+ style='font-family:Arial;font-size:75%'><span
+ style='mso-spacerun:yes'>          </span>new
+ DataOutputStream(clientSocket.getOutputStream());</span><span
+ style='font-size:75%'> &#13;</span></div>
+ <div style='position:absolute;top:87.0%;left:24.9%;width:72.84%;height:4.0%'><span
+ style='font-size:75%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:91.0%;left:24.9%;width:72.84%;height:3.5%'><span
+ style='font-size:67%'><span style='mso-spacerun:yes'>        </span></span></div>
+ </div>
+ <div v:shape="_x0000_s180228" class=O style='text-align:right;position:absolute;
+ top:58.25%;left:.93%;width:22.65%;height:4.25%'><span style='font-size:83%;
+ color:#3333CC;mso-color-index:5'>Tạo input stream</span></div>
+ <div v:shape="_x0000_s180229" class=O>
+ <div style='text-align:right;position:absolute;top:68.25%;left:-.93%;
+ width:24.53%;height:4.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'>Tạo client socket, &#13;</span></div>
+ <div style='text-align:right;position:absolute;top:72.75%;left:.93%;
+ width:22.65%;height:4.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'>kết nối tới server</span></div>
+ </div>
+ <div v:shape="_x0000_s180230" class=O>
+ <div style='text-align:right;position:absolute;top:81.5%;left:-1.87%;
+ width:25.28%;height:4.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'>Tạo output stream,&#13;</span></div>
+ <div style='text-align:right;position:absolute;top:86.0%;left:-5.05%;
+ width:28.46%;height:4.25%'><span style='font-size:83%;color:#3333CC;
+ mso-color-index:5'><span style='mso-spacerun:yes'> </span>đính kèm vào socket</span></div>
+ </div>
+ <v:polyline id="_x0000_s180231" style='position:absolute;mso-wrap-style:none;
+  mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;v-text-anchor:middle' points="163.875pt,306.375pt,173.625pt,306.375pt,173.625pt,349.125pt,164.625pt,349.125pt"
+  coordsize="78,342" filled="f" strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:shadow color="gray [2]"/>
+  <v:path arrowok="t"/>
+ </v:polyline><![if !vml]><img border=0 v:shapes="_x0000_s180231"
+ src="slide0096_image071.gif" style='position:absolute;top:56.5%;left:22.65%;
+ width:2.05%;height:8.75%'><![endif]><v:line id="_x0000_s180232" style='position:absolute;
+  flip:y;v-text-anchor:middle' from="174.375pt,327pt" to="202.875pt,327.375pt"
+  strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0 v:shapes="_x0000_s180232"
+ src="slide0096_image072.gif" style='position:absolute;top:59.75%;left:23.97%;
+ width:4.68%;height:2.25%'><![endif]><v:shape id="_x0000_s180233" style='position:absolute;
+  left:163.875pt;top:362.625pt;width:9.75pt;height:60.375pt;mso-wrap-style:square;
+  mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;v-text-anchor:middle' coordsize="78,342" path="m,l78,r,342l6,342e"
+  filled="f" strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:shadow color="gray [2]"/>
+  <v:path arrowok="t"/>
+ </v:shape><![if !vml]><img border=0 v:shapes="_x0000_s180233"
+ src="slide0096_image073.gif" style='position:absolute;top:67.0%;left:22.65%;
+ width:2.05%;height:12.0%'><![endif]><v:line id="_x0000_s180234" style='position:absolute;
+  v-text-anchor:middle' from="174pt,392.75pt" to="207.375pt,393pt"
+  strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0 v:shapes="_x0000_s180234"
+ src="slide0096_image074.gif" style='position:absolute;top:72.0%;left:23.97%;
+ width:5.24%;height:2.25%'><![endif]><v:shape id="_x0000_s180235" style='position:absolute;
+  left:166.125pt;top:434.625pt;width:9.75pt;height:63.375pt;mso-wrap-style:square;
+  mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;v-text-anchor:middle' coordsize="78,342" path="m,l78,r,342l6,342e"
+  filled="f" strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:shadow color="gray [2]"/>
+  <v:path arrowok="t"/>
+ </v:shape><![if !vml]><img border=0 v:shapes="_x0000_s180235"
+ src="slide0096_image075.gif" style='position:absolute;top:80.25%;left:22.84%;
+ width:2.05%;height:12.5%'><![endif]><v:line id="_x0000_s180236" style='position:absolute;
+  flip:y;v-text-anchor:middle' from="176.25pt,442.5pt" to="204.75pt,443.625pt"
+  strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+ </v:line><![if !vml]><img border=0 v:shapes="_x0000_s180236"
+ src="slide0096_image076.gif" style='position:absolute;top:81.0%;left:24.34%;
+ width:4.68%;height:2.25%'><![endif]></p:slide></div>
+
+</body>
+
+</html>

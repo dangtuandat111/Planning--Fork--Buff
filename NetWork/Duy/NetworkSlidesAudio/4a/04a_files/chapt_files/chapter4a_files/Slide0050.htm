@@ -1,0 +1,282 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../chapter4a.htm">
+<link rel=Preview href=preview.wmf>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Part I: Introduction</title>
+<meta name=Description content="12/4/2006: Thảo luận về Thuật toán Dijsktra">
+<link rel=Stylesheet href="master03_stylesheet.css">
+<![if !ppt]>
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:107% !important;}
+-->
+</style>
+<script src=script.js></script><script><!--
+gUseSldTimings=0;
+str=document.location.hash,idx=str.indexOf('#');if(idx>=0) str=str.substr(1);if (str == "0") g_showAnimation=0;else g_showAnimation=1;
+
+
+//if( !IsNts() ) Redirect( "PPTSld" );
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]>
+
+<!--[if gte IE 5]>
+<object style="visibility:hidden" id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"
+	codebase="http://download.microsoft.com/download/vizact2000/Install/10/WIN98Me/EN-US/msorun.cab#version=10,0,0,1"></object>
+<![endif]-->
+</head>
+
+<body bgcolor="transparent" style='overflow:hidden' onkeypress="DocumentOnClick()" lang=EN-US style='margin:0px' onclick="DocumentOnClick()"
+onresize="_RSW()" onload="LoadSld()" onkeypresstemp="_KPH()">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:534px;height:400px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"
+ masterhref="master03.xml" href="slide0050.xml">
+ <p:shaperangetemp href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#_x0000_s1029"/>
+ <div v:shape="_x0000_s1029" class=O style='text-align:right;position:absolute;
+ top:94.25%;left:60.11%;width:29.77%;height:3.0%'><span style='font-size:58%'>4:
+ Network Layer</span></div>
+ <p:shaperange href="master03.xml#_x0000_s1030"/>
+ <div v:shape="_x0000_s1030" class=O>
+ <div style='text-align:right;position:absolute;top:94.25%;left:90.26%;
+ width:5.61%;height:3.0%'><span style='font-size:58%'>4a-</span><span
+ style='font-size:58%;mso-field-code:meta16'>19</span><span style='font-size:
+ 58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![endif]><p:shaperange href="master03.xml#_x0000_m1026"/><p:shaperange
+  href="master03.xml#_x0000_m1027"/><p:shaperange
+  href="slide0050.xml#_x0000_s119810"/><![if !vml]><img border=0
+ v:shapes="_x0000_s119814,_x0000_s119815,_x0000_s119883,_x0000_s119816,_x0000_s119817,_x0000_s119818,_x0000_s119819,_x0000_s119820,_x0000_s119856,_x0000_s119857,_x0000_s119887,_x0000_s119821,_x0000_s119822,_x0000_s119823,_x0000_s119824,_x0000_s119825,_x0000_s119862,_x0000_s119863,_x0000_s119886,_x0000_s119831,_x0000_s119832,_x0000_s119833,_x0000_s119834,_x0000_s119835,_x0000_s119865,_x0000_s119866,_x0000_s119884,_x0000_s119826,_x0000_s119827,_x0000_s119828,_x0000_s119829,_x0000_s119830,_x0000_s119868,_x0000_s119869"
+ src="slide0050_image078.gif" style='position:absolute;top:62.25%;left:4.86%;
+ width:21.91%;height:20.25%'><![endif]>
+ <div v:shape="_x0000_s119810" class=T style='position:absolute;top:8.25%;
+ left:6.92%;width:86.32%;height:7.5%'><span style='font-size:90%'>Thảo luận về
+ Thuật toán Dijsktra</span></div>
+ <div v:shape="_x0000_s119811" class=HB>
+ <div style='position:absolute;top:21.0%;left:7.11%;width:85.58%;height:5.25%'><span
+ style='mso-special-format:nobullet;display:none;color:#3333CC;mso-color-index:
+ 5;font-family:ZapfDingbats;font-size:85%'>r</span><span style='color:red'><b>Độ
+ phức tạp Thuật toán</b></span><span style='color:red'>: </span>n nút&#13;</div>
+ <div style='position:absolute;top:27.5%;left:7.11%;width:101.49%;height:5.25%'><span
+ style='position:absolute;top:0%;left:3.69%;width:96.3%;height:100.0%'><span
+ class=HBB style='position:absolute;left:-3.83%;top:.16em'>r</span>Mỗi vòng
+ lặp: Cần kiểm tra tất cả các nút w không ở trong N&#13;</span></div>
+ <div style='position:absolute;top:33.75%;left:7.11%;width:85.58%;height:5.25%'><span
+ style='position:absolute;top:0%;left:4.37%;width:95.62%;height:100.0%'><span
+ class=HBB style='position:absolute;left:-4.57%;top:.16em'>r</span>n*(n+1)/2 :
+ O(n**2)&#13;</span></div>
+ <div style='position:absolute;top:40.25%;left:7.11%;width:85.58%;height:5.25%'><span
+ style='position:absolute;top:0%;left:4.37%;width:95.62%;height:100.0%'><span
+ class=HBB style='position:absolute;left:-4.57%;top:.16em'>r</span>Bằng thuật
+ toán “mịn” hơn: O(nlogn)&#13;</span></div>
+ <div style='mso-line-spacing:"100 40 0";position:absolute;top:47.5%;
+ left:7.11%;width:85.58%;height:5.25%'><span style='mso-special-format:nobullet;
+ display:none;color:#3333CC;mso-color-index:5;font-family:ZapfDingbats;
+ font-size:85%'>r</span><span style='color:red'><b>Tình huống Dao động:</b></span><b>&#13;</b></div>
+ <div style='position:absolute;top:53.75%;left:7.11%;width:87.07%;height:4.25%'><span
+ style='position:absolute;top:0%;left:4.3%;width:95.69%;height:100.0%'><span
+ style='font-size:83%'><span class=HBB style='position:absolute;left:-4.49%;
+ top:.16em'>r</span></span><span style='font-size:83%'>Ví dụ khi Chi phí kênh
+ truyền = khối lượng dữ liệu truyền qua</span></span></div>
+ </div>
+ <div v:shape="_x0000_s119857" class=O style='text-align:center;position:absolute;
+ top:62.75%;left:14.04%;width:2.62%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>A</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119863" class=O style='text-align:center;position:absolute;
+ top:68.75%;left:7.3%;width:2.62%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>D</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119866" class=O style='text-align:center;position:absolute;
+ top:75.5%;left:14.23%;width:2.24%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>C</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119869" class=O style='text-align:center;position:absolute;
+ top:69.0%;left:21.34%;width:2.24%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>B</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119878" class=O style='text-align:center;position:absolute;
+ top:64.5%;left:10.11%;width:1.49%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>1</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <p:shaperange href="slide0050.xml#_x0000_s119888"/><![if !vml]><img border=0
+ v:shapes="_x0000_s119888,_x0000_s119889,_x0000_s119890,_x0000_s119894,_x0000_s119896,_x0000_s119898"
+ src="slide0050_image079.gif" style='position:absolute;top:66.5%;left:5.61%;
+ width:17.97%;height:19.75%'><![endif]>
+ <div v:shape="_x0000_s119891" class=O style='text-align:center;position:absolute;
+ top:65.25%;left:18.72%;width:4.68%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>1+e</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119892" class=O style='text-align:center;position:absolute;
+ top:73.25%;left:19.1%;width:1.87%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>e</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119893" class=O style='text-align:center;position:absolute;
+ top:73.75%;left:9.55%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>0</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119895" class=O style='text-align:center;position:absolute;
+ top:83.25%;left:13.29%;width:1.87%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%;color:red'>e</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119897" class=O style='text-align:center;position:absolute;
+ top:77.5%;left:5.24%;width:1.49%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%;color:red'>1</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119899" class=O style='text-align:center;position:absolute;
+ top:79.0%;left:22.09%;width:1.49%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%;color:red'>1</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ <p:shaperange href="slide0050.xml#_x0000_s119900"/><![if !vml]><img border=0
+ v:shapes="_x0000_s119900,_x0000_s119902,_x0000_s120015,_x0000_s119907,_x0000_s119908,_x0000_s119910,_x0000_s119911,_x0000_s119912,_x0000_s119913,_x0000_s119914,_x0000_s119916,_x0000_s119917,_x0000_s119919,_x0000_s119920,_x0000_s119921,_x0000_s119922,_x0000_s119923,_x0000_s119925,_x0000_s119926,_x0000_s119929,_x0000_s119930,_x0000_s119931,_x0000_s119932,_x0000_s119933,_x0000_s119935,_x0000_s119936,_x0000_s119938,_x0000_s119939,_x0000_s119940,_x0000_s119941,_x0000_s119942,_x0000_s119944,_x0000_s119945,_x0000_s119946,_x0000_s119947,_x0000_s119948,_x0000_s119949,_x0000_s119950,_x0000_s119951,_x0000_s119952,_x0000_s119959,_x0000_s119960,_x0000_s119961,_x0000_s119962,_x0000_s120017,_x0000_s120018,_x0000_s120019,_x0000_s120020,_x0000_s120021,_x0000_s120022,_x0000_s120023,_x0000_s120024,_x0000_s120026,_x0000_s120027,_x0000_s120028,_x0000_s120029,_x0000_s120030,_x0000_s120031,_x0000_s120032,_x0000_s120033,_x0000_s120035,_x0000_s120036,_x0000_s120037,_x0000_s120039,_x0000_s120040,_x0000_s120041,_x0000_s120042,_x0000_s120043,_x0000_s120045,_x0000_s120046,_x0000_s120047,_x0000_s120048,_x0000_s120049,_x0000_s120050,_x0000_s120051,_x0000_s120052,_x0000_s120054,_x0000_s120055"
+ src="slide0050_image080.gif" style='position:absolute;top:63.0%;left:10.67%;
+ width:63.85%;height:20.25%'><![endif]>
+ <div v:shape="_x0000_s119903" class=O style='text-align:center;position:absolute;
+ top:70.5%;left:12.54%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>0</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119904" class=O style='text-align:center;position:absolute;
+ top:70.25%;left:16.47%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>0</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119917" class=O style='text-align:center;position:absolute;
+ top:63.5%;left:38.57%;width:2.62%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>A</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119926" class=O style='text-align:center;position:absolute;
+ top:69.5%;left:31.83%;width:2.62%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>D</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119936" class=O style='text-align:center;position:absolute;
+ top:76.25%;left:38.76%;width:2.24%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>C</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119945" class=O style='text-align:center;position:absolute;
+ top:69.5%;left:45.88%;width:2.24%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>B</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119946" class=O style='text-align:center;position:absolute;
+ top:65.5%;left:31.46%;width:5.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>2+e</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119950" class=O style='text-align:center;position:absolute;
+ top:66.0%;left:44.56%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>0</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119951" class=O style='text-align:center;position:absolute;
+ top:74.0%;left:43.44%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>0</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119952" class=O style='text-align:center;position:absolute;
+ top:74.5%;left:34.08%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>0</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119961" class=O style='text-align:center;position:absolute;
+ top:71.0%;left:36.32%;width:4.68%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>1+e</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s119962" class=O style='text-align:center;position:absolute;
+ top:71.0%;left:41.01%;width:1.49%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>1</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120027" class=O style='text-align:center;position:absolute;
+ top:63.75%;left:62.17%;width:2.62%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>A</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120036" class=O style='text-align:center;position:absolute;
+ top:69.5%;left:55.24%;width:2.62%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>D</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120046" class=O style='text-align:center;position:absolute;
+ top:76.25%;left:62.35%;width:2.24%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>C</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120055" class=O style='text-align:center;position:absolute;
+ top:69.75%;left:69.47%;width:2.24%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>B</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120056" class=O style='text-align:center;position:absolute;
+ top:65.75%;left:56.55%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>0</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <p:shaperange href="slide0050.xml#_x0000_s120057"/><![if !vml]><img border=0
+ v:shapes="_x0000_s120057,_x0000_s120058,_x0000_s120059"
+ src="slide0050_image081.gif" style='position:absolute;top:67.5%;left:57.86%;
+ width:11.23%;height:11.0%'><![endif]>
+ <div v:shape="_x0000_s120060" class=O style='text-align:center;position:absolute;
+ top:66.25%;left:66.47%;width:5.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>2+e</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120061" class=O style='text-align:center;position:absolute;
+ top:74.75%;left:65.73%;width:4.68%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>1+e</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120062" class=O style='text-align:center;position:absolute;
+ top:74.5%;left:57.67%;width:1.49%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>1</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <p:shaperange href="slide0050.xml#_x0000_s120063"/><![if !vml]><img border=0
+ v:shapes="_x0000_s120063,_x0000_s120064,_x0000_s120067,_x0000_s120068,_x0000_s120069,_x0000_s120071,_x0000_s120072,_x0000_s120073,_x0000_s120074,_x0000_s120075,_x0000_s120077,_x0000_s120078,_x0000_s120080,_x0000_s120081,_x0000_s120082,_x0000_s120083,_x0000_s120084,_x0000_s120086,_x0000_s120087,_x0000_s120090,_x0000_s120091,_x0000_s120092,_x0000_s120093,_x0000_s120094,_x0000_s120096,_x0000_s120097,_x0000_s120099,_x0000_s120100,_x0000_s120101,_x0000_s120102,_x0000_s120103,_x0000_s120105,_x0000_s120106,_x0000_s120107,_x0000_s120108,_x0000_s120109,_x0000_s120110,_x0000_s120111,_x0000_s120112,_x0000_s120113,_x0000_s120114,_x0000_s120115,_x0000_s120116,_x0000_s120117,_x0000_s120122,_x0000_s120123,_x0000_s120124,_x0000_s120125,_x0000_s120126,_x0000_s120127"
+ src="slide0050_image082.gif" style='position:absolute;top:63.5%;left:32.02%;
+ width:65.54%;height:21.5%'><![endif]>
+ <div v:shape="_x0000_s120065" class=O style='text-align:center;position:absolute;
+ top:71.25%;left:61.23%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>0</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120066" class=O style='text-align:center;position:absolute;
+ top:71.0%;left:64.41%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>0</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120078" class=O style='text-align:center;position:absolute;
+ top:64.0%;left:85.01%;width:2.62%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>A</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120087" class=O style='text-align:center;position:absolute;
+ top:69.75%;left:78.27%;width:2.62%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>D</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120097" class=O style='text-align:center;position:absolute;
+ top:76.5%;left:85.2%;width:2.24%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>C</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120106" class=O style='text-align:center;position:absolute;
+ top:70.0%;left:92.32%;width:2.24%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>B</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120107" class=O style='text-align:center;position:absolute;
+ top:66.0%;left:77.9%;width:5.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>2+e</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120111" class=O style='text-align:center;position:absolute;
+ top:66.5%;left:91.01%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>0</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120112" class=O style='text-align:center;position:absolute;
+ top:74.5%;left:90.07%;width:1.87%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>e</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120113" class=O style='text-align:center;position:absolute;
+ top:74.75%;left:80.52%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>0</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120116" class=O style='text-align:center;position:absolute;
+ top:71.5%;left:82.77%;width:4.68%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>1+e</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120117" class=O style='text-align:center;position:absolute;
+ top:71.25%;left:87.64%;width:1.49%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>1</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120118" class=O style='text-align:center;position:absolute;
+ top:87.75%;left:9.55%;width:12.54%;height:4.5%'><span style='font-family:Arial;
+ font-size:83%;color:#3333CC;mso-color-index:5'>Ban đầu</span><span
+ style='font-family:Arial;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120119" class=O style='text-align:center;position:absolute;
+ top:85.5%;left:24.71%;width:32.2%;height:4.5%'><span style='font-family:Arial;
+ font-size:83%;color:#3333CC;mso-color-index:5'>… Tính lại Định tuyến</span><span
+ style='font-family:Arial;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120120" class=O style='text-align:center;position:absolute;
+ top:85.5%;left:55.24%;width:15.35%;height:4.5%'><span style='font-family:Arial;
+ font-size:83%;color:#3333CC;mso-color-index:5'>… Tính lại</span><span
+ style='font-family:Arial;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s120121" class=O style='text-align:center;position:absolute;
+ top:85.25%;left:76.96%;width:15.35%;height:4.5%'><span style='font-family:
+ Arial;font-size:83%;color:#3333CC;mso-color-index:5'>… Tính lại</span><span
+ style='font-family:Arial;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <p:shaperange href="slide0050.xml#_x0000_s120128"/><![if !vml]><img border=0
+ v:shapes="_x0000_s120128" src="slide0050_image083.gif" style='position:absolute;
+ top:74.25%;left:78.65%;width:1.31%;height:4.25%'><![endif]><p:shaperange
+  href="slide0050.xml#_x0000_s120129"/><![if !vml]><img border=0
+ v:shapes="_x0000_s120129" src="slide0050_image084.gif" style='position:absolute;
+ top:81.0%;left:85.95%;width:1.31%;height:4.25%'><![endif]><p:shaperange
+  href="slide0050.xml#_x0000_s120130"/><![if !vml]><img border=0
+ v:shapes="_x0000_s120130" src="slide0050_image085.gif" style='position:absolute;
+ top:74.5%;left:93.07%;width:1.31%;height:4.25%'><![endif]></p:slide>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../chapter4a.htm">
+<link rel=Preview href=preview.wmf>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Part I: Introduction</title>
+<meta name=Description content="12/4/2006: Thuật toán Dijsktra">
+<link rel=Stylesheet href="master03_stylesheet.css">
+<![if !ppt]>
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:107% !important;}
+-->
+</style>
+<script src=script.js></script><script><!--
+gUseSldTimings=0;
+str=document.location.hash,idx=str.indexOf('#');if(idx>=0) str=str.substr(1);if (str == "0") g_showAnimation=0;else g_showAnimation=1;
+
+
+//if( !IsNts() ) Redirect( "PPTSld" );
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]><o:shapelayout v:ext="edit">
+ <o:idmap v:ext="edit" data="115"/>
+</o:shapelayout>
+
+<!--[if gte IE 5]>
+<object style="visibility:hidden" id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"
+	codebase="http://download.microsoft.com/download/vizact2000/Install/10/WIN98Me/EN-US/msorun.cab#version=10,0,0,1"></object>
+<![endif]-->
+</head>
+
+<body bgcolor="transparent" style='overflow:hidden' onkeypress="DocumentOnClick()" lang=EN-US style='margin:0px' onclick="DocumentOnClick()"
+onresize="_RSW()" onload="LoadSld()" onkeypresstemp="_KPH()">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:534px;height:400px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"
+ masterhref="master03.xml">
+ <p:shaperangetemp href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#_x0000_s1029"/>
+ <div v:shape="_x0000_s1029" class=O style='text-align:right;position:absolute;
+ top:94.25%;left:60.11%;width:29.77%;height:3.0%'><span style='font-size:58%'>4:
+ Network Layer</span></div>
+ <p:shaperange href="master03.xml#_x0000_s1030"/>
+ <div v:shape="_x0000_s1030" class=O>
+ <div style='text-align:right;position:absolute;top:94.25%;left:90.26%;
+ width:5.61%;height:3.0%'><span style='font-size:58%'>4a-</span><span
+ style='font-size:58%;mso-field-code:meta16'>17</span><span style='font-size:
+ 58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![endif]><p:shaperange href="master03.xml#_x0000_m1026"/><v:shape id="_x0000_s117762"
+  type="#_x0000_m1026" style='position:absolute;left:42pt;top:18pt;width:612pt;
+  height:90pt' o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <p:placeholder type="title"/></v:shape><v:shapetype id="_x0000_t202"
+  coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s117763" type="#_x0000_t202" style='position:absolute;
+  left:89.875pt;top:114.875pt;width:611pt;height:367.25pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape>
+ <div v:shape="_x0000_s117762" class=T style='position:absolute;top:8.25%;
+ left:6.92%;width:83.14%;height:7.5%'><span style='font-size:90%'>Thuật toán
+ Dijsktra</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s117763" class=O>
+ <div style='position:absolute;top:22.25%;left:13.48%;width:82.95%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>1<span style='mso-spacerun:yes'> 
+ </span></span><span style='font-family:Arial;font-size:83%;color:red'><b><i>Khởi
+ tạo:</i></b></span><span style='font-family:Arial;font-size:83%;color:red'>
+ &#13;</span></div>
+ <div style='position:absolute;top:26.75%;left:13.48%;width:82.95%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>2<span style='mso-spacerun:yes'>   
+ </span>N = {A} &#13;</span></div>
+ <div style='position:absolute;top:31.0%;left:13.48%;width:82.95%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>3<span style='mso-spacerun:yes'>   
+ </span>Với tất cả các nút v &#13;</span></div>
+ <div style='position:absolute;top:35.5%;left:13.48%;width:82.95%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>4<span style='mso-spacerun:yes'>     
+ </span>Nếu v kề với A &#13;</span></div>
+ <div style='position:absolute;top:40.0%;left:13.48%;width:82.95%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>5<span
+ style='mso-spacerun:yes'>        </span>thì D(v) = c(A,v) &#13;</span></div>
+ <div style='position:absolute;top:44.5%;left:13.48%;width:82.95%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>6<span
+ style='mso-spacerun:yes'>        </span>nếu không D(v) = infty &#13;</span></div>
+ <div style='position:absolute;top:48.75%;left:13.48%;width:82.95%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>7 &#13;</span></div>
+ <div style='position:absolute;top:53.25%;left:13.48%;width:82.95%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>8<span style='mso-spacerun:yes'>  
+ </span></span><span style='font-family:Arial;font-size:83%;color:red'><b><i>Lặp</i></b></span><span
+ style='font-family:Arial;font-size:83%'><i> </i></span><span style='font-family:
+ Arial;font-size:83%;display:none'>&#13;</span></div>
+ <div style='position:absolute;top:57.75%;left:13.48%;width:82.95%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>9<span style='mso-spacerun:yes'>     
+ </span>Tìm w không trong N sao cho D(w) nhỏ nhất &#13;</span></div>
+ <div style='position:absolute;top:62.25%;left:13.48%;width:82.95%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>10<span style='mso-spacerun:yes'>   
+ </span>Bổ sung w vào N &#13;</span></div>
+ <div style='position:absolute;top:66.75%;left:13.48%;width:87.64%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>11<span style='mso-spacerun:yes'>   
+ </span>Cập nhật D(v) cho tất cả v kề với w và không trong N: &#13;</span></div>
+ <div style='position:absolute;top:71.0%;left:13.48%;width:82.95%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>12<span
+ style='mso-spacerun:yes'>       </span>D(v) = min( D(v), D(w) + c(w,v) ) &#13;</span></div>
+ <div style='position:absolute;top:75.5%;left:13.48%;width:99.62%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>13<span style='mso-spacerun:yes'>   
+ </span>/* Giá mới tới v hoặc là giá cũ đến v hoặc đường đi ngắn nhất &#13;</span></div>
+ <div style='position:absolute;top:80.0%;left:13.48%;width:82.95%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>14<span style='mso-spacerun:yes'>   
+ </span>đến w cộng thêm khoảng cách từ w tới v */ &#13;</span></div>
+ <div style='position:absolute;top:84.5%;left:13.48%;width:82.95%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>15<span style='mso-spacerun:yes'> 
+ </span></span><span style='font-family:Arial;font-size:83%;color:red'><b><i>Cho
+ đến khi tất cả các nút đều nằm trong N</i></b></span><span style='font-family:
+ Arial;font-size:83%'> </span></div>
+ </div>
+ <v:shape id="_x0000_s117764" style='position:absolute;left:47.25pt;top:279pt;
+  width:63pt;height:227.25pt;mso-wrap-style:none;mso-wrap-distance-left:9pt;
+  mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;v-text-anchor:middle' coordsize="504,1818" path="m504,1596hhc444,1728,240,1818,120,1602,,1386,48,444,90,192hdc162,,294,84,396,144hhe"
+  filled="f" strokecolor="#33c [5]" strokeweight="2.25pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+  <v:path arrowok="t"/>
+ </v:shape><![if !vml]><img border=0 v:shapes="_x0000_s117764"
+ src="slide0048_image060.gif" style='position:absolute;top:51.5%;left:6.36%;
+ width:9.36%;height:43.0%'><![endif]></p:slide></div>
+
+</body>
+
+</html>

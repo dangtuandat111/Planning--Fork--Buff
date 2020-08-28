@@ -1,0 +1,584 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../chapter2b.htm">
+<link rel=Preview href=preview.wmf>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Part 2: Apprlications </title>
+<meta name=Description
+content="11/23/2006: Tương tác Socket Client/server : TCP">
+<link rel=Stylesheet href="master03_stylesheet.css">
+<!--[if gte IE 5]>
+<object id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"></object>
+<object id=MSOTIME classid="CLSID:A4639D29-774E-11D3-A490-00C04F6843FB"></object>
+<![endif]-->
+<![if !ppt]>
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:107% !important;}
+-->
+</style>
+<style>
+<!--
+oa\:* { BEHAVIOR: url(#MSOANIM#ANIM) url(#MSOTIME#TIME) }
+oa\:par,oa\:seq,oa\:iterate { BEHAVIOR:url(#MSOTIME) }
+oa\:video,oa\:audio {BEHAVIOR:url(#MSOTIME) url(#MSOTIME#MEDIA) }
+-->
+</style>
+<script src=script.js></script><script><!--
+gUseSldTimings=0;
+str=document.location.hash,idx=str.indexOf('#');if(idx>=0) str=str.substr(1);if (str == "0") g_showAnimation=0;else g_showAnimation=1;
+
+
+//if( !IsNts() ) Redirect( "PPTSld" );
+//--></script><script><!--
+g_animItemsToHide=new Array("_x0000_s175118_AllText","_x0000_s175118","_x0000_s175134_AllText","_x0000_s175134","_x0000_s175128_AllText","_x0000_s175128","_x0000_s175140_AllText","_x0000_s175140","_x0000_s175115_AllText","_x0000_s175115","_x0000_s175107_AllText","_x0000_s175107","_x0000_s175110_AllText","_x0000_s175110");
+
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]><o:shapelayout v:ext="edit">
+ <o:idmap v:ext="edit" data="171"/>
+</o:shapelayout>
+
+<!--[if gte IE 5]>
+<object style="visibility:hidden" id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"
+	codebase="http://download.microsoft.com/download/vizact2000/Install/10/WIN98Me/EN-US/msorun.cab#version=10,0,0,1"></object>
+<![endif]-->
+</head>
+
+<body bgcolor="transparent" style='overflow:hidden' onkeypress="DocumentOnClick()" lang=EN-US style='margin:0px' onclick="DocumentOnClick()"
+onresize="_RSW()" onload="LoadSld()" onkeypresstemp="_KPH()" oa:clockstart="onstart">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:534px;height:400px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"
+ masterhref="master03.xml">
+ <p:shaperangetemp href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#_x0000_s1029"/>
+ <div v:shape="_x0000_s1029" class=O style='text-align:right;position:absolute;
+ top:94.25%;left:60.11%;width:29.77%;height:3.0%'><span style='font-size:58%'>2:
+ Tầng Ứng dụng</span></div>
+ <p:shaperange href="master03.xml#_x0000_s1030"/>
+ <div v:shape="_x0000_s1030" class=O>
+ <div style='text-align:right;position:absolute;top:94.25%;left:91.76%;
+ width:3.18%;height:3.0%'><span style='font-size:58%;mso-field-code:meta16'>23</span><span
+ style='font-size:58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![endif]><p:shaperange href="master03.xml#_x0000_m1026"/><v:shape id="_x0000_s175106"
+  type="#_x0000_m1026" style='position:absolute;left:42pt;top:18pt;width:639pt;
+  height:90pt' o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <o:lock v:ext="edit" text="f"/>
+  <p:placeholder type="title"/></v:shape>
+ <div v:shape="_x0000_s175106" class=T style='position:absolute;top:8.25%;
+ left:6.92%;width:97.0%;height:7.5%'><span style='font-size:90%;text-decoration:
+ none'>Tương tác Socket Client/server : TCP</span></div>
+ <v:group id="_x0000_s175107" style='position:absolute;left:103.375pt;top:253.375pt;
+  width:166.75pt;height:73pt' coordorigin="827,2027" coordsize="1334,584">
+  <v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+   <v:stroke joinstyle="miter"/>
+   <v:path gradientshapeok="t" o:connecttype="rect"/>
+  </v:shapetype><v:shape id="_x0000_s175108" type="#_x0000_t202" style='position:absolute;
+   left:827;top:2027;width:1059;height:326;mso-wrap-style:none;v-text-anchor:middle'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s175109" type="#_x0000_t202" style='position:absolute;
+   left:828;top:2285;width:1333;height:326;mso-wrap-style:none;v-text-anchor:middle'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><p:animation number="2" delay="0" type="object" effect="dissolve"
+   flag="17408"/></v:group><![if !ppt]>
+ <div id="_x0000_s175107_AllText" style='position:absolute;top:47.0%;
+ left:14.41%;width:26.59%;height:14.0%;white-space:nowrap'
+ onfilterchange="javascript:TickHandler()"><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s175107,_x0000_s175108,_x0000_s175109"
+ src="slide0093_image064.gif" style='position:absolute;top:0%;left:0%;
+ width:88.02%;height:100.0%'><![endif]>
+ <div v:shape="_x0000_s175108" class=O>
+ <div style='position:absolute;top:5.35%;left:3.52%;width:66.19%;height:23.21%'><span
+ style='font-family:Arial;font-size:58%'>wait for incoming&#13;</span></div>
+ <div style='position:absolute;top:26.78%;left:3.52%;width:74.64%;height:23.21%'><span
+ style='font-family:Arial;font-size:58%'>connection request</span><span
+ style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <div v:shape="_x0000_s175109" class=O>
+ <div style='position:absolute;top:48.21%;left:3.52%;width:80.28%;height:23.21%'><span
+ style='font-family:Arial;font-size:58%;color:red'>connectionSocket =&#13;</span></div>
+ <div style='position:absolute;top:69.64%;left:3.52%;width:95.77%;height:23.21%'><span
+ style='font-family:Arial;font-size:58%;color:red'>welcomeSocket.accept()</span><span
+ style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![if !ppt]></div>
+ <![endif]><v:group id="_x0000_s175110" style='position:absolute;left:102.625pt;
+  top:148.125pt;width:128.75pt;height:111.375pt' coordorigin="821,1185"
+  coordsize="1030,891">
+  <v:group id="_x0000_s175111" style='position:absolute;left:821;top:1185;
+   width:1030;height:712' coordorigin="329,1209" coordsize="1030,712">
+   <v:shape id="_x0000_s175112" type="#_x0000_t202" style='position:absolute;
+    left:329;top:1209;width:997;height:460;mso-wrap-style:none;v-text-anchor:middle'
+    filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape><v:shape id="_x0000_s175113" type="#_x0000_t202" style='position:absolute;
+    left:333;top:1595;width:1026;height:326;mso-wrap-style:none;
+    v-text-anchor:middle' filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape></v:group><v:line id="_x0000_s175114" style='position:absolute;
+   v-text-anchor:middle' from="1284,1872" to="1284,2076" strokecolor="#33c [5]"
+   strokeweight="2.25pt">
+   <v:stroke endarrow="block"/>
+   <v:shadow color="gray [2]"/>
+  </v:line><p:animation number="1" delay="0" type="object" effect="dissolve"
+   flag="17408"/></v:group><![if !ppt]>
+ <div id="_x0000_s175110_AllText" style='position:absolute;top:27.5%;
+ left:12.17%;width:21.72%;height:21.25%;white-space:nowrap'
+ onfilterchange="javascript:TickHandler()"><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s175110,_x0000_s175112,_x0000_s175113,_x0000_s175114"
+ src="slide0093_image065.gif" style='position:absolute;top:0%;left:9.48%;
+ width:83.62%;height:100.0%'><![endif]>
+ <div v:shape="_x0000_s175112" class=O>
+ <div style='position:absolute;top:3.52%;left:13.79%;width:71.55%;height:15.29%'><span
+ style='font-family:Arial;font-size:58%'>create socket,&#13;</span></div>
+ <div style='position:absolute;top:17.64%;left:13.79%;width:71.55%;height:15.29%'><span
+ style='font-family:Arial;font-size:58%'>port=</span><span style='font-family:
+ "Courier New";font-size:58%'><b>x</b></span><span style='font-family:Arial;
+ font-size:58%'>, for&#13;</span></div>
+ <div style='position:absolute;top:32.94%;left:13.79%;width:85.34%;height:15.29%'><span
+ style='font-family:Arial;font-size:58%'>incoming request:</span><span
+ style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <div v:shape="_x0000_s175113" class=O>
+ <div style='text-align:right;position:absolute;top:45.88%;left:0%;width:87.93%;
+ height:15.29%'><span style='font-family:Arial;font-size:58%;color:red'>welcomeSocket
+ = &#13;</span></div>
+ <div style='text-align:right;position:absolute;top:60.0%;left:14.65%;
+ width:73.27%;height:15.29%'><span style='font-family:Arial;font-size:58%;
+ color:red'>ServerSocket()</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ </div>
+ <![if !ppt]></div>
+ <![endif]><v:group id="_x0000_s175115" style='position:absolute;left:400.875pt;
+  top:248pt;width:181.5pt;height:71.625pt' coordorigin="3333,1156" coordsize="1452,573">
+  <v:shape id="_x0000_s175116" type="#_x0000_t202" style='position:absolute;
+   left:3335;top:1156;width:1450;height:326;mso-wrap-style:none;
+   v-text-anchor:middle' filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s175117" type="#_x0000_t202" style='position:absolute;
+   left:3333;top:1403;width:846;height:326;mso-wrap-style:none;v-text-anchor:middle'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><p:animation number="3" delay="0" type="object" effect="dissolve"
+   flag="17408"/></v:group><![if !ppt]>
+ <div id="_x0000_s175115_AllText" style='position:absolute;top:46.0%;
+ left:54.11%;width:30.52%;height:13.75%;white-space:nowrap'
+ onfilterchange="javascript:TickHandler()"><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s175115,_x0000_s175116,_x0000_s175117"
+ src="slide0093_image066.gif" style='position:absolute;top:0%;left:4.9%;
+ width:83.43%;height:100.0%'><![endif]>
+ <div v:shape="_x0000_s175116" class=O>
+ <div style='position:absolute;top:5.45%;left:8.58%;width:76.68%;height:23.63%'><span
+ style='font-family:Arial;font-size:58%'>create socket,&#13;</span></div>
+ <div style='position:absolute;top:27.27%;left:8.58%;width:91.41%;height:23.63%'><span
+ style='font-family:Arial;font-size:58%'>connect to </span><span
+ style='font-family:"Courier New";font-size:58%'><b>hostid</b></span><span
+ style='font-family:Arial;font-size:58%'>, port=</span><span style='font-family:
+ "Courier New";font-size:58%'><b>x</b></span><span style='mso-special-format:
+ lastCR;display:none'>&#13;</span></div>
+ </div>
+ <div v:shape="_x0000_s175117" class=O>
+ <div style='text-align:right;position:absolute;top:47.27%;left:0%;width:50.3%;
+ height:23.63%'><span style='font-family:Arial;font-size:58%;color:red'>clientSocket
+ = &#13;</span></div>
+ <div style='text-align:right;position:absolute;top:69.09%;left:8.58%;
+ width:42.33%;height:23.63%'><span style='font-family:Arial;font-size:58%;
+ color:red'>Socket()</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![if !ppt]></div>
+ <![endif]><v:group id="_x0000_s175118" style='position:absolute;left:100.5pt;
+  top:246pt;width:428.375pt;height:264pt' coordorigin="804,1968" coordsize="3427,2112">
+  <v:shape id="_x0000_s175119" type="#_x0000_t202" style='position:absolute;
+   left:839;top:3641;width:998;height:326;mso-wrap-style:none;v-text-anchor:middle'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:line id="_x0000_s175120" style='position:absolute;
+   v-text-anchor:middle' from="1290,3564" to="1290,3768" strokecolor="#33c [5]"
+   strokeweight="2.25pt">
+   <v:stroke endarrow="block"/>
+   <v:shadow color="gray [2]"/>
+  </v:line><v:shape id="_x0000_s175121" style='position:absolute;left:804;
+   top:1968;width:492;height:2112;mso-wrap-style:square;
+   mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;
+   mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;v-text-anchor:middle'
+   coordsize="492,2112" path="m492,1968r,144l,2112,,,402,e" filled="f"
+   strokecolor="#33c [5]" strokeweight="2.25pt">
+   <v:stroke endarrow="block"/>
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:group id="_x0000_s175122" style='position:absolute;left:3365;
+   top:3377;width:866;height:692' coordorigin="3365,3377" coordsize="866,692">
+   <v:shape id="_x0000_s175123" type="#_x0000_t202" style='position:absolute;
+    left:3365;top:3377;width:866;height:326;mso-wrap-style:none;
+    v-text-anchor:middle' filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape><v:shape id="_x0000_s175124" type="#_x0000_t202" style='position:absolute;
+    left:3389;top:3743;width:719;height:326;mso-wrap-style:none;
+    v-text-anchor:middle' filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape><v:line id="_x0000_s175125" style='position:absolute;
+    v-text-anchor:middle' from="3816,3690" to="3816,3894" strokecolor="#33c [5]"
+    strokeweight="2.25pt">
+    <v:stroke endarrow="block"/>
+    <v:shadow color="gray [2]"/>
+   </v:line><p:animation number="7" delay="0" type="object" effect="dissolve"
+    flag="17408"/></v:group><p:animation number="7" delay="0" type="object"
+   effect="dissolve" flag="17408"/></v:group><![if !ppt]>
+ <div id="_x0000_s175118_AllText" style='position:absolute;top:44.75%;
+ left:13.85%;width:61.42%;height:50.25%;white-space:nowrap'
+ onfilterchange="javascript:TickHandler()"><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s175118,_x0000_s175119,_x0000_s175120,_x0000_s175121,_x0000_s175123,_x0000_s175124,_x0000_s175125"
+ src="slide0093_image067.gif" style='position:absolute;top:0%;left:0%;
+ width:97.56%;height:100.0%'><![endif]>
+ <div v:shape="_x0000_s175119" class=O>
+ <div style='position:absolute;top:80.09%;left:2.74%;width:25.3%;height:6.46%'><span
+ style='font-family:Arial;font-size:58%'>close&#13;</span></div>
+ <div style='position:absolute;top:86.56%;left:2.74%;width:30.18%;height:6.46%'><span
+ style='font-family:Arial;font-size:58%;color:red'>connectionSocket</span><span
+ style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <div v:shape="_x0000_s175123" class=O>
+ <div style='position:absolute;top:68.15%;left:74.08%;width:25.91%;height:6.46%'><span
+ style='font-family:Arial;font-size:58%'>read reply from&#13;</span></div>
+ <div style='position:absolute;top:74.12%;left:74.08%;width:21.34%;height:6.46%'><span
+ style='font-family:Arial;font-size:58%;color:red'>clientSocket</span><span
+ style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <div v:shape="_x0000_s175124" class=O>
+ <div style='position:absolute;top:85.07%;left:75.0%;width:17.37%;height:6.46%'><span
+ style='font-family:Arial;font-size:58%'>close&#13;</span></div>
+ <div style='position:absolute;top:91.04%;left:75.0%;width:20.73%;height:6.46%'><span
+ style='font-family:Arial;font-size:58%;color:red'>clientSocket</span><span
+ style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![if !ppt]></div>
+ <![endif]><v:shape id="_x0000_s175126" type="#_x0000_t202" style='position:absolute;
+  left:138.375pt;top:103.5pt;width:82.375pt;height:36pt;mso-wrap-style:none;
+  v-text-anchor:middle' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s175127" type="#_x0000_t202" style='position:absolute;
+  left:415pt;top:105pt;width:77.125pt;height:36pt;mso-wrap-style:none;
+  v-text-anchor:middle' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape>
+ <div v:shape="_x0000_s175126" class=O style='text-align:center;mso-line-spacing:
+ "100 50 0";position:absolute;top:20.25%;left:19.28%;width:11.42%;height:5.25%'><b>Server</b></div>
+ <div v:shape="_x0000_s175127" class=O style='text-align:center;mso-line-spacing:
+ "100 50 0";position:absolute;top:20.5%;left:57.67%;width:10.67%;height:5.25%'><b>Client</b></div>
+ <v:group id="_x0000_s175128" style='position:absolute;left:231pt;top:315.75pt;
+  width:318.25pt;height:108pt' coordorigin="1848,2526" coordsize="2546,864">
+  <v:line id="_x0000_s175129" style='position:absolute;flip:x;v-text-anchor:middle'
+   from="3792,2964" to="3798,3390" strokecolor="#33c [5]" strokeweight="2.25pt">
+   <v:stroke endarrow="block"/>
+   <v:shadow color="gray [2]"/>
+  </v:line><v:group id="_x0000_s175130" style='position:absolute;left:1848;
+   top:2526;width:2546;height:516' coordorigin="1848,2526" coordsize="2546,516">
+   <v:shape id="_x0000_s175131" type="#_x0000_t202" style='position:absolute;
+    left:3335;top:2675;width:1059;height:326;mso-wrap-style:none;
+    v-text-anchor:middle' filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape><v:line id="_x0000_s175132" style='position:absolute;
+    v-text-anchor:middle' from="3792,2526" to="3792,2730" strokecolor="#33c [5]"
+    strokeweight="2.25pt">
+    <v:stroke endarrow="block"/>
+    <v:shadow color="gray [2]"/>
+   </v:line><v:line id="_x0000_s175133" style='position:absolute;flip:x;
+    mso-wrap-style:none;v-text-anchor:middle' from="1848,2790" to="3366,3042"
+    strokecolor="red" strokeweight="2.25pt">
+    <v:stroke endarrow="block"/>
+    <v:shadow color="gray [2]"/>
+   </v:line><p:animation number="5" delay="0" type="object" effect="dissolve"
+    flag="17408"/></v:group><p:animation number="5" delay="0" type="object"
+   effect="dissolve" flag="17408"/></v:group><![if !ppt]>
+ <div id="_x0000_s175128_AllText" style='position:absolute;top:58.25%;
+ left:31.83%;width:47.0%;height:21.0%;white-space:nowrap'
+ onfilterchange="javascript:TickHandler()"><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s175128,_x0000_s175129,_x0000_s175131,_x0000_s175132,_x0000_s175133"
+ src="slide0093_image068.gif" style='position:absolute;top:0%;left:0%;
+ width:95.21%;height:100.0%'><![endif]>
+ <div v:shape="_x0000_s175131" class=O>
+ <div style='position:absolute;top:21.42%;left:57.76%;width:42.23%;height:15.47%'><span
+ style='font-family:Arial;font-size:58%'>send request using&#13;</span></div>
+ <div style='position:absolute;top:35.71%;left:57.76%;width:35.05%;height:15.47%'><span
+ style='font-family:Arial;font-size:58%;color:red'>clientSocket</span><span
+ style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![if !ppt]></div>
+ <![endif]><v:group id="_x0000_s175134" style='position:absolute;left:102.625pt;
+  top:323.25pt;width:322.625pt;height:117.125pt' coordorigin="821,2586"
+  coordsize="2581,937">
+  <v:shape id="_x0000_s175135" type="#_x0000_t202" style='position:absolute;
+   left:821;top:2789;width:998;height:326;mso-wrap-style:none;v-text-anchor:middle'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s175136" type="#_x0000_t202" style='position:absolute;
+   left:851;top:3197;width:998;height:326;mso-wrap-style:none;v-text-anchor:middle'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:line id="_x0000_s175137" style='position:absolute;
+   v-text-anchor:middle' from="1278,2586" to="1278,2826" strokecolor="#33c [5]"
+   strokeweight="2.25pt">
+   <v:stroke endarrow="block"/>
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s175138" style='position:absolute;flip:x;
+   v-text-anchor:middle' from="1284,3090" to="1290,3246" strokecolor="#33c [5]"
+   strokeweight="2.25pt">
+   <v:stroke endarrow="block"/>
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s175139" style='position:absolute;
+   v-text-anchor:middle' from="1866,3306" to="3402,3486" strokecolor="red"
+   strokeweight="2.25pt">
+   <v:stroke endarrow="block"/>
+   <v:shadow color="gray [2]"/>
+  </v:line><p:animation number="6" delay="0" type="object" effect="dissolve"
+   flag="17408"/></v:group><![if !ppt]>
+ <div id="_x0000_s175134_AllText" style='position:absolute;top:59.75%;
+ left:14.23%;width:45.31%;height:22.25%;white-space:nowrap'
+ onfilterchange="javascript:TickHandler()"><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s175134,_x0000_s175135,_x0000_s175136,_x0000_s175137,_x0000_s175138,_x0000_s175139"
+ src="slide0093_image069.gif" style='position:absolute;top:0%;left:0%;
+ width:100.0%;height:100.0%'><![endif]>
+ <div v:shape="_x0000_s175135" class=O>
+ <div style='position:absolute;top:25.84%;left:2.06%;width:40.9%;height:14.6%'><span
+ style='font-family:Arial;font-size:58%'>read request from&#13;</span></div>
+ <div style='position:absolute;top:39.32%;left:2.06%;width:40.9%;height:14.6%'><span
+ style='font-family:Arial;font-size:58%;color:red'>connectionSocket</span><span
+ style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <div v:shape="_x0000_s175136" class=O>
+ <div style='position:absolute;top:67.41%;left:3.3%;width:34.29%;height:14.6%'><span
+ style='font-family:Arial;font-size:58%'>write reply to&#13;</span></div>
+ <div style='position:absolute;top:82.02%;left:3.3%;width:40.9%;height:14.6%'><span
+ style='font-family:Arial;font-size:58%;color:red'>connectionSocket</span><span
+ style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![if !ppt]></div>
+ <![endif]><v:group id="_x0000_s175140" style='position:absolute;left:230.25pt;
+  top:239.5pt;width:173.25pt;height:50.5pt' coordorigin="1842,1916"
+  coordsize="1386,404">
+  <v:line id="_x0000_s175141" style='position:absolute;mso-wrap-style:none;
+   v-text-anchor:middle' from="1842,2130" to="3228,2130" strokecolor="red"
+   strokeweight="3pt">
+   <v:stroke dashstyle="dash" startarrow="block" endarrow="block"/>
+   <v:shadow color="gray [2]"/>
+  </v:line><v:shape id="_x0000_s175142" type="#_x0000_t202" style='position:absolute;
+   left:1887;top:1916;width:1240;height:404;mso-wrap-style:none;
+   v-text-anchor:middle' filled="f" stroked="f">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><p:animation number="4" delay="0" type="object" effect="dissolve"
+   flag="17408"/></v:group><![if !ppt]>
+ <div id="_x0000_s175140_AllText" style='position:absolute;top:44.25%;
+ left:31.83%;width:24.9%;height:9.75%;white-space:nowrap'
+ onfilterchange="javascript:TickHandler()"><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s175140,_x0000_s175141,_x0000_s175142"
+ src="slide0093_image070.gif" style='position:absolute;top:0%;left:0%;
+ width:100.0%;height:100.0%'><![endif]>
+ <div v:shape="_x0000_s175142" class=O>
+ <div style='text-align:center;position:absolute;top:2.56%;left:7.51%;
+ width:78.94%;height:51.28%'><span style='font-family:"Comic Sans MS";
+ font-size:75%;color:red'>TCP &#13;</span></div>
+ <div style='text-align:center;position:absolute;top:43.58%;left:0%;width:94.73%;
+ height:51.28%'><span style='font-family:"Comic Sans MS";font-size:75%;
+ color:red'>connection setup</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ </div>
+ <![if !ppt]></div>
+ <![endif]></p:slide></div>
+
+<p:animation number="-424056440"/><oa:par id="TimeNode0" dur="indefinite"
+ restart="never" p:nodeType="timingRoot">
+ <oa:seq id="TimeNode1" dur="indefinite" prev="document.onpptprev"
+  next="document.onpptnext" concurrent="enabled" nextAction="seek"
+  p:nodeType="mainSeq">
+  <oa:par id="TimeNode2" begin="indefinite" fill="hold">
+   <oa:par id="TimeNode3" begin="0.0" fill="hold">
+    <oa:par id="TimeNode4" o:presetID="ppt_9" o:presetClass="entrance"
+     o:presetSubType="0x0" begin="0.0" fill="hold" p:nodeType="clickEffect">
+     <oa:set id="TimeNode5" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s175110" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode6" dur="0.5" targetElement="_x0000_s175110"
+      transition="in" filter="dissolve"/>
+    </oa:par>
+    <![if !ppt]><oa:par id="TimeNode7" o:presetID="ppt_9" o:presetClass="entrance"
+     o:presetSubType="0x0" begin="0.0" fill="hold" p:nodeType="withEffect">
+     <oa:set id="TimeNode8" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s175110_AllText" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode9" dur="0.5"
+      targetElement="_x0000_s175110_AllText" transition="in" filter="dissolve"/>
+    </oa:par>
+    <![endif]></oa:par>
+  </oa:par>
+  <oa:par id="TimeNode10" begin="indefinite" fill="hold">
+   <oa:par id="TimeNode11" begin="0.0" fill="hold">
+    <oa:par id="TimeNode12" o:presetID="ppt_9" o:presetClass="entrance"
+     o:presetSubType="0x0" begin="0.0" fill="hold" p:nodeType="clickEffect">
+     <oa:set id="TimeNode13" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s175107" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode14" dur="0.5" targetElement="_x0000_s175107"
+      transition="in" filter="dissolve"/>
+    </oa:par>
+    <![if !ppt]><oa:par id="TimeNode15" o:presetID="ppt_9"
+     o:presetClass="entrance" o:presetSubType="0x0" begin="0.0" fill="hold"
+     p:nodeType="withEffect">
+     <oa:set id="TimeNode16" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s175107_AllText" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode17" dur="0.5"
+      targetElement="_x0000_s175107_AllText" transition="in" filter="dissolve"/>
+    </oa:par>
+    <![endif]></oa:par>
+  </oa:par>
+  <oa:par id="TimeNode18" begin="indefinite" fill="hold">
+   <oa:par id="TimeNode19" begin="0.0" fill="hold">
+    <oa:par id="TimeNode20" o:presetID="ppt_9" o:presetClass="entrance"
+     o:presetSubType="0x0" begin="0.0" fill="hold" p:nodeType="clickEffect">
+     <oa:set id="TimeNode21" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s175115" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode22" dur="0.5" targetElement="_x0000_s175115"
+      transition="in" filter="dissolve"/>
+    </oa:par>
+    <![if !ppt]><oa:par id="TimeNode23" o:presetID="ppt_9"
+     o:presetClass="entrance" o:presetSubType="0x0" begin="0.0" fill="hold"
+     p:nodeType="withEffect">
+     <oa:set id="TimeNode24" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s175115_AllText" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode25" dur="0.5"
+      targetElement="_x0000_s175115_AllText" transition="in" filter="dissolve"/>
+    </oa:par>
+    <![endif]></oa:par>
+  </oa:par>
+  <oa:par id="TimeNode26" begin="indefinite" fill="hold">
+   <oa:par id="TimeNode27" begin="0.0" fill="hold">
+    <oa:par id="TimeNode28" o:presetID="ppt_9" o:presetClass="entrance"
+     o:presetSubType="0x0" begin="0.0" fill="hold" p:nodeType="clickEffect">
+     <oa:set id="TimeNode29" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s175140" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode30" dur="0.5" targetElement="_x0000_s175140"
+      transition="in" filter="dissolve"/>
+    </oa:par>
+    <![if !ppt]><oa:par id="TimeNode31" o:presetID="ppt_9"
+     o:presetClass="entrance" o:presetSubType="0x0" begin="0.0" fill="hold"
+     p:nodeType="withEffect">
+     <oa:set id="TimeNode32" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s175140_AllText" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode33" dur="0.5"
+      targetElement="_x0000_s175140_AllText" transition="in" filter="dissolve"/>
+    </oa:par>
+    <![endif]></oa:par>
+  </oa:par>
+  <oa:par id="TimeNode34" begin="indefinite" fill="hold">
+   <oa:par id="TimeNode35" begin="0.0" fill="hold">
+    <oa:par id="TimeNode36" o:presetID="ppt_9" o:presetClass="entrance"
+     o:presetSubType="0x0" begin="0.0" fill="hold" p:nodeType="clickEffect">
+     <oa:set id="TimeNode37" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s175128" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode38" dur="0.5" targetElement="_x0000_s175128"
+      transition="in" filter="dissolve"/>
+    </oa:par>
+    <![if !ppt]><oa:par id="TimeNode39" o:presetID="ppt_9"
+     o:presetClass="entrance" o:presetSubType="0x0" begin="0.0" fill="hold"
+     p:nodeType="withEffect">
+     <oa:set id="TimeNode40" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s175128_AllText" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode41" dur="0.5"
+      targetElement="_x0000_s175128_AllText" transition="in" filter="dissolve"/>
+    </oa:par>
+    <![endif]></oa:par>
+  </oa:par>
+  <oa:par id="TimeNode42" begin="indefinite" fill="hold">
+   <oa:par id="TimeNode43" begin="0.0" fill="hold">
+    <oa:par id="TimeNode44" o:presetID="ppt_9" o:presetClass="entrance"
+     o:presetSubType="0x0" begin="0.0" fill="hold" p:nodeType="clickEffect">
+     <oa:set id="TimeNode45" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s175134" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode46" dur="0.5" targetElement="_x0000_s175134"
+      transition="in" filter="dissolve"/>
+    </oa:par>
+    <![if !ppt]><oa:par id="TimeNode47" o:presetID="ppt_9"
+     o:presetClass="entrance" o:presetSubType="0x0" begin="0.0" fill="hold"
+     p:nodeType="withEffect">
+     <oa:set id="TimeNode48" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s175134_AllText" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode49" dur="0.5"
+      targetElement="_x0000_s175134_AllText" transition="in" filter="dissolve"/>
+    </oa:par>
+    <![endif]></oa:par>
+  </oa:par>
+  <oa:par id="TimeNode50" begin="indefinite" fill="hold">
+   <oa:par id="TimeNode51" begin="0.0" fill="hold">
+    <oa:par id="TimeNode52" o:presetID="ppt_9" o:presetClass="entrance"
+     o:presetSubType="0x0" begin="0.0" fill="hold" p:nodeType="clickEffect">
+     <oa:set id="TimeNode53" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s175118" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode54" dur="0.5" targetElement="_x0000_s175118"
+      transition="in" filter="dissolve"/>
+    </oa:par>
+    <![if !ppt]><oa:par id="TimeNode55" o:presetID="ppt_9"
+     o:presetClass="entrance" o:presetSubType="0x0" begin="0.0" fill="hold"
+     p:nodeType="withEffect">
+     <oa:set id="TimeNode56" begin="0.0" dur="0.001" fill="hold"
+      targetElement="_x0000_s175118_AllText" attributeName="style.visibility"
+      to="visible"/>
+     <oa:animateFilter id="TimeNode57" dur="0.5"
+      targetElement="_x0000_s175118_AllText" transition="in" filter="dissolve"/>
+    </oa:par>
+    <![endif]></oa:par>
+  </oa:par>
+ </oa:seq>
+</oa:par>
+</body>
+
+</html>

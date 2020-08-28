@@ -1,0 +1,21 @@
+<!-- simple file which when navigated to triggers a specific event number -->
+<HTML>
+<SCRIPT language="Javascript">
+function fireEvent()
+{
+	var nEvent=parseInt(window.location.search.substr(1));
+	
+	if (isNaN(nEvent))
+		return;
+		
+	try
+		{
+		parent.mainFrame.SetEvent(nEvent);
+		}
+	catch (e)
+		{
+		}
+}
+</SCRIPT>
+<BODY onload="fireEvent()"></BODY>
+</HTML>

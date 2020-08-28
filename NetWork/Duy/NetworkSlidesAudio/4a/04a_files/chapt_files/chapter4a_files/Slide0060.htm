@@ -1,0 +1,339 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../chapter4a.htm">
+<link rel=Preview href=preview.wmf>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Part I: Introduction</title>
+<meta name=Description content="12/4/2006: Distance Vector: Đảo ngược">
+<link rel=Stylesheet href="master03_stylesheet.css">
+<![if !ppt]>
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:107% !important;}
+-->
+</style>
+<script src=script.js></script><script><!--
+gUseSldTimings=0;
+str=document.location.hash,idx=str.indexOf('#');if(idx>=0) str=str.substr(1);if (str == "0") g_showAnimation=0;else g_showAnimation=1;
+
+
+//if( !IsNts() ) Redirect( "PPTSld" );
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]><o:shapelayout v:ext="edit">
+ <o:idmap v:ext="edit" data="127"/>
+</o:shapelayout>
+
+<!--[if gte IE 5]>
+<object style="visibility:hidden" id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"
+	codebase="http://download.microsoft.com/download/vizact2000/Install/10/WIN98Me/EN-US/msorun.cab#version=10,0,0,1"></object>
+<![endif]-->
+</head>
+
+<body bgcolor="transparent" style='overflow:hidden' onkeypress="DocumentOnClick()" lang=EN-US style='margin:0px' onclick="DocumentOnClick()"
+onresize="_RSW()" onload="LoadSld()" onkeypresstemp="_KPH()">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:534px;height:400px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"
+ masterhref="master03.xml">
+ <p:shaperangetemp href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#_x0000_s1029"/>
+ <div v:shape="_x0000_s1029" class=O style='text-align:right;position:absolute;
+ top:94.25%;left:60.11%;width:29.77%;height:3.0%'><span style='font-size:58%'>4:
+ Network Layer</span></div>
+ <p:shaperange href="master03.xml#_x0000_s1030"/>
+ <div v:shape="_x0000_s1030" class=O>
+ <div style='text-align:right;position:absolute;top:94.25%;left:90.26%;
+ width:5.61%;height:3.0%'><span style='font-size:58%'>4a-</span><span
+ style='font-size:58%;mso-field-code:meta16'>30</span><span style='font-size:
+ 58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![endif]><p:shaperange href="master03.xml#_x0000_m1026"/><v:shape id="_x0000_s130050"
+  type="#_x0000_m1026" style='position:absolute;left:42pt;top:18pt;width:612pt;
+  height:90pt' o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <p:placeholder type="title"/></v:shape><v:rect id="_x0000_s130051" style='position:absolute;
+  left:42pt;top:104.25pt;width:413.25pt;height:117pt' filled="f" fillcolor="#0c9 [4]"
+  stroked="f" strokecolor="black [1]">
+  <v:fill color2="white [0]"/>
+  <v:shadow color="gray [2]"/>
+ </v:rect>
+ <div v:shape="_x0000_s130050" class=T style='position:absolute;top:8.5%;
+ left:6.92%;width:83.14%;height:6.75%'><span style='font-size:80%'>Distance
+ Vector: Đảo ngược</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s130051" class=HB>
+ <div style='position:absolute;top:20.25%;left:6.92%;width:55.61%;height:5.25%'><span
+ style='mso-special-format:nobullet;display:none;color:#3333CC;mso-color-index:
+ 5;font-family:ZapfDingbats;font-size:85%'>r</span>If Z định tuyến tới X qua Y:<span
+ style='font-size:83%;display:none'>&#13;</span></div>
+ <span style='position:absolute;top:26.5%;left:10.67%;width:59.73%;height:4.25%'><span
+ style='font-size:83%'><span class=HBB style='position:absolute;left:-6.26%;
+ top:.16em'>r</span></span><span style='font-size:83%'>Z thông báo với Y khoảng
+ cách từ Z tới X là </span></span><span style='position:absolute;top:31.0%;
+ left:10.67%;width:57.11%;height:4.25%'><span style='font-size:83%'>vô cùng (để
+ Y không chuyển gói tin đến X </span></span><span style='position:absolute;
+ top:35.25%;left:10.67%;width:51.87%;height:4.25%'><span style='font-size:83%'>qua
+ Z)&#13;</span></span>
+ <div style='position:absolute;top:40.75%;left:6.92%;width:55.61%;height:4.25%'><span
+ style='position:absolute;top:0%;left:6.73%;width:93.26%;height:100.0%'><span
+ style='font-size:83%'><span class=HBB style='position:absolute;left:-7.22%;
+ top:.16em'>r</span></span><span style='font-size:83%'>Có thể khắc phục vấn đề
+ được không? &#13;</span></span></div>
+ <div style='position:absolute;top:46.0%;left:6.92%;width:55.61%;height:4.25%'><span
+ style='position:absolute;top:0%;left:6.73%;width:93.26%;height:100.0%'><span
+ style='font-size:83%;visibility:hidden'><span class=HBB style='position:absolute;
+ left:-7.22%'>r</span></span><span style='font-size:83%;mso-special-format:
+ lastCR;display:none'>&#13;</span></span></div>
+ </div>
+ <v:group id="_x0000_s130052" style='position:absolute;left:475.625pt;top:117.25pt;
+  width:172pt;height:103.5pt' coordorigin="169,1316" coordsize="1376,828">
+  <v:shape id="_x0000_s130053" style='position:absolute;left:169;top:1380;
+   width:1376;height:764;mso-wrap-style:none;v-text-anchor:middle' coordsize="1376,764"
+   path="m113,348c166,270,296,218,395,162,494,106,583,,710,9v127,9,341,127,450,210c1269,302,1376,426,1367,510v-9,84,-133,178,-264,216c972,764,749,754,578,738,407,722,154,695,77,630,,565,60,426,113,348xe"
+   fillcolor="#cff" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:shape id="_x0000_s130054" style='position:absolute;left:528;
+   top:1644;width:222;height:180;mso-wrap-style:none;v-text-anchor:middle'
+   coordsize="222,180" path="m,180l222,e" filled="f" strokecolor="black [1]"
+   strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:oval id="_x0000_s130055" style='position:absolute;left:268;
+   top:1880;width:313;height:81;mso-wrap-style:none;v-text-anchor:middle'
+   fillcolor="#ccf [6]" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:oval><v:line id="_x0000_s130056" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="268,1873" to="269,1923"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:line id="_x0000_s130057" style='position:absolute;
+   mso-wrap-style:none;v-text-anchor:middle' from="581,1873" to="582,1923"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:line><v:rect id="_x0000_s130058" style='position:absolute;left:268;top:1873;
+   width:310;height:49;mso-wrap-style:none;v-text-anchor:middle' fillcolor="#ccf [6]"
+   stroked="f" strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:rect><v:oval id="_x0000_s130059" style='position:absolute;left:265;top:1814;
+   width:313;height:95;mso-wrap-style:none;v-text-anchor:middle' fillcolor="#ccf [6]"
+   strokecolor="black [1]" strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+  </v:oval><v:shape id="_x0000_s130060" style='position:absolute;left:933;
+   top:1644;width:216;height:189;mso-wrap-style:none;v-text-anchor:middle'
+   coordsize="216,189" path="m,l216,189e" filled="f" strokecolor="black [1]"
+   strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:shape id="_x0000_s130061" style='position:absolute;left:585;
+   top:1908;width:540;height:3;mso-wrap-style:none;v-text-anchor:middle'
+   coordsize="540,3" path="m540,3l,e" filled="f" strokecolor="black [1]"
+   strokeweight="1pt">
+   <v:shadow color="gray [2]"/>
+   <v:path arrowok="t"/>
+  </v:shape><v:group id="_x0000_s130062" style='position:absolute;left:303;
+   top:1766;width:232;height:250' coordorigin="2940,2429" coordsize="235,250">
+   <v:rect id="_x0000_s130063" style='position:absolute;left:2982;top:2490;
+    width:144;height:132;mso-wrap-style:none;v-text-anchor:middle' fillcolor="#ccf [6]"
+    stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+   </v:rect><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"
+    path="m,l,21600r21600,l21600,xe">
+    <v:stroke joinstyle="miter"/>
+    <v:path gradientshapeok="t" o:connecttype="rect"/>
+   </v:shapetype><v:shape id="_x0000_s130064" type="#_x0000_t202" style='position:absolute;
+    left:2940;top:2429;width:235;height:250;mso-wrap-style:none;
+    v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+    <v:shadow color="gray [2]"/>
+    <v:textbox style='mso-fit-shape-to-text:t'/>
+   </v:shape></v:group><v:group id="_x0000_s130065" style='position:absolute;
+   left:1110;top:1778;width:316;height:250' coordorigin="1740,2306"
+   coordsize="316,250">
+   <v:oval id="_x0000_s130066" style='position:absolute;left:1743;top:2420;
+    width:313;height:81;mso-wrap-style:none;v-text-anchor:middle' fillcolor="#ccf [6]"
+    strokecolor="black [1]" strokeweight="1pt">
+    <v:shadow color="gray [2]"/>
+   </v:oval><v:line id="_x0000_s130067" style='position:absolute;
+    mso-wrap-style:none;v-text-anchor:middle' from="1743,2413" to="1743,2463"
+    strokecolor="black [1]" strokeweight="1pt">
+    <v:shadow color="gray [2]"/>
+   </v:line><v:line id="_x0000_s130068" style='position:absolute;
+    mso-wrap-style:none;v-text-anchor:middle' from="2056,2413" to="2056,2463"
+    strokecolor="black [1]" strokeweight="1pt">
+    <v:shadow color="gray [2]"/>
+   </v:line><v:rect id="_x0000_s130069" style='position:absolute;left:1743;
+    top:2413;width:310;height:49;mso-wrap-style:none;v-text-anchor:middle'
+    fillcolor="#ccf [6]" stroked="f" strokecolor="black [1]" strokeweight="1pt">
+    <v:shadow color="gray [2]"/>
+   </v:rect><v:oval id="_x0000_s130070" style='position:absolute;left:1740;
+    top:2354;width:313;height:95;mso-wrap-style:none;v-text-anchor:middle'
+    fillcolor="#ccf [6]" strokecolor="black [1]" strokeweight="1pt">
+    <v:shadow color="gray [2]"/>
+   </v:oval><v:group id="_x0000_s130071" style='position:absolute;left:1788;
+    top:2306;width:227;height:250' coordorigin="2943,2429" coordsize="230,250">
+    <v:rect id="_x0000_s130072" style='position:absolute;left:2982;top:2490;
+     width:144;height:132;mso-wrap-style:none;v-text-anchor:middle'
+     fillcolor="#ccf [6]" stroked="f" strokecolor="black [1]">
+     <v:shadow color="gray [2]"/>
+    </v:rect><v:shape id="_x0000_s130073" type="#_x0000_t202" style='position:absolute;
+     left:2943;top:2429;width:230;height:250;mso-wrap-style:none;
+     v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+     <v:shadow color="gray [2]"/>
+     <v:textbox style='mso-fit-shape-to-text:t'/>
+    </v:shape></v:group></v:group><v:shape id="_x0000_s130074" type="#_x0000_t202"
+   style='position:absolute;left:1013;top:1568;width:181;height:231;
+   mso-wrap-style:none;v-text-anchor:top-baseline' filled="f" stroked="f"
+   strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s130075" type="#_x0000_t202" style='position:absolute;
+   left:474;top:1565;width:204;height:231;mso-wrap-style:none;v-text-anchor:top-baseline'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:shape id="_x0000_s130076" type="#_x0000_t202" style='position:absolute;
+   left:715;top:1898;width:292;height:231;mso-wrap-style:none;v-text-anchor:top-baseline'
+   filled="f" stroked="f" strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:group id="_x0000_s130077" style='position:absolute;left:690;
+   top:1454;width:316;height:250' coordorigin="1740,2306" coordsize="316,250">
+   <v:oval id="_x0000_s130078" style='position:absolute;left:1743;top:2420;
+    width:313;height:81;mso-wrap-style:none;v-text-anchor:middle' fillcolor="#ccf [6]"
+    strokecolor="black [1]" strokeweight="1pt">
+    <v:shadow color="gray [2]"/>
+   </v:oval><v:line id="_x0000_s130079" style='position:absolute;
+    mso-wrap-style:none;v-text-anchor:middle' from="1743,2413" to="1743,2463"
+    strokecolor="black [1]" strokeweight="1pt">
+    <v:shadow color="gray [2]"/>
+   </v:line><v:line id="_x0000_s130080" style='position:absolute;
+    mso-wrap-style:none;v-text-anchor:middle' from="2056,2413" to="2056,2463"
+    strokecolor="black [1]" strokeweight="1pt">
+    <v:shadow color="gray [2]"/>
+   </v:line><v:rect id="_x0000_s130081" style='position:absolute;left:1743;
+    top:2413;width:310;height:49;mso-wrap-style:none;v-text-anchor:middle'
+    fillcolor="#ccf [6]" stroked="f" strokecolor="black [1]" strokeweight="1pt">
+    <v:shadow color="gray [2]"/>
+   </v:rect><v:oval id="_x0000_s130082" style='position:absolute;left:1740;
+    top:2354;width:313;height:95;mso-wrap-style:none;v-text-anchor:middle'
+    fillcolor="#ccf [6]" strokecolor="black [1]" strokeweight="1pt">
+    <v:shadow color="gray [2]"/>
+   </v:oval><v:group id="_x0000_s130083" style='position:absolute;left:1792;
+    top:2306;width:218;height:250' coordorigin="2947,2429" coordsize="221,250">
+    <v:rect id="_x0000_s130084" style='position:absolute;left:2982;top:2490;
+     width:144;height:132;mso-wrap-style:none;v-text-anchor:middle'
+     fillcolor="#ccf [6]" stroked="f" strokecolor="black [1]">
+     <v:shadow color="gray [2]"/>
+    </v:rect><v:shape id="_x0000_s130085" type="#_x0000_t202" style='position:absolute;
+     left:2947;top:2429;width:221;height:250;mso-wrap-style:none;
+     v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+     <v:shadow color="gray [2]"/>
+     <v:textbox style='mso-fit-shape-to-text:t'/>
+    </v:shape></v:group></v:group><v:shape id="_x0000_s130086" type="#_x0000_t202"
+   style='position:absolute;left:328;top:1316;width:292;height:231;
+   mso-wrap-style:none;v-text-anchor:top-baseline' filled="f" stroked="f"
+   strokecolor="black [1]">
+   <v:shadow color="gray [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape><v:line id="_x0000_s130087" style='position:absolute;flip:x y;
+   mso-wrap-style:none;v-text-anchor:middle' from="492,1512" to="624,1740"
+   strokecolor="red" strokeweight="1.5pt">
+   <v:stroke endarrow="block"/>
+   <v:shadow color="gray [2]"/>
+  </v:line></v:group><![if !vml]><img border=0
+ v:shapes="_x0000_s130052,_x0000_s130053,_x0000_s130054,_x0000_s130055,_x0000_s130056,_x0000_s130057,_x0000_s130058,_x0000_s130059,_x0000_s130060,_x0000_s130061,_x0000_s130063,_x0000_s130064,_x0000_s130066,_x0000_s130067,_x0000_s130068,_x0000_s130069,_x0000_s130070,_x0000_s130072,_x0000_s130073,_x0000_s130074,_x0000_s130075,_x0000_s130076,_x0000_s130078,_x0000_s130079,_x0000_s130080,_x0000_s130081,_x0000_s130082,_x0000_s130084,_x0000_s130085,_x0000_s130086,_x0000_s130087"
+ src="slide0060_image114.gif" style='position:absolute;top:21.75%;left:66.1%;
+ width:24.15%;height:19.5%'><![endif]>
+ <div v:shape="_x0000_s130064" class=O style='text-align:center;position:absolute;
+ top:32.25%;left:69.1%;width:2.62%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>X</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s130073" class=O style='text-align:center;position:absolute;
+ top:32.5%;left:84.08%;width:2.43%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>Z</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s130074" class=O style='text-align:center;position:absolute;
+ top:27.75%;left:81.64%;width:1.49%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>1</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s130075" class=O style='text-align:center;position:absolute;
+ top:27.75%;left:72.28%;width:2.05%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>4</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s130076" class=O style='text-align:center;position:absolute;
+ top:35.25%;left:76.21%;width:3.93%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%'>50</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s130085" class=O style='text-align:center;position:absolute;
+ top:25.0%;left:76.77%;width:2.24%;height:5.5%'><span style='font-family:"Comic Sans MS";
+ font-size:83%'>Y</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s130086" class=O style='text-align:center;position:absolute;
+ top:22.0%;left:69.47%;width:3.93%;height:5.0%'><span style='font-family:"Comic Sans MS";
+ font-size:75%;color:red'>60</span><span style='mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+  o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn="sum @0 1 0"/>
+   <v:f eqn="sum 0 0 @1"/>
+   <v:f eqn="prod @2 1 2"/>
+   <v:f eqn="prod @3 21600 pixelWidth"/>
+   <v:f eqn="prod @3 21600 pixelHeight"/>
+   <v:f eqn="sum @0 0 1"/>
+   <v:f eqn="prod @6 1 2"/>
+   <v:f eqn="prod @7 21600 pixelWidth"/>
+   <v:f eqn="sum @8 21600 0"/>
+   <v:f eqn="prod @7 21600 pixelHeight"/>
+   <v:f eqn="sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+  <o:lock v:ext="edit" aspectratio="t"/>
+ </v:shapetype><v:shape id="_x0000_s130090" type="#_x0000_t75" style='position:absolute;
+  left:100.5pt;top:274.375pt;width:533.5pt;height:221pt'>
+  <v:imagedata src="slide0060_image115.png" o:title="dv_pois"/>
+ </v:shape><![if !vml]><img border=0 v:shapes="_x0000_s130090"
+ src="slide0060_image116.jpg" style='position:absolute;top:50.75%;left:14.04%;
+ width:74.15%;height:41.0%'><![endif]><v:line id="_x0000_s130091" style='position:absolute;
+  mso-wrap-style:none;v-text-anchor:middle' from="612pt,257.25pt" to="612pt,473.25pt"
+  strokecolor="#33c [5]" strokeweight="1.5pt">
+  <v:shadow color="gray [2]"/>
+ </v:line><v:shape id="_x0000_s130092" type="#_x0000_t202" style='position:absolute;
+  left:614.5pt;top:257.125pt;width:94.875pt;height:45.75pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><![if !vml]><img border=0 v:shapes="_x0000_s130091"
+ src="slide0060_image117.gif" style='position:absolute;top:47.5%;left:84.83%;
+ width:.56%;height:40.75%'><![endif]>
+ <div v:shape="_x0000_s130092" class=O>
+ <div style='position:absolute;top:47.75%;left:86.32%;width:13.67%;height:4.25%'><span
+ style='font-family:"Comic Sans MS";font-size:67%;color:#3333CC;mso-color-index:
+ 5'>Thuật toán&#13;</span></div>
+ <div style='position:absolute;top:51.5%;left:86.32%;width:11.42%;height:4.25%'><span
+ style='font-family:"Comic Sans MS";font-size:67%;color:#3333CC;mso-color-index:
+ 5'>kết thúc</span><span style='font-family:"Comic Sans MS";font-size:75%;
+ mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+</p:slide></div>
+
+</body>
+
+</html>

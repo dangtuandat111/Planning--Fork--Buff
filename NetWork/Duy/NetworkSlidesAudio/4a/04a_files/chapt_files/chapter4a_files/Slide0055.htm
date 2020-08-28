@@ -1,0 +1,244 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../chapter4a.htm">
+<link rel=Preview href=preview.wmf>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Part I: Introduction</title>
+<meta name=Description content="12/4/2006: Thuật toán Distance Vector:">
+<link rel=Stylesheet href="master03_stylesheet.css">
+<![if !ppt]>
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:107% !important;}
+-->
+</style>
+<script src=script.js></script><script><!--
+gUseSldTimings=0;
+str=document.location.hash,idx=str.indexOf('#');if(idx>=0) str=str.substr(1);if (str == "0") g_showAnimation=0;else g_showAnimation=1;
+
+
+//if( !IsNts() ) Redirect( "PPTSld" );
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]><o:shapelayout v:ext="edit">
+ <o:idmap v:ext="edit" data="122"/>
+</o:shapelayout>
+
+<!--[if gte IE 5]>
+<object style="visibility:hidden" id=MSOANIM classid="CLSID:A4639D2F-774E-11D3-A490-00C04F6843FB"
+	codebase="http://download.microsoft.com/download/vizact2000/Install/10/WIN98Me/EN-US/msorun.cab#version=10,0,0,1"></object>
+<![endif]-->
+</head>
+
+<body bgcolor="transparent" style='overflow:hidden' onkeypress="DocumentOnClick()" lang=EN-US style='margin:0px' onclick="DocumentOnClick()"
+onresize="_RSW()" onload="LoadSld()" onkeypresstemp="_KPH()">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:534px;height:400px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#FFFFFF,#000000,#808080,#000000,#00CC99,#3333CC,#CCCCFF,#B2B2B2"
+ masterhref="master03.xml">
+ <p:shaperangetemp href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#_x0000_s1029"/>
+ <div v:shape="_x0000_s1029" class=O style='text-align:right;position:absolute;
+ top:94.25%;left:60.11%;width:29.77%;height:3.0%'><span style='font-size:58%'>4:
+ Network Layer</span></div>
+ <p:shaperange href="master03.xml#_x0000_s1030"/>
+ <div v:shape="_x0000_s1030" class=O>
+ <div style='text-align:right;position:absolute;top:94.25%;left:90.26%;
+ width:5.61%;height:3.0%'><span style='font-size:58%'>4a-</span><span
+ style='font-size:58%;mso-field-code:meta16'>25</span><span style='font-size:
+ 58%;mso-special-format:lastCR;display:none'>&#13;</span></div>
+ </div>
+ <![endif]><p:shaperange href="master03.xml#_x0000_m1026"/><v:shape id="_x0000_s124930"
+  type="#_x0000_m1026" style='position:absolute;left:20.25pt;top:12pt;width:612pt;
+  height:63.75pt' o:userdrawn="f">
+  <v:fill o:detectmouseclick="f"/>
+  <v:stroke o:forcedash="f"/>
+  <p:placeholder type="title"/></v:shape><v:shapetype id="_x0000_t202"
+  coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s124931" type="#_x0000_t202" style='position:absolute;
+  left:73.875pt;top:66.25pt;width:547pt;height:463.25pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s124935" type="#_x0000_t202" style='position:absolute;
+  left:447.375pt;top:338.125pt;width:27.5pt;height:28.875pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape>
+ <div v:shape="_x0000_s124930" class=T style='position:absolute;top:5.0%;
+ left:3.74%;width:83.14%;height:6.75%'><span style='font-size:80%'>Thuật toán
+ Distance Vector:</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s124931" class=O>
+ <div style='position:absolute;top:13.25%;left:11.23%;width:74.15%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>8<span style='mso-spacerun:yes'> 
+ </span></span><span style='font-family:Arial;font-size:83%'><b>loop</b></span><span
+ style='font-family:Arial;font-size:83%'> &#13;</span></div>
+ <div style='position:absolute;top:17.75%;left:11.23%;width:77.71%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>9<span style='mso-spacerun:yes'>   
+ </span></span><span style='font-family:Arial;font-size:83%'><b>wait</b></span><span
+ style='font-family:Arial;font-size:83%'> (until I see a link cost change to
+ neighbor V &#13;</span></div>
+ <div style='position:absolute;top:22.0%;left:11.23%;width:74.15%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>10<span
+ style='mso-spacerun:yes'>         </span>or until I receive update from
+ neighbor V) &#13;</span></div>
+ <div style='position:absolute;top:26.5%;left:11.23%;width:74.15%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>11 &#13;</span></div>
+ <div style='position:absolute;top:31.0%;left:11.23%;width:74.15%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>12<span style='mso-spacerun:yes'>  
+ </span></span><span style='font-family:Arial;font-size:83%'><b>if</b></span><span
+ style='font-family:Arial;font-size:83%'> (c(X,V) changes by d) &#13;</span></div>
+ <div style='position:absolute;top:35.5%;left:11.23%;width:79.96%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>13<span style='mso-spacerun:yes'>    
+ </span></span><span style='font-family:Arial;font-size:83%;color:#3333CC;
+ mso-color-index:5'>/* change cost to all dest's via neighbor v by d */</span><span
+ style='font-family:Arial;font-size:83%'> &#13;</span></div>
+ <div style='position:absolute;top:39.75%;left:11.23%;width:74.15%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>14<span style='mso-spacerun:yes'>    
+ </span>/* note: d could be positive or negative */ &#13;</span></div>
+ <div style='position:absolute;top:44.25%;left:11.23%;width:74.53%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>15<span style='mso-spacerun:yes'>    
+ </span>for all destinations y:<span style='mso-spacerun:yes'>  </span>D<span
+ style='mso-spacerun:yes'>  </span>(y,V) =<span style='mso-spacerun:yes'> 
+ </span>D<span style='mso-spacerun:yes'>  </span>(y,V) + d &#13;</span></div>
+ <div style='position:absolute;top:48.75%;left:11.23%;width:74.15%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>16 &#13;</span></div>
+ <div style='position:absolute;top:53.25%;left:11.23%;width:80.14%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>17<span style='mso-spacerun:yes'>  
+ </span></span><span style='font-family:Arial;font-size:83%'><b>else if</b></span><span
+ style='font-family:Arial;font-size:83%'> (update received from V wrt
+ destination Y) &#13;</span></div>
+ <div style='position:absolute;top:57.75%;left:11.23%;width:82.39%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>18<span style='mso-spacerun:yes'>    
+ </span></span><span style='font-family:Arial;font-size:83%;color:#3333CC;
+ mso-color-index:5'>/* shortest path from V to some Y has changed<span
+ style='mso-spacerun:yes'>  </span>*/</span><span style='font-family:Arial;
+ font-size:83%'> &#13;</span></div>
+ <div style='position:absolute;top:62.0%;left:11.23%;width:81.46%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>19<span style='mso-spacerun:yes'>    
+ </span>/* V has sent a new value for its<span style='mso-spacerun:yes'> 
+ </span>min<span style='mso-spacerun:yes'>   </span>DV(Y,w) */ &#13;</span></div>
+ <div style='position:absolute;top:66.5%;left:11.23%;width:76.96%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>20<span style='mso-spacerun:yes'>    
+ </span>/* call this received new value is &quot;newval&quot;<span
+ style='mso-spacerun:yes'>     </span>*/ &#13;</span></div>
+ <div style='position:absolute;top:71.0%;left:11.23%;width:88.95%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>21<span style='mso-spacerun:yes'>    
+ </span>for the single destination y: D<span style='mso-spacerun:yes'> 
+ </span>(Y,V) = c(X,V) + newval &#13;</span></div>
+ <div style='position:absolute;top:75.5%;left:11.23%;width:74.15%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>22 &#13;</span></div>
+ <div style='position:absolute;top:79.75%;left:11.23%;width:84.08%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>23<span style='mso-spacerun:yes'>  
+ </span></span><span style='font-family:Arial;font-size:83%'><b>if</b></span><span
+ style='font-family:Arial;font-size:83%'> we have a new min<span
+ style='mso-spacerun:yes'>   </span>D<span style='mso-spacerun:yes'> 
+ </span>(Y,w)for any destination Y &#13;</span></div>
+ <div style='position:absolute;top:84.25%;left:11.23%;width:81.83%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>24<span style='mso-spacerun:yes'>     
+ </span>send new value of min<span style='mso-spacerun:yes'>   </span>D<span
+ style='mso-spacerun:yes'>  </span>(Y,w) to all neighbors &#13;</span></div>
+ <div style='position:absolute;top:88.75%;left:11.23%;width:74.15%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>25 &#13;</span></div>
+ <div style='position:absolute;top:93.25%;left:11.23%;width:74.15%;height:4.5%'><span
+ style='font-family:Arial;font-size:83%'>26<span style='mso-spacerun:yes'> 
+ </span></span><span style='font-family:Arial;font-size:83%'><b>forever</b></span><span
+ style='font-family:Arial;font-size:83%'> </span></div>
+ </div>
+ <div v:shape="_x0000_s124935" class=O style='position:absolute;top:63.5%;
+ left:63.1%;width:2.43%;height:4.0%'><span style='font-family:Arial;font-size:
+ 75%'>w</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <v:polyline id="_x0000_s124939" style='position:absolute;mso-wrap-style:none;
+  mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;v-text-anchor:middle' points="91.5pt,524.25pt,91.5pt,531pt,54pt,530.25pt,54pt,81pt,78pt,81pt"
+  coordsize="300,3600" filled="f" strokecolor="#33c [5]" strokeweight="1.5pt">
+  <v:stroke endarrow="block"/>
+  <v:shadow color="gray [2]"/>
+  <v:path arrowok="t"/>
+ </v:polyline><v:shape id="_x0000_s124940" type="#_x0000_t202" style='position:absolute;
+  left:427pt;top:229.375pt;width:26.5pt;height:28.875pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s124941" type="#_x0000_t202" style='position:absolute;
+  left:331.75pt;top:228.625pt;width:26.5pt;height:28.875pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s124942" type="#_x0000_t202" style='position:absolute;
+  left:331.75pt;top:418.375pt;width:26.5pt;height:28.875pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s124943" type="#_x0000_t202" style='position:absolute;
+  left:359.5pt;top:442.375pt;width:26.5pt;height:28.875pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s124944" type="#_x0000_t202" style='position:absolute;
+  left:382pt;top:371.875pt;width:26.5pt;height:28.875pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s124945" type="#_x0000_t202" style='position:absolute;
+  left:301.125pt;top:434.125pt;width:27.5pt;height:28.875pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><v:shape id="_x0000_s124946" type="#_x0000_t202" style='position:absolute;
+  left:328.875pt;top:461.125pt;width:27.5pt;height:28.875pt;mso-wrap-style:none;
+  v-text-anchor:top-baseline' filled="f" stroked="f" strokecolor="black [1]">
+  <v:shadow color="gray [2]"/>
+  <v:textbox style='mso-fit-shape-to-text:t'/>
+ </v:shape><![if !vml]><img border=0 v:shapes="_x0000_s124939"
+ src="slide0055_image099.gif" style='position:absolute;top:14.25%;left:7.3%;
+ width:5.8%;height:84.75%'><![endif]>
+ <div v:shape="_x0000_s124940" class=O style='text-align:center;position:absolute;
+ top:43.5%;left:60.11%;width:2.24%;height:4.0%'><span style='font-family:Arial;
+ font-size:75%'>X</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s124941" class=O style='text-align:center;position:absolute;
+ top:43.25%;left:46.81%;width:2.24%;height:4.0%'><span style='font-family:Arial;
+ font-size:75%'>X</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s124942" class=O style='text-align:center;position:absolute;
+ top:78.5%;left:46.81%;width:2.24%;height:4.0%'><span style='font-family:Arial;
+ font-size:75%'>X</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s124943" class=O style='text-align:center;position:absolute;
+ top:82.75%;left:50.74%;width:2.24%;height:4.0%'><span style='font-family:Arial;
+ font-size:75%'>X</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s124944" class=O style='text-align:center;position:absolute;
+ top:69.75%;left:53.93%;width:2.24%;height:4.0%'><span style='font-family:Arial;
+ font-size:75%'>X</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s124945" class=O style='position:absolute;top:81.25%;
+ left:42.88%;width:2.43%;height:4.0%'><span style='font-family:Arial;
+ font-size:75%'>w</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+ <div v:shape="_x0000_s124946" class=O style='position:absolute;top:86.25%;
+ left:46.62%;width:2.43%;height:4.0%'><span style='font-family:Arial;
+ font-size:75%'>w</span><span style='mso-special-format:lastCR;display:none'>&#13;</span></div>
+</p:slide></div>
+
+</body>
+
+</html>
