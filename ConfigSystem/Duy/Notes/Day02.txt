@@ -8,13 +8,27 @@ Phần tử:
 		Địa chỉ
 		Số điện thoại
 		Các học phần đã học, chưa học
+		/*dtd
+		mã sinh viên 
+		lớp 
+		khoa
+		quê quán
+		thông tin phụ huynh();
+		*/
 	Thông tin các học phần
 		Học phần tự chọn
 		Học phần bắt buộc
+		/*dtd
+		điểm các học phần đã học 
+		xếp loại các học phần đã học
+		*/
 	Thông tin nhà trường
 		Quy chế
 
 Môi trường của hệ thống: sinh viên, trường học
+		/*dtd
+		sinh viên trường đại học giao thông vận tải
+		*/
 
 Ranh giới:Để xác định  phạm vi của hệ thống quản lý sinh viên ta xác định các phẩn từ và các mối quan hệ của nó:
 	Phẩn tử:
@@ -23,6 +37,10 @@ Ranh giới:Để xác định  phạm vi của hệ thống quản lý sinh vi�
 		Thông tin sinh viên, thông tin các học phần ràng buộc lẫn nhau và đều phụ thuộc vào thông tin nhà trường
 
 	=> Ranh giới: sinh viên, các lớp học và nhà trường là ranh giới của hệ thống quản lý sinh viên.
+	/*dtd
+	quản lý thông tin sinh viên, các học phần và thông tin nhà trường
+	
+		*/
 Hệ thống con, phân dã
 	Quản lý môn học
 		Quản lý quá trình đăng ký học phần, hủy học phẩn
@@ -30,6 +48,13 @@ Hệ thống con, phân dã
 		Quản lý thành viên
 		Phân lớp
 	Quản lý điểm 
+	/*dtd
+	Hệ thống con, phân rã:
+		Quản lý thông tin sinh viên
+		Quản lý học phần (điểm, các môn học đã đăng ký, các môn học chưa đăng ký, xếp loại học phần, hủy học phần, ...)
+		Quản lý đánh giá rèn luyện sinh viên
+		
+		*/
 
 Giao diện:
 	Tương tác với môi trường:
@@ -37,10 +62,13 @@ Giao diện:
 		Tìm kiếm lớp học bất kỳ
 	Tương tác với các thành phần của nó:
 		Tìm kiếm số học phần đã học của sinh viên thì thông tin sinh viên phải tương tác và tham chiếu tới thông tin học phần
+	/*dtd
+	Phần này mình vẫn chưa hiểu lắm 
+		*/
 
 Hệ thống động:
 	Một số thông tin luôn đuọc thay đổi theo từng kỳ học như quy chế của nhà trường, sinh viên đang theo học, dừng học, điểm của sinh viên..
-
+	
 Thông tin đầu vào, đầu ra:
 	Đầu vào:
 		Hệ thống tương tác với môi trường:
@@ -56,7 +84,11 @@ Trạng thái của hệ thống:
 	Thời gian xử lý dữ liệu
 
 Modun hóa:
-
+	/*dtd
+	Bảng thông tin cá nhân sinh viên 
+	Bảng điểm sinh viên 
+	Bảng đăng ký học phần, hủy học phần, học lại , 
+		*/
 
 
 
