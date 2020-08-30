@@ -1,0 +1,65 @@
+Câu hỏi thi 1: Hệ thống là gì ? Trả lời theo bất kỳ quan điểm nào nhớ ghi rõ quan điểm của ai.
+
+Hệ thống quản lý sinh viên
+
+Phần tử:
+	Thông tin sinh viên: 
+		Họ tên
+		Địa chỉ
+		Số điện thoại
+		Các học phần đã học, chưa học
+	Thông tin các học phần
+		Học phần tự chọn
+		Học phần bắt buộc
+	Thông tin nhà trường
+		Quy chế
+
+Môi trường của hệ thống: sinh viên, trường học
+
+Ranh giới:Để xác định  phạm vi của hệ thống quản lý sinh viên ta xác định các phẩn từ và các mối quan hệ của nó:
+	Phẩn tử:
+		Thông tin sinh viên, thông tin các học phần, thông tin nhà trường
+	Mối quan hệ:
+		Thông tin sinh viên, thông tin các học phần ràng buộc lẫn nhau và đều phụ thuộc vào thông tin nhà trường
+
+	=> Ranh giới: sinh viên, các lớp học và nhà trường là ranh giới của hệ thống quản lý sinh viên.
+Hệ thống con, phân dã
+	Quản lý môn học
+		Quản lý quá trình đăng ký học phần, hủy học phẩn
+	Quản lý lớp học
+		Quản lý thành viên
+		Phân lớp
+	Quản lý điểm 
+
+Giao diện:
+	Tương tác với môi trường:
+		Tìm kiếm thông tin một sinh viên bất kỳ
+		Tìm kiếm lớp học bất kỳ
+	Tương tác với các thành phần của nó:
+		Tìm kiếm số học phần đã học của sinh viên thì thông tin sinh viên phải tương tác và tham chiếu tới thông tin học phần
+
+Hệ thống động:
+	Một số thông tin luôn đuọc thay đổi theo từng kỳ học như quy chế của nhà trường, sinh viên đang theo học, dừng học, điểm của sinh viên..
+
+Thông tin đầu vào, đầu ra:
+	Đầu vào:
+		Hệ thống tương tác với môi trường:
+			Sinh viên vào trường
+			Thầy cô giảng dạy
+			Nhà trường
+	Đầu ra: 
+		Thời khóa biểu sinh viên
+		Giao diện đăng ký học phần
+		Quản lý học lại, thôi học, lên lớp
+
+Trạng thái của hệ thống:
+	Thời gian xử lý dữ liệu
+
+Modun hóa:
+
+
+
+
+
+
+	
